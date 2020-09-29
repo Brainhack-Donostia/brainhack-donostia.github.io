@@ -12,7 +12,7 @@ Check the form below to see it in action!
 
 ### Example Formspree contact form with validation and reCaptcha
 
-Fill in the form or [email me](mailto:{{site.email}}) to discuss your next project.
+Fill in the form or [email us](mailto:{{site.email}}) to discuss your next project.
 
 {% include form.html %}
 
