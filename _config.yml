@@ -8,7 +8,7 @@ url: "https://brainhack-donostia.github.io/" # the base hostname & protocol for 
 
 # THEME SETTINGS
 navigation: # Navigation links
-  - {name: 'Home', link: '/'}
+  # - {name: 'Home', link: '/'}
   - {name: 'Register', link: ''}
   - {name: 'Schedule', link: ''}
   - {name: 'Projects', link: ''}
