@@ -10,6 +10,7 @@ url: "https://brainhack-donostia.github.io/" # the base hostname & protocol for 
 navigation: # Navigation links
   - {name: 'Home', link: '/'}
   - {name: 'Register', link: ''}
+  - {name: 'Schedule', link: ''}
   - {name: 'Projects', link: ''}
   - {name: 'About', link: '/about'}
   - {name: 'Contact', link: '/contact'}
