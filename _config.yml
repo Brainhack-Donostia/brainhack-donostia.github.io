@@ -6,20 +6,11 @@ description: > # Meta description of Homepage
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://brainhack-donostia.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
-# SEO PLUGIN
-social:
-  name: Your Name
-  links:
-    - https://twitter.com/BenBalter
-    - https://www.facebook.com/ben.balter
-    - https://www.linkedin.com/in/BenBalter
-    - https://plus.google.com/+BenBalter
-    - https://github.com/benbalter
-    - https://keybase.io/benbalter
-
 # THEME SETTINGS
 navigation: # Navigation links
   - {name: 'Home', link: '/'}
+  - {name: 'Registration', link: '/about'}
+  - {name: 'Projects', link: '/about'}
   - {name: 'About', link: '/about'}
   - {name: 'Contact', link: '/contact'}
 
