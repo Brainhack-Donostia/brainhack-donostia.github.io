@@ -28,7 +28,7 @@ tagline: >
 
 hero_img: posts/sleek_lg.jpg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
 
-email: your-email@domain.com # email for form submission
+email: info.bhg-donostia@bcbl.eu # email for form submission
 
 twitter_username: BHDonostia # replace with your_twitter_username or comment to remove link from footer
 github_username:  Brainhack-Donostia # replace with your_github_username or comment to remove link from footer
