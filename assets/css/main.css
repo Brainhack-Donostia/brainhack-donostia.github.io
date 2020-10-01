@@ -733,7 +733,7 @@ footer a:focus {
     width: 1.5rem
 }
 
-.social__icon mattermost{
+.social__icon .mattermost{
     height: 1.2rem;
     width: 1.2rem;
     margin-top: -4px;
