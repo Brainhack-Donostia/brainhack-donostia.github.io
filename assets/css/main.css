@@ -516,7 +516,8 @@ pre>code {
 }
 
 .header__logo .header__logo--container {
-    width: 58px
+    width: auto;
+    margin-top: 8px;
 }
 
 .header__logo .header__logo--container .logo {
