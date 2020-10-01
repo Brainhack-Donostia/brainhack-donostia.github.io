@@ -451,7 +451,7 @@ pre>code {
 }
 
 .header {
-    background-color: #030A0F;
+    background-color: #080f14;
     color: #fff;
     position: absolute;
     z-index: 4;
@@ -480,7 +480,7 @@ pre>code {
 
 .header.fix-nav {
     position: fixed;
-    background-color: #030A0F;
+    background-color: #080f14;
     -webkit-transition: background-color 0.5s ease, -webkit-transform .3s;
     transition: background-color 0.5s ease, -webkit-transform .3s;
     transition: transform .3s, background-color 0.5s ease;
@@ -507,7 +507,7 @@ pre>code {
     margin-right: 1.25rem;
     outline: 0;
     border-bottom: 0;
-    color: #030A0F
+    color: #080f14
 }
 
 .header__logo:hover {
@@ -544,7 +544,7 @@ pre>code {
     left: 0;
     width: 100%;
     height: auto;
-    background: #0F3145
+    background: #080f14
 }
 
 .header__link {
@@ -575,7 +575,7 @@ pre>code {
     display: block;
     position: relative;
     margin-top: 4px;
-    background-color: #030A0F;
+    background-color: #080f14;
     width: 100%;
     height: 2px;
     border-radius: 1px;
@@ -608,7 +608,7 @@ pre>code {
     width: 0;
     height: 0;
     opacity: 0;
-    background-color: #030A0F;
+    background-color: #080f14;
     z-index: 2;
     -webkit-transition: opacity 1s ease 0.1s;
     transition: opacity 1s ease 0.1s
