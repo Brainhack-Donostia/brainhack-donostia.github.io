@@ -1,5 +1,5 @@
 # SITE CONFIGURATION
-title: Brainhack Donostia 2020 # your site title
+title: #Brainhack Donostia 2020 # your site title
 author: GitHub User # You :P
 description: > # Meta description of Homepage
   Website of the Brainhack Donostia organization.
@@ -15,8 +15,8 @@ navigation: # Navigation links
   - {name: 'About', link: '/about'}
   - {name: 'Contact', link: '/contact'}
 
-tagline: >
-  Online edition: November 9th - 13th
+# tagline: >
+#   Online edition: November 9th - 13th
 
 hero_img: posts/sleek_lg.jpg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
 
