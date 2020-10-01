@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Registration
+title: Register now!
 permalink: /registration/
 ---
 
