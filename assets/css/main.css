@@ -548,7 +548,7 @@ pre>code {
 }
 
 .header__link {
-    color: #343851;
+    color: #ff67a4;
     padding: .938rem 0;
     border-top: 1px solid #ededed
 }
@@ -666,7 +666,7 @@ pre>code {
         width: 100%;
         -webkit-transform: scaleX(0);
         transform: scaleX(0);
-        background: #277cea;
+        background: #ff67a4;
         -webkit-transition: color 0.2s ease-in-out, -webkit-transform .2s ease-in-out;
         transition: color 0.2s ease-in-out, -webkit-transform .2s ease-in-out;
         transition: color 0.2s ease-in-out, transform .2s ease-in-out;
@@ -674,7 +674,7 @@ pre>code {
     }
 
     .header__link:hover {
-        color: #0f4c9c
+        color: #ff67a4
     }
 
     .header__link:hover::after,
@@ -682,7 +682,7 @@ pre>code {
     .header__link :focus::after {
         -webkit-transform: scaleX(1);
         transform: scaleX(1);
-        color: #0f4c9c;
+        color: #ff67a4;
         -webkit-transition: -webkit-transform .2s ease-in-out;
         transition: -webkit-transform .2s ease-in-out;
         transition: transform .2s ease-in-out;
