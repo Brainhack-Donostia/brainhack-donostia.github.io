@@ -1464,7 +1464,8 @@ table td {
     min-height: 8.75rem;
     width: 100%;
     position: relative;
-    background-color: #313237
+    background-color: #313237;
+    background-image: url('assets/img/posts/BHD2020_banner_Web_1920x1200_empty.jpg');
 }
 
 @media only screen and (min-width: 62em) {
