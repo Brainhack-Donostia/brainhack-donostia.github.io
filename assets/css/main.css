@@ -452,7 +452,7 @@ pre>code {
 
 .header {
     background-color: #000000;
-    color: #343851;
+    color: #fff;
     position: absolute;
     z-index: 4;
     width: 100%;
@@ -468,7 +468,7 @@ pre>code {
 }
 
 .header a {
-    color: #ff67a4;
+    color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -544,7 +544,7 @@ pre>code {
     left: 0;
     width: 100%;
     height: auto;
-    background: #fff
+    background: #000000
 }
 
 .header__link {
