@@ -1482,7 +1482,7 @@ table td {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #080f14
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(25,90,130,1) 100%);
 }
 
 .hero__wrap {
