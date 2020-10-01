@@ -451,7 +451,7 @@ pre>code {
 }
 
 .header {
-    background-color: #fff;
+    background-color: #000000;
     color: #343851;
     position: absolute;
     z-index: 4;
@@ -468,6 +468,7 @@ pre>code {
 }
 
 .header a {
+    color: #ff67a4;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
