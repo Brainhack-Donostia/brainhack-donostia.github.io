@@ -11,7 +11,7 @@ navigation: # Navigation links
   # - {name: 'Home', link: '/'}
   - {name: 'Register', link: '/registration'}
   - {name: 'Schedule', link: '/schedule'}
-  - {name: 'Projects', link: ''}
+  - {name: 'Projects', link: '/projects'}
   - {name: 'About', link: '/about'}
   - {name: 'Contact', link: '/contact'}
 
