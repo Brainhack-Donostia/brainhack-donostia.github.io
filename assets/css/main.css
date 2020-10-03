@@ -1451,7 +1451,14 @@ table td {
 @media only screen and (min-width: 62em) {
     .hero {
         margin: 0 auto;
-        height: 66em
+        height: 46.25em
+    }
+}
+
+@media only screen and (min-width: 110em) {
+    .hero {
+        margin: 0 auto;
+        height: 76em
     }
 }
 
