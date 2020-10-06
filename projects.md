@@ -4,8 +4,6 @@ title: Projects
 permalink: /projects/
 ---
 
-You can see the list of projects that have already been proposed for this years edition .
-
 Got a project idea? <a href="https://github.com/brainhackorg/global2020/issues" target="_blank">Submit!</a>
 
 In the spirit of Brainhack, participants are encouraged to propose collaborative projects to be developed by small teams “onsite” (through Zoom) during the event. We would like attendees to sign up for projects to promote active collaboration, and hands-on learning, both during and after the event.
