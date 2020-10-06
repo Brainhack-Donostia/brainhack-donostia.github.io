@@ -24,4 +24,4 @@ This year's edition will be held online, which means it will be completely free 
 
 The Organising Committee would like to thank the Basque Center on Cognition, Brain and Language, as well as everyone who put a lot of work into this event for helping this year's edition come to life.
 
-<img src="assets/img/posts/LogoBCBL_positivo con leyenda.jpg" alt="" width="30%">
+<img class="bcbl_logo" src="assets/img/posts/LogoBCBL_positivo con leyenda.jpg" alt="">
