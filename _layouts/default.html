@@ -29,6 +29,11 @@ layout: compress
     <main class="site__content">
       <section class="blog">
         <div class="container">
+          <div class="page-content">
+
+            {{ content }}
+  
+          </div>
           <div class="post-list" itemscope="" itemtype="http://schema.org/Blog">
 
             {% for post in site.posts %}
