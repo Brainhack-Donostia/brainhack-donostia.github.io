@@ -16,7 +16,7 @@ If you'd like to know more about what the different working groups have prepared
 
 ## Registration
 
-Registration for Brainhack Donostia 2020 is now OPEN!
+Registration for Brainhack Donostia 2020 is now **OPEN**!
 
 This year's edition will be held online, which means it will be completely free for participants and we will be able to host people from all around the world, making this year's edition bigger, better, and even more inclusive than ever before!
 
