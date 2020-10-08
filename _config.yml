@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 title: Brainhack Donostia # your site title
-author: GitHub User # You :P
+author: Brainhack Donostia # You :P
 description: > # Meta description of Homepage
   Website of the Brainhack Donostia organization.
 baseurl: "" # the subpath of your site, e.g. /blog
