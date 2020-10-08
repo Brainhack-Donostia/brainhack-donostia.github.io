@@ -1656,7 +1656,7 @@ table td {
     display: block;
 }
 
-@media only screen and (min-width: 62em) {
+@media only screen and (max-width: 62em) {
     .cta_button{
         width: 50%;
     }
