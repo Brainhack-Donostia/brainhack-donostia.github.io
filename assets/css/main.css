@@ -1649,15 +1649,8 @@ table td {
     fill: #277cea
 }
 
-.bcbl_logo {
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
 .cta_button{
-    width: 20%;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
     display: block;
