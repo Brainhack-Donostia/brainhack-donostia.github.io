@@ -20,8 +20,10 @@ Registration for Brainhack Donostia 2020 is now **OPEN**!
 
 This year's edition will be held online, which means it will be **completely free** for participants and we will be able to host people from all around the world, making this year's edition bigger, better, and even more inclusive than ever before!
 
+<a href="https://brainhack-donostia.github.io/registration/" target="_blank"><img class="bcbl_logo" src="assets/img/posts/CTAregister.jpg" alt=""></a>
+
 ## Acknowledgements
 
 The Organising Committee would like to thank the Basque Center on Cognition, Brain and Language, as well as everyone who put a lot of work into this event for helping this year's edition come to life.
 
-<a href="https://www.bcbl.eu/en" target="_blank"><img class="bcbl_logo" src="assets/img/posts/logoBCBL.jpg" alt=""></a>
+<a href="https://www.bcbl.eu/en" target="_blank"><img class="cta_button" src="assets/img/posts/logoBCBL.jpg" alt=""></a>
