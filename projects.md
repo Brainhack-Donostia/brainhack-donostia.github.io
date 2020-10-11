@@ -13,4 +13,6 @@ To find out more about the projects carried out in previous editions, check out 
 
 <a href="https://brainhack.org/global2020/projects" target="_blank"><img class="cta_button" src="../assets/img/posts/CTAprojects.jpg" alt=""></a>
 
-The projects will be chosen on the first day of the Brainhack, giving preference to those that were pre-submitted. The activities carried out during Brainhack Donostia 2020 can result in useful output that will be available beyond the current event, as well as new collaborations with peers!
+The projects will be chosen on the first day of the Brainhack, giving preference to those that were pre-submitted. Participants will be able to work on their projects while the train-track events are taking place (see [schedule page](https://brainhack-donostia.github.io/schedule/)).
+ 
+The activities carried out during Brainhack Donostia 2020 can result in useful output that will be available beyond the current event, as well as new collaborations with peers!
