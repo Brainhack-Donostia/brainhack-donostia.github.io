@@ -6,6 +6,8 @@ permalink: /schedule/
 
 You can download the calendar to your device by clicking [here](https://calendar.google.com/calendar/ical/bhg-donostia%40bcbl.eu/public/basic.ics).
 
+Attendees will be able to sign up and work on collaborative projects while the scheduled events are taking place. See more on the [projects page](https://brainhack-donostia.github.io/projects/).
+
 Times displayed on the calendar are automatically updated based on the user's time zone.
 
 <div id='calendar-container'>
