@@ -73,6 +73,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (>= 1.12)
+  jekyll-sitemap
   jekyll-sleek!
   kramdown-parser-gfm
   rake (~> 10.0)
