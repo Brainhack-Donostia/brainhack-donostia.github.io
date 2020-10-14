@@ -17,10 +17,10 @@ The ideal projects should convey ideas in development of tools, methodologies, g
 If you would like to get more ideas about
 
 - how to design your project and expectations from a Brainhack experience,
-- how to lead a project
-- how to be an attendee of a project
+- how to lead a project,
+- how to be an attendee of a project,
 
-please read our **<a href="https://github.com/brainhackorg/bhg-event-materials/blob/master/docs/leading_and_attending_to_brainhack_projects.md" target="_blank">How to Guideline for Leading and Attending to Brainhack Projects</a>**
+please read our **<a href="https://github.com/brainhackorg/bhg-event-materials/blob/master/docs/leading_and_attending_to_brainhack_projects.md" target="_blank">How to Guideline for Leading and Attending to Brainhack Projects</a>**.
 
 ## How will it work?
 
