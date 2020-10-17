@@ -27,3 +27,5 @@ This year's edition will be held online, which means it will be **completely fre
 The Organising Committee would like to thank the <a href="https://www.bcbl.eu/en" target="_blank">Basque Center on Cognition, Brain and Language</a>, as well as everyone who put a lot of work into this event for helping this year's edition come to life.
 
 <a href="https://www.bcbl.eu/en" target="_blank"><img class="cta_button" src="assets/img/posts/logoBCBL.jpg" alt=""></a>
+
+## News
