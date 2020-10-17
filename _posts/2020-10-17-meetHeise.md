@@ -14,6 +14,4 @@ In addition to her research, Dr Heise is very passionate about reducing research
 
 ### There’s a bit more about Verena’s talk in Brainhack Donostia in her abstract below
 
-```yaml
 Are most published research findings false? Why should we care? And is there anything we can do about it? In this talk I will give an overview of some practical solutions such as open science and good research practices in neuroimaging that can help make our research findings more robust. While there are a number of solutions that can be implemented by individual researchers, there are wider issues, for example around skills training and incentives, that require cultural change. To lobby for this change I am involved in a number of different initiatives and I will briefly outline current and planned activities.
-```
