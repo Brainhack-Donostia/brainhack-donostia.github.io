@@ -7,7 +7,7 @@ mathjax: true
 
 Meet Verena Heise, one of our confirmed speakers in Brainhack Donostia Online Edition! Being an advocate of Open Science, she will be presenting on how to deal with research findings in a more widely accessible and involved way. She will share her experience and the various practices she has been also carrying out in her own research to achieve these goals.
 
-![](../_img/posts/heise.jpg)
+![](https://brainhack-donostia.github.io/assets/img/posts/heise.jpg)
 
 ### A bit about Dr Heise
 
