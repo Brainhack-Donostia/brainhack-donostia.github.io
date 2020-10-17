@@ -408,7 +408,7 @@ pre>code {
 }
 
 .dark-bg {
-    background-color: #313237
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(25,90,130,1) 100%);
 }
 
 .hidden {
