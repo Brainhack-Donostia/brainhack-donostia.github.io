@@ -73,6 +73,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (>= 1.12)
+  jekyll-seo-tag
   jekyll-sitemap
   jekyll-sleek!
   kramdown-parser-gfm

@@ -1,15 +1,20 @@
 {
-  "name": "sleek",
+  "name": "brainhack-donostia",
   "version": "1.0.0",
-  "description": "Sleek is a modern Jekyll theme focused on speed performance & SEO best practices.",
-  "main": "gulpfile.js",
+  "description": "Website of the Brainhack Donostia organization.",
+  "main": "gulpfile.babel.js",
   "dependencies": {
-    "fg-loadcss": "^1.3.1",
-    "jquery": "^3.2.1",
-    "lazysizes": "^4.0.1",
-    "normalize.css": "^7.0.0",
-    "picturefill": "^3.0.2",
-    "velocity-animate": "^1.5.0"
+    "browser-sync": "^2.26.12",
+    "browserify": "^17.0.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-size": "^3.0.0",
+    "sharp": "^0.26.2",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -17,7 +22,7 @@
     "babelify": "^8.0.0",
     "browser-sync": "^2.18.13",
     "browserify": "^15.2.0",
-    "critical": "^1.0.0",
+    "critical": "^1.3.10",
     "eslint": "^4.15.0",
     "eslint-config-jquery": "^1.0.1",
     "eslint-plugin-dollar-sign": "^1.0.1",
@@ -26,31 +31,38 @@
     "gulp-autoprefixer": "^4.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-htmlmin": "^3.0.0",
-    "gulp-imagemin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
     "gulp-notify": "^3.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-responsive": "^2.8.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-responsive": "^3.0.1",
     "gulp-sass": "^3.1.0",
     "gulp-size": "^3.0.0",
-    "gulp-sourcemaps": "^2.6.1",
-    "gulp-uglify": "^3.0.0",
-    "sw-precache": "^5.2.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "sw-precache": "^5.2.1",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/janczizikow/sleek.git"
+    "url": "git+https://github.com/Brainhack-Donostia/brainhack-donostia.github.io.git"
   },
-  "keywords": [],
-  "author": "Jan Czizikow",
+  "keywords": [
+    "brainhack",
+    "brainhack",
+    "donostia",
+    "brainhack",
+    "global",
+    "bhg",
+    "bhg-donostia"
+  ],
+  "author": "Brainhack Donostia",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/janczizikow/sleek/issues"
+    "url": "https://github.com/Brainhack-Donostia/brainhack-donostia.github.io/issues"
   },
-  "homepage": "https://github.com/janczizikow/sleek#readme"
+  "homepage": "https://github.com/Brainhack-Donostia/brainhack-donostia.github.io#readme"
 }
