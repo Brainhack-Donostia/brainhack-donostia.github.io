@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-Got a project idea?
+Got a project idea? Submit!
 
 <a href="https://brainhack-donostia.github.io/submission" target="_blank"><img class="cta_button" src="../assets/img/posts/CTAsubmitButton.jpg" alt=""></a>
 
