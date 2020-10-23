@@ -5,7 +5,7 @@ featured-img: esteban
 mathjax: true
 ---
 
-We are delighted to introduce another guest speaker, Dr Oscar Esteban. He will be giving a talk on Tuesday 10thNovember about niPreps, an open-source neuroimaging preprocessing framework. Together with Michael Joseph, he will also be part of the team behind the tutorial on how to contribute to an open-source project on Thursday 12th November.
+We are delighted to introduce another guest speaker, Dr Oscar Esteban. He will be giving a talk on Tuesday 10th November about niPreps, an open-source neuroimaging preprocessing framework. Together with Michael Joseph, he will also be part of the team behind the tutorial on how to contribute to an open-source project on Thursday 12th November.
 
 ![](https://brainhack-donostia.github.io/assets/img/posts/esteban.jpg)
 
