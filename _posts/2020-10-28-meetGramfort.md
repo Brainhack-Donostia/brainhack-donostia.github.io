@@ -5,7 +5,7 @@ featured-img: gramfort
 mathjax: true
 ---
 
-Meet Verena Heise, oneToday, we would like to introduce you (drumroll, please) Dr Alex Gramfort, our next confirmed speaker at Brainhack Donostia 2020! If you have ever used Scikit Learn, you will probably recognise him as one of the core developers of this widely used machine learning Python library. But, he was also behind the creation of MNE, yet another open-source Python package for human neurophysiological data. Here, he will be talking about how our understanding of neurophysiological data has changed over the last few decades, and how recent advances in machine learning and deep learning are helping us to better understand EEG signals.
+Today, we would like to introduce you (drumroll, please) Dr Alex Gramfort, our next confirmed speaker at Brainhack Donostia 2020! If you have ever used Scikit Learn, you will probably recognise him as one of the core developers of this widely used machine learning Python library. But, he was also behind the creation of MNE, yet another open-source Python package for human neurophysiological data. Here, he will be talking about how our understanding of neurophysiological data has changed over the last few decades, and how recent advances in machine learning and deep learning are helping us to better understand EEG signals.
 
 ![](https://brainhack-donostia.github.io/assets/img/posts/gramfort.jpg)
 
