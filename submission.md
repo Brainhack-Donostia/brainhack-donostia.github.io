@@ -36,10 +36,10 @@ In order to submit a project to the Brainhack Global 2020, please follow these s
 1. Fill the necessary information as asked you to do so.
 1. Please make sure you give as clear and brief information about your project as possible sharing the necessary links that point reviewer/attendees to the right sources/repository and more detailed information about your project.
 1. Please make sure to follow the instructions in **<a href="https://github.com/brainhackorg/bhg-event-materials/blob/master/docs/leading_and_attending_to_brainhack_projects.md" target="_blank">How to Guideline for Leading and Attending to Brainhack Projects</a>** to increase the diversity and inclusivity in your project work and define the tasks, roles, and the skills that you are expecting from your attendees accordingly. Make sure you have room for the newcomers to give them a chance to learn from the seniors and share their own experiences.
+1. In the skill section you should list the labels that relate to the project. This is a very important step since this information will be use in our internal algorithm to match the participants with the projects based on the registration form. In case you don't put enough labels reviewers will add them at will.**<a href="https://github.com/brainhackorg/global2020/labels" target="_blank">labels list</a>**
 1. After you are done filling the required information, open the issue to submit your project to be reviewed. 
 1. Do not forget that you can make amendments in your issue template as necessary/required to do so along with and after the review processes.
-1. Once the issue is opened Choose/Create the label that is pointing to the event location that you are registered with.
-1. Choose the labels from the labels menu that are associated with your project. This will help us to make the correct assignments of the attendees with your project and will help with curating the right attention to your project.
+
 
 ### What happens next?
 
