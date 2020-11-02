@@ -12,6 +12,7 @@ navigation: # Navigation links
   - {name: 'Register', link: '/registration'}
   - {name: 'Schedule', link: '/schedule'}
   - {name: 'Projects', link: '/projects'}
+  - {name: 'Social Events', link: '/social-events'}
   - {name: 'About', link: '/about'}
   - {name: 'Contact', link: '/contact'}
 
