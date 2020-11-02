@@ -18,7 +18,7 @@ Will your team become the ultimate Brain-Hacker? Accept the challenge by filling
 
 ### November 11th at 18:30 CET
 
-Ever wish you could participate in trivia competitions without putting on pants or moving from your couch? If so, your wish has come true! We are cordially inviting you to participate in our official trivia event. Put yourself to the test with questions about the talks you attended during the week (make sure to take note of what the presenters are wearing  ), things about Donostia (don’t worry, it will be multiple choice), and generally nerdy things. We will have a creative section and a lightning round, so don’t worry, there will be something for everyone!
+Ever wish you could participate in trivia competitions without putting on pants or moving from your couch? If so, your wish has come true! We are cordially inviting you to participate in our official trivia event. Put yourself to the test with questions about the talks you attended during the week (make sure to take note of what the presenters are wearing), things about Donostia (don’t worry, it will be multiple choice), and generally nerdy things. We will have a creative section and a lightning round, so don’t worry, there will be something for everyone!
 
 You can either come with your own group (max. 6 people, please decide on a group name beforehand) or, if you’re feeling social, we can assign you to one. Please fill this form [Enlace para el mismo formulario que el de Scavenger Hunt] to sign up.
 
