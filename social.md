@@ -14,6 +14,8 @@ In this social event, you will overcome puzzles using your logic and problem-sol
 
 Will your team become the ultimate Brain-Hacker? Accept the challenge by filling this <a href="https://forms.gle/ssoFwaukbjdnBFKu5">form</a>.
 
+---
+
 ## Trivia Night
 
 ### November 11th at 18:30 CET
