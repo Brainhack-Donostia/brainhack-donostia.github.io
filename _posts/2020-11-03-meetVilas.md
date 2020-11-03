@@ -5,7 +5,7 @@ featured-img: vilas
 mathjax: true
 ---
 
-Our next guest speaker is a total champion of Open Science. Last year she co-organised OHBM's Open Science Room and her passion for accessibility and the equitable dissemination of knowledge is highly contagious! At Brainhack Donostian 2020 she will been telling us about what can we do to make our work more inclusive. Don't miss her presentation on November 9!
+ *The Turing Way* is everything you could ask for in a guide for reproducible science. It's open source. It's community-driven. It's inclusive. And it's a global collaboration of people working at research institutes and universities, government departments, and industry. Martina Vilas will share her experience as a core contributor and maintainer of *The Turing Way*, where she provides infrastructure support for the project.
 
 
 ![](https://brainhack-donostia.github.io/assets/img/posts/vilas.jpg)
