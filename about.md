@@ -142,12 +142,6 @@ PhD student @ BCBL and neuropsychologist, coming from the field of attention and
 
 <a href="https://www.bcbl.eu/es/conocenos/equipo/carlos-prez-serrano" target="_blank">See webpage</a>
 
-**Jose Pérez-Navarro**
-
-PhD student @ BCBL. He studies cognitive and language development in bilingual children, using both EEG and behavioral measures to explore neurophysiological correlates of language acquisition.
-
-<a href="https://www.bcbl.eu/es/conocenos/equipo/jose-prez-navarro" target="_blank">See webpage</a>
-
 **Ileana Quiñones**
 
 Postdoctoral researcher @ BCBL. Is there a causal link between individual differences in cognitive abilities and the architecture of the human connectome? Can the human connectome re-orchestrate the function(s) of its constituent nodes in order to cope with brain lesions? Does the malleability of the human connectome represent an adaptive advantage for post-surgery brain recovery processes? Her current research attempts to answer these questions using a combination of different non-invasive neuroimaging techniques, such as MRI, fMRI, and DTI.
