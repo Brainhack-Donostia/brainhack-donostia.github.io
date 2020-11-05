@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Invited speaker t Dr Garikoitz Lerma-Usabiaga
+title: Invited speaker Dr Garikoitz Lerma-Usabiaga
 featured-img: lerma
 mathjax: true
 ---
