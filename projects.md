@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-Got a project idea? Submit!
+**Got a project idea? Submit! Project submissions for Brainhack Donostia 2021 are now OPEN!**
 
 <center style="padding-bottom: 1em;"><a class="submission-button" href="https://brainhack-donostia.github.io/submission" target="_blank">Submit</a></center>
 
