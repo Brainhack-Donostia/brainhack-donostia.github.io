@@ -1,12 +1,12 @@
 ---
-layout: page
+layout: projects
 title: Projects
 permalink: /projects/
 ---
 
 Got a project idea? Submit!
 
-<a href="https://brainhack-donostia.github.io/submission" target="_blank"><img class="cta_button" src="../assets/img/posts/CTAsubmitButton.jpg" alt=""></a>
+<a class="submission-button" href="http://www.google.com" target="_blank">Submit</a>
 
 In the spirit of Brainhack, participants are encouraged to propose collaborative projects to be developed by small teams “onsite” (through Zoom) during the event. We would like attendees to sign up for projects to promote active collaboration, and hands-on learning, both during and after the event.
 
