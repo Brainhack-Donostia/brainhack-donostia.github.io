@@ -1688,15 +1688,17 @@ table td {
 .submission-button {
   display: inline-block !important;
   padding: 0.35em 1.2em !important;
-  border: 0.1em solid #FFFFFF !important;
+  border: 0.2em solid #19567D !important;
   margin: 0 0.3em 0.3em 0 !important;
-  border-radius: 0.12em !important;
+  border-radius: 0.3em !important;
   box-sizing: border-box !important;
   text-decoration: none !important;
-  font-weight: 300 !important;
+  font-weight: 700 !important;
   color: #FFFFFF !important;
   text-align: center !important;
   transition: all 0.2s !important;
+  background-color: #19567D;
+  font-size: 1.4em;
 }
 
 .submission-button:hover {
