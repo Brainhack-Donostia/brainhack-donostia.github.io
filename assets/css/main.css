@@ -1688,7 +1688,7 @@ table td {
 .submission-button {
   display: inline-block !important;
   padding: 0.35em 1.2em !important;
-  border: 0.2em solid #19567D !important;
+  border: 0.2em solid #0C2E41 !important;
   margin: 0 0.3em 0.3em 0 !important;
   border-radius: 0.3em !important;
   box-sizing: border-box !important;
@@ -1697,12 +1697,12 @@ table td {
   color: #FFFFFF !important;
   text-align: center !important;
   transition: all 0.2s !important;
-  background-color: #19567D;
-  font-size: 1.4em;
+  background-color: #0C2E41 !important;
+  font-size: 1.4em !important;
 }
 
 .submission-button:hover {
-  color: #19567D !important;
+  color: #0C2E41 !important;
   background-color: #FFFFFF !important;
 }
 @media all and (max-width:30em) {
