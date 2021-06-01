@@ -1685,28 +1685,29 @@ table td {
 
 /* Submission button */
 
-a.submission-button{
- display: inline-block !important;
- padding: 0.35em 1.2em !important;
- border: 0.1em solid #FFFFFF !important;
- margin: 0 0.3em 0.3em 0 !important;
- border-radius: 0.12em !important;
- box-sizing: border-box !important;
- text-decoration: none !important;
- font-weight: 300 !important;
- color: #FFFFFF !important;
- text-align: center !important;
- transition: all 0.2s !important;
+.submission-button {
+  display: inline-block !important;
+  padding: 0.35em 1.2em !important;
+  border: 0.1em solid #FFFFFF !important;
+  margin: 0 0.3em 0.3em 0 !important;
+  border-radius: 0.12em !important;
+  box-sizing: border-box !important;
+  text-decoration: none !important;
+  font-weight: 300 !important;
+  color: #FFFFFF !important;
+  text-align: center !important;
+  transition: all 0.2s !important;
 }
-a.submission-button:hover{
- color: #000000 !important;
- background-color: #FFFFFF !important;
+
+.submission-button:hover {
+  color: #000000 !important;
+  background-color: #FFFFFF !important;
 }
-@media all and (max-width:30em){
- a.submission-button{
-  display: block !important;
-  margin: 0.4em auto !important;
- }
+@media all and (max-width:30em) {
+  .submission-button{
+    display: block !important;
+    margin: 0.4em auto !important;
+  }
 }
 
 
