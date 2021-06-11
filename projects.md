@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-permalink: $link
+permalink: /projects/
 ---
 
 **Got a project idea? Submit! Project submissions for Brainhack Donostia 2021 are now OPEN!**
