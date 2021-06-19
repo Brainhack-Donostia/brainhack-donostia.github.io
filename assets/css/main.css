@@ -1714,7 +1714,7 @@ table td {
 
 /* Project cards */
 .projects.post-card {
-    width: 48% !important;
+    width: 100% !important;
 }
 
 
