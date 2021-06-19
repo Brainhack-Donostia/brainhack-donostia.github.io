@@ -1713,7 +1713,7 @@ table td {
 }
 
 /* Project cards */
-.projects .post-card {
+.projects.post-card {
     width: 48% !important;
 }
 
