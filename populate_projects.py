@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 from string import Template
 import wget
@@ -47,6 +48,8 @@ def main():
 
     with open("projects.md", "wb") as f:
         f.write(prj_page.encode("utf-8"))
+
+    os.remove(filename)
 
 if __name__ == "__main__":
     main()
