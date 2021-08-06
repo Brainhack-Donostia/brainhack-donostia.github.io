@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Invited speaker Dr Alex Gramfort
+title: Invited speaker 2020 Dr Alex Gramfort
 featured-img: gramfort
 mathjax: true
 ---
