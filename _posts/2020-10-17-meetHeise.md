@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Invited speaker Dr Verena Heise
+title: Invited speaker 2020 Dr Verena Heise
 featured-img: heise
 mathjax: true
 ---
