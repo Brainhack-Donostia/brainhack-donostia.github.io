@@ -36,7 +36,7 @@ layout: compress
           </div>
           <div class="post-list" itemscope="" itemtype="http://schema.org/Blog">
 
-            {% for post in site.posts %}
+            {% for post in site.categories.current %}
               {% include card.html %}
             {% endfor %}
 
