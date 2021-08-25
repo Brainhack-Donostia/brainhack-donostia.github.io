@@ -1445,7 +1445,7 @@ table td {
 
 .hero {
     margin: 3.75rem auto 2rem !important;
-    min-height: 46.25rem;
+    min-height: 34.25rem;
     width: 100%;
     position: relative;
     background-color: #fff;
@@ -1457,7 +1457,9 @@ table td {
 @media only screen and (min-width: 62em) {
     .hero {
         margin: 0 auto;
-        height: 46.25em;background-size: auto 100%;
+        min-height: 46.25rem;
+        height: 46.25em;
+        background-size: auto 100%;
         background-size: auto 100%;
     }
 }
@@ -1465,6 +1467,7 @@ table td {
 @media only screen and (min-width: 110em) {
     .hero {
         margin: 0 auto;
+        min-height: 46.25rem;
         height: 86em;
         background-size: auto 100%;
     }
