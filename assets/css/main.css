@@ -1568,7 +1568,7 @@ table td {
 @media only screen and (min-width: 48em) {
     .hero__wrap .hero__title {
         padding: 1rem 0;
-        font-size: 3.625em;
+        font-size: 2.625em;
         line-height: 1.125rem;
         color: #313237 !important;
         font-weight: 500;
