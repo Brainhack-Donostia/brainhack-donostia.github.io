@@ -1451,20 +1451,22 @@ table td {
     background-color: #fff;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto 100%;
+    background-size: 200% 100%;
 }
 
 @media only screen and (min-width: 62em) {
     .hero {
         margin: 0 auto;
-        height: 46.25em
+        height: 46.25em;background-size: auto 100%;
+        background-size: auto 100%;
     }
 }
 
 @media only screen and (min-width: 110em) {
     .hero {
         margin: 0 auto;
-        height: 86em
+        height: 86em;
+        background-size: auto 100%;
     }
 }
 
