@@ -551,7 +551,7 @@ pre>code {
 }
 
 .header__link {
-    color: #2d3f79;
+    color: black;
     padding: .938rem 0;
     border-top: 1px solid #ededed
 }
@@ -660,6 +660,7 @@ pre>code {
     }
 
     .header__link::after {
+        font-weight: 700;
         content: "";
         display: block;
         position: absolute;
@@ -669,7 +670,7 @@ pre>code {
         width: 100%;
         -webkit-transform: scaleX(0);
         transform: scaleX(0);
-        background: #2d3f79;
+        background: black;
         -webkit-transition: color 0.2s ease-in-out, -webkit-transform .2s ease-in-out;
         transition: color 0.2s ease-in-out, -webkit-transform .2s ease-in-out;
         transition: color 0.2s ease-in-out, transform .2s ease-in-out;
@@ -677,7 +678,8 @@ pre>code {
     }
 
     .header__link:hover {
-        color: #2d3f79;
+        color: black;
+        font-weight: 700;
     }
 
     .header__link:hover::after,
@@ -685,7 +687,8 @@ pre>code {
     .header__link :focus::after {
         -webkit-transform: scaleX(1);
         transform: scaleX(1);
-        color: #2d3f79;
+        color: black;
+        font-weight: 700;
         -webkit-transition: -webkit-transform .2s ease-in-out;
         transition: -webkit-transform .2s ease-in-out;
         transition: transform .2s ease-in-out;
@@ -929,8 +932,8 @@ button:disabled :focus {
     font-size: .75rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: rgba(255, 255, 255, 0.8);
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: #313237;
+    border: 2px solid rgba(41, 41, 41, 0.5);
     border-radius: 100px;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease
@@ -1440,14 +1443,14 @@ table td {
 }
 
 .hero {
-    margin: 3.75rem auto 0;
+    margin: 3.75rem auto 2rem !important;
     min-height: 46.25rem;
     width: 100%;
     position: relative;
     background-color: #fff;
     background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: cover
+    background-position: center;
+    background-size: auto 100%;
 }
 
 @media only screen and (min-width: 62em) {
@@ -1481,7 +1484,7 @@ table td {
     width: 100%;
     position: relative;
     /* background-color: #313237; */
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(25,90,130,1) 100%);
+    background: white;
 }
 
 .hero--post {
@@ -1490,7 +1493,7 @@ table td {
     width: 100%;
     position: relative;
     /* background-color: #313237; */
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(25,90,130,1) 100%);
+    background: white;
 }
 
 @media only screen and (min-width: 62em) {
@@ -1507,7 +1510,7 @@ table td {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(25,90,130,1) 100%);
+    background: white;
 }
 
 .hero--post::before {
@@ -1518,7 +1521,7 @@ table td {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(25,90,130,1) 100%);
+    background: white;
 }
 
 .hero__wrap {
@@ -1529,28 +1532,40 @@ table td {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-    color: rgba(255, 255, 255, 0.8);
+    color: black;
     width: 100%;
     max-width: 90%;
     z-index: 1
 }
 
+.hero__meta {
+    color: #313237 !important;
+}
+
 @media only screen and (min-width: 48em) {
     .hero__wrap {
-        max-width: 40em
+        max-width: 50em
     }
 }
 
 .hero__wrap .hero__title {
-    font-size: 1.8em;
-    color: #fff
+    font-size: 2.8em;
+    color: #313237 !important;
+    font-weight: 500;
+}
+
+.speaker__title {
+    font-size: 6em;
+    color: black;
 }
 
 @media only screen and (min-width: 48em) {
     .hero__wrap .hero__title {
         padding: 1rem 0;
-        font-size: 2.625em;
-        line-height: 3.125rem
+        font-size: 3.625em;
+        line-height: 1.125rem;
+        color: #313237 !important;
+        font-weight: 500;
     }
 }
 
@@ -1687,23 +1702,21 @@ table td {
 /* Submission button */
 
 .submission-button {
-  display: inline-block !important;
-  padding: 0.35em 1.2em !important;
-  border: 0.2em solid #0C2E41 !important;
-  margin: 0 0.3em 0.3em 0 !important;
-  border-radius: 0.3em !important;
-  box-sizing: border-box !important;
-  text-decoration: none !important;
-  font-weight: 700 !important;
-  color: #FFFFFF !important;
-  text-align: center !important;
-  transition: all 0.2s !important;
-  background-color: #0C2E41 !important;
-  font-size: 1.4em !important;
+    display: inline-block !important;
+    padding: 0.35em 1.2em !important;
+    border: 2px solid black !important;
+    margin: 0 0.3em 0.3em 0 !important;
+    font-weight: 500 !important;
+    color: black !important;
+    text-align: center !important;
+    transition: all 0.2s !important;
+    font-size: 2.4em !important;
 }
 
 .submission-button:hover {
-  color: #0C2E41 !important;
+  color: black !important;
+  font-weight: 700 !important;
+  border: 5px solid black !important;
   background-color: #FFFFFF !important;
 }
 @media all and (max-width:30em) {
@@ -1716,6 +1729,7 @@ table td {
 /* Project cards */
 .projects.post-card {
     width: 100% !important;
+    border: 1px solid black;
 }
 
 /* Logo */
