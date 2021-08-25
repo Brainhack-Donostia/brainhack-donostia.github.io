@@ -1550,13 +1550,13 @@ table td {
 }
 
 .hero__wrap .hero__title {
-    font-size: 2.8em;
+    font-size: 1.8em;
     color: #313237 !important;
     font-weight: 500;
 }
 
 .speaker__title {
-    font-size: 6em;
+    font-size: 3em;
     color: black;
 }
 
@@ -1568,6 +1568,11 @@ table td {
         color: #313237 !important;
         font-weight: 500;
     }
+
+    .speaker__title {
+        font-size: 6em;
+        color: black;
+    }    
 }
 
 .page-content {
