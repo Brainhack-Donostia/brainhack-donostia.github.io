@@ -10,7 +10,7 @@ The development of neuroimaging software requires strict validation before it ca
 
 ![](https://brainhack-donostia.github.io/assets/img/posts/lerma.jpg)
 
-### A bit about t Dr Garikoitz Lerma-Usabiaga
+### A bit about Dr Garikoitz Lerma-Usabiaga
 
 Dr Lerma-Usabiaga’s research focuses on 1) behavioral as well as functional and structural MRI techniques to investigate the neural basis of vision and reading and 2) developing MRI methods–both functional and structural–to further examine cognitive functions and enhance neuroimaging reproducibility, validity, and generalizability. He is an Electrical Engineer with 5 years of industry experience as a management consultant and 7 years of experience as a tech entrepreneur. He obtained his PhD at the BCBL on characterizing the involvement of ventral occipitotemporal cortex in word recognition using multimodal MRI techniques. After his PhD, he joined Prof Brian Wandell at Stanford University for 3 years of postdoctoral studies, to work on advanced diffusion MRI methods, population receptive fields (pRF), MRI biomarkers, and single-subject quantification. Dr Lerma-Usabiaga is currently affiliated to the BCBL in his third year of the Marie Skłodowska-Curie Global Fellowship.
 
