@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Invited speaker 2020 Dr Oscar Esteban
+title: Invited speaker 2020
+speaker: Dr Oscar Esteban
 featured-img: esteban
 mathjax: true
 ---

@@ -3,7 +3,7 @@
     <style>
       .cls-1 {
         font-size: 200px;
-        fill: #fafafa;
+        fill: #000;
         font-family: Roboto;
         font-weight: 800;
       }

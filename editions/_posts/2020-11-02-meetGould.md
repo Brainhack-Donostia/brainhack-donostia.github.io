@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Invited speaker 2020 Dr Cassandra Gould van Praag
+title: Invited speaker 2020
+speaker: Dr Cassandra Gould van Praag
 featured-img: gould
 mathjax: true
 ---

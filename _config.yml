@@ -9,22 +9,23 @@ url: "https://brainhack-donostia.github.io" # the base hostname & protocol for y
 # THEME SETTINGS
 navigation: # Navigation links
   # - {name: 'Home', link: '/'}
-  - {name: 'Register', link: '/registration'}
-  - {name: 'Schedule', link: '/schedule'}
-  - {name: 'Projects', link: '/projects'}
-  - {name: 'Social Events', link: '/social-events'}
-  - {name: 'About', link: '/about'}
-  - {name: 'Contact', link: '/contact'}
+  - { name: "Register", link: "/registration" }
+  - { name: "Schedule", link: "/schedule" }
+  - { name: "Projects", link: "/projects" }
+  - { name: "Social Events", link: "/social-events" }
+  - { name: "Previous Editions", link: "/previous-editions" }
+  - { name: "About", link: "/about" }
+  - { name: "Contact", link: "/contact" }
 
 # tagline: >
 #   Online edition: November 9th - 13th
 
-hero_img: posts/BHD2020_banner_Web_1920x1200_txiki.jpg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
+hero_img: posts/bh_keynote.svg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
 
 email: info.bhg-donostia@bcbl.eu # email for form submission
 
 twitter_username: BHDonostia # replace with your_twitter_username or comment to remove link from footer
-github_username:  Brainhack-Donostia/brainhack-donostia-2020 # replace with your_github_username or comment to remove link from footer
+github_username: Brainhack-Donostia/brainhack-donostia-2020 # replace with your_github_username or comment to remove link from footer
 mattermost_channel: bhg20-donostia # replace with your_instagram_username or comment to remove link from footer
 
 # google_tag_manager: GTM-NT2CFFQ # Uncomment to enable GTM. Replace GTM-XXXXXXX with your GTM container ID
@@ -48,7 +49,7 @@ exclude:
   - gulpfile.js
   - sleek.jpg
 
-include: ['_pages']
+include: ["_pages"]
 permalink: /:title/
 
 compress_html:

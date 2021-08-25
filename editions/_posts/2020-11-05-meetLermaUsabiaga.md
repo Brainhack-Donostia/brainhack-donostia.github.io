@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Invited speaker 2020 Dr Garikoitz Lerma-Usabiaga
+title: Invited speaker 2020
+speaker: Dr Garikoitz Lerma-Usabiaga
 featured-img: lerma
 mathjax: true
 ---

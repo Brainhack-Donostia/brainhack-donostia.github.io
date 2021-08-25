@@ -26,7 +26,7 @@ layout: compress
   <div class="hero dark-bg">
   {% endif %}
     <div class="hero__wrap">
-      {% if post.categories or page.categories %}
+      <!-- {% if post.categories or page.categories %}
         <div class="hero__categories">
           {% if post %}
             {% assign categories = post.categories %}
@@ -38,8 +38,9 @@ layout: compress
             {% unless forloop.last %}&nbsp;{% endunless %}
           {% endfor %}
         </div>
-      {% endif %}
+      {% endif %} -->
       <h1 class="hero__title">{{ page.title }}</h1>
+      <h1 class="speaker__title">{{ page.speaker }}</h1>
       <p class="hero__meta">
         <span>
           <time>{{ page.date | date_to_string }}</time>&nbsp;&middot;
@@ -74,7 +75,7 @@ layout: compress
                     <path fill="fillColor" d="M5.647 1.718c.37-.434.323-1.09-.106-1.465A1.016 1.016 0 0 0 4.095.36L.25 4.875a1.05 1.05 0 0 0 .017 1.378l3.95 4.407c.38.424 1.03.456 1.448.07a1.05 1.05 0 0 0 .07-1.468l-3.34-3.725 3.253-3.819z"/>
                   </svg>
               </span>
-            {{page.previous.title | strip_html | truncate: 30}}
+            {{page.previous.speaker | strip_html | truncate: 30}}
           </a>
           {% endif %}
         </div>
@@ -83,7 +84,7 @@ layout: compress
           {% if page.next.url %}
           <span>Next</span>
           <a href="{{page.next.url | relative_url }}">
-            {{page.next.title | strip_html | truncate: 30}}
+            {{page.next.speaker | strip_html | truncate: 30}}
             <span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="6" height="11">
                   <path fill="#fillColor" d="M.353 9.282c-.37.434-.323 1.09.106 1.465a1.016 1.016 0 0 0 1.446-.107L5.75 6.125a1.05 1.05 0 0 0-.017-1.378L1.784.34A1.015 1.015 0 0 0 .336.27a1.05 1.05 0 0 0-.07 1.468l3.34 3.725L.353 9.282z"/>

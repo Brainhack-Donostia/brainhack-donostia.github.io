@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Invited speaker 2020 Martina Vilas
+title: Invited speaker 2020
+speaker: Martina Vilas
 featured-img: vilas
 mathjax: true
 ---
