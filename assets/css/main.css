@@ -1451,20 +1451,22 @@ table td {
     background-color: #fff;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto 100%;
+    background-size: 200% 100%;
 }
 
 @media only screen and (min-width: 62em) {
     .hero {
         margin: 0 auto;
-        height: 46.25em
+        height: 46.25em;background-size: auto 100%;
+        background-size: auto 100%;
     }
 }
 
 @media only screen and (min-width: 110em) {
     .hero {
         margin: 0 auto;
-        height: 86em
+        height: 86em;
+        background-size: auto 100%;
     }
 }
 
@@ -1550,13 +1552,13 @@ table td {
 }
 
 .hero__wrap .hero__title {
-    font-size: 2.8em;
+    font-size: 1.8em;
     color: #313237 !important;
     font-weight: 500;
 }
 
 .speaker__title {
-    font-size: 6em;
+    font-size: 3em;
     color: black;
 }
 
@@ -1568,6 +1570,11 @@ table td {
         color: #313237 !important;
         font-weight: 500;
     }
+
+    .speaker__title {
+        font-size: 6em;
+        color: black;
+    }    
 }
 
 .page-content {
