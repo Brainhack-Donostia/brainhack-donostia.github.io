@@ -8,7 +8,7 @@ The first edition of Brainhack Donostia was held in May 2018 at the Basque Cente
 
 The second edition was an even greater success, with more than 70 participants! The challenge of Brainhack Donostia 2019 was to improve the development of projects in order to generate collaborations that would continue beyond the event. For the first time, we had two international speakers: Dimitri Van De Ville and Matteo Bastiani. Our guest speakers brought new experiences and knowledge to the table, contributing to our goal of promoting and sharing knowledge in an open and transparent way between disciplines and specialties, as well as to the development of open source tools.
 
-Despite the challenges of 2020 we continued to work to organize the very first virtual edition of BrainHack Donostia. This new online format allowed us to reach more participants and invited speakers than ever before. Last year's event counted with more than 100 participants from all over the world, and focused primarily on four main areas of interest: functional magnetic resonance imaging (fMRI), magnetoencephalography (MEG), diffusion imaging (DTI), and Open Science. 
+Despite the challenges of 2020 we continued to work to organize the very first virtual edition of BrainHack Donostia. This new online format allowed us to reach more participants and invited speakers than ever before. Last year's event counted with more than 100 participants from all over the world, and focused primarily on four main areas of interest: functional magnetic resonance imaging (fMRI), magnetoencephalography (MEG), diffusion imaging (DTI), and Open Science.
 ## Committee
 
 **Eneko Uruñuela**
