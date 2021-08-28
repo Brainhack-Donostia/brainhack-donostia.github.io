@@ -21,10 +21,21 @@ The activities carried out during Brainhack Donostia 2021 can result in useful o
 
 <div class="post-list" itemscope="" itemtype="http://schema.org/Blog" style="padding-top: 1em !important;">
 
-<div class="projects post-card" style="padding: 1.4em;">
-    <h4 style="font-size:1.8em">Aroma</h4>
-    <p style="padding-top:1em; padding-bottom: 1em;">ICA-AROMA (i.e. ‘ICA-based Automatic Removal Of Motion Artifacts’) concerns a data-driven method to identify and remove motion-related independent components from fMRI data. To that end it exploits a small, but robust set of theoretically motivated features, preventing the need for classifier re-training and therefore providing direct and easy applicability. The aim of this project is to modify the original ICA-AROMA code in order to restructure it into a pure Python package; e.g., dropping FSL calls in favor of pure Python functions.</p>
-    <p style="text-align: right; bottom: 0; right: 0; position: absolute; padding-right: 1.4em; font-style:italic">Eneko Uruñuela</p>
+<div class="projects post-card" style="padding: 1.4em">
+  <h4 style="font-size: 1.8em">Aroma</h4>
+  <p style="padding-top: 1em; padding-bottom: 1em">ICA-AROMA (i.e. ‘ICA-based Automatic Removal Of Motion Artifacts’) concerns a data-driven method to identify and remove motion-related independent components from fMRI data. To that end it exploits a small, but robust set of theoretically motivated features, preventing the need for classifier re-training and therefore providing direct and easy applicability. The aim of this project is to modify the original ICA-AROMA code in order to restructure it into a pure Python package; e.g., dropping FSL calls in favor of pure Python functions.</p>
+  <p
+    style="
+      text-align: right;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      padding-right: 1.4em;
+      font-style: italic;
+    "
+  >
+    Eneko Uruñuela
+  </p>
 </div>
 
 
