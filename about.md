@@ -11,158 +11,118 @@ The second edition was an even greater success, with more than 70 participants! 
 Despite the challenges of 2020 we continued to work to organize the very first virtual edition of BrainHack Donostia. This new online format allowed us to reach more participants and invited speakers than ever before. Last year's event counted with more than 100 participants from all over the world, and focused primarily on four main areas of interest: functional magnetic resonance imaging (fMRI), magnetoencephalography (MEG), diffusion imaging (DTI), and Open Science.
 ## Committee
 
+**Irene Arrieta**
+
+Chair of BHD 2021. She is interested in sound perception in the hearing impaired, from the psychoacoustic and developmental points of view. Focused on predicting Cochlear implantation outcomes in babies. Music perception should be a right for everybody!
+
+[See webpage](https://www.bcbl.eu/es/conocenos/equipo/irene-arrieta)
+
+**Chiara Luna Rivolta**
+
+Chair of BHD 2021. PhD student @ BCBL with a background in psychology and cognitive science. Now she investigates how modality shapes perception and production of language, through the comparison of spoken and signed languages. 
+
+[See webpage](https://www.bcbl.eu/es/conocenos/equipo/chiara-luna-rivolta)
+
 **Eneko Uruñuela**
 
-New chair of BHD. PhD student @ BCBL and biomedical engineer. His research focuses on the development of deconvolution methods for fMRI. As a proper engineer, he's a computer/phone/tech/programming geek. He also loves hiking (especially at sunset) and photography, and is into playing the electric guitar. Finally, he's a big (not so) secret fan of the 80s.
+Ex-chair of BHD. PhD student @ BCBL and biomedical engineer. His research focuses on the development of deconvolution methods for fMRI. As a proper engineer, he’s a computer/phone/tech/programming geek. He also loves hiking (especially at sunset) and photography, and is into playing the electric guitar. Finally, he’s a big (not so) secret fan of the 80s.
 
-<a href="https://www.bcbl.eu/es/conocenos/equipo/eneko-uruuela" target="_blank">See webpage</a>
-
-**Stefano Moia**
-
-PhD student @ BCBL and ex-chair of BHD. Resting-state aficionado, he's currently studying how physiological factors impact BOLD signal measurements. When he's not coding, he's probably in the kitchen, cooking.
-
-<a href="https://www.bcbl.eu/es/conocenos/equipo/stefano-moia" target="_blank">See webpage</a>
-
-**Polina Timofeeva**
-
-Ex-chair of BHD, she is a PhD student in Cognitive Neuroscience with an engineering background. Her previous research focused on Speech motor learning mechanisms and Speech perception. Her current research interests lie in the field of the neural basis of bilingual language control and, more specifically, she focuses on people who undergo brain surgery. Hiking, climbing, and singing.
-
-<a href="https://www.bcbl.eu/es/conocenos/equipo/polina-timofeeva" target="_blank">See webpage</a>
-
-**Daniel Alcalá**
-
-Cognitive neuroscientist and fMRI advocate. Studying the neural basis of the psychological processes we engage in when trying to understand other individuals. Also interested in large-scale meta-analytic methods and statistical learning.
+[See webpage](https://www.bcbl.eu/es/conocenos/equipo/eneko-uruuela)
 
 **Hülya Aldemir**
 
-Research Trainee @ BCBL. While learning how to do science in a better way every single day, she likes studying different languages in her free time, varying between Japanese to Basque, Italian to Klingon.
+Ex-research trainee @ BCBL, now a PhD student @ University of Seville. Her ongoing research life revolves around psycholinguistics - and currently works on helping vocabulary growth for deaf children and adolescents as a part of a MSCA ITN team, "Early Language Development in the Digital Age". She fancies napping and tweeting.
 
-**Jose Aguasvivas**
+[See webpage](https://www.ntnu.edu/web/e-ladda/hulya-aldemir)
 
-PhD student @ BCBL and Python enthusiast. Currently studying the cognitive mechanisms of language learning in multilingual populations. Other interests include patient post-operative outcome prediction using machine learning techniques and cognitive computational modeling. In his free time, he enjoys doing CrossFit and cooking.
+**Karen Arellano**
 
-<a href="https://www.bcbl.eu/es/conocenos/equipo/jos-aguasvivas" target="_blank">See webpage</a>
+PhD student @ BCBL with a background in Linguistics and Language Teaching Methodology. Her current research focuses on the mechanisms of language recovery and other domain-general abilities after stroke.
 
-**Irene Arrieta**
-
-Interested in sound perception in the hearing impaired, from the psychoacoustic and developmental points of view. Focused on predicting Cochlear implantation outcomes in babies. Music perception should be a right for everybody!
-
-<a href="https://www.bcbl.eu/es/conocenos/equipo/irene-arrieta" target="_blank">See webpage</a>
+[See webpage](https://www.bcbl.eu/en/karen-arellano)
 
 **César Caballero-Gaudes**
 
 César likes developing new signal processing algorithms and imaging methods to understand human brain function, mainly using functional magnetic resonance imaging. Lately, he has been interested in novel analyses of dynamic functional connectivity and multi-echo functional MRI. If he finds you around, he might invite you to participate in one of his MRI studies with highly-sampled individuals. Apart from research, he tries to be a good father and an appropriate mentor for his students.
 
-<a href="https://www.bcbl.eu/es/conocenos/equipo/cesar-caballero-gaudes" target="_blank">See webpage</a>
+[See webpage](https://www.bcbl.eu/es/conocenos/equipo/cesar-caballero-gaudes)
+
+**Amaia Carrión**
+
+Postdoctoral researcher @ BCBL. Trying to understand how genetics shapes our ability to speak and read, with the brain in its way!
+
+[See webpage](https://www.bcbl.eu/es/conocenos/equipo/amaia-carrin-castillo)
+
+**Inés Chavarría**
+
+PhD student @ BCBL, currently working on fMRI sequence development but interested in most engineering aspects of the MRI. My interests outside work are even wider: volleyball, crochet, art, Stephen King, board games, climbing, chocolate, traveling... and, of course, I do enjoy a little bit of programming!
+
+[See webpage](https://www.bcbl.eu/es/ines-chavarria)
 
 **Catherine Clark**
 
 PhD student @ BCBL interested in reading and reading acquisition in typical and atypical readers. Currently studying cross-modal integration of visual and auditory information to support visual word recognition.
 
-<a href="https://www.bcbl.eu/es/conocenos/equipo/catherine-clark" target="_blank">See webpage</a>
+[See webpage](https://www.bcbl.eu/es/conocenos/equipo/catherine-clark)
 
 **Florent Dueme**
 
-PhD student @ BCBL. He is a former French teacher and interpreter. Interested in phonetic transfer between a bilingual's two languages and uses mostly behavioural techniques and acoustic analysis. Outside the lab, he likes reading, learning new languages, and doing sports.
+PhD student @ BCBL. He is a former French teacher and interpreter. Interested in phonetic transfer between a bilingual’s two languages and uses mostly behavioural techniques and acoustic analysis. Outside the lab, he likes reading, learning new languages, and doing sports.
 
-<a href="https://www.bcbl.eu/es/conocenos/equipo/florent-dume" target="_blank">See webpage</a>
+[See webpage](https://www.bcbl.eu/es/conocenos/equipo/florent-dume)
 
-**Teresa Esteban**
+**Laura Fernandez-Merino**
 
-PhD student @ BCBL interested in brain functioning in healthy aging as well as in neurodegenerative diseases.
+PhD student @ BCBL studying cortical tracking of speech and music in bilingual infants, and its role in language acquisition and speech perception. When she is not surfing brain waves in the BabyLab, she likes surfing real waves and playing piano.
 
-<a href="https://www.bcbl.eu/es/conocenos/equipo/teresa-esteban" target="_blank">See webpage</a>
+[See webpage](https://www.bcbl.eu/en/conocenos/equipo/laura-fernandez-merino)
 
 **Vicente Ferrer**
 
 PhD student @BCBL and IT department chief at Brainhack Donostia, focused on Cognition in Parkinson’s disease. Also a bit of a geek with computers and programming. Loves surfing, hiking, and of course watching TV series. If you have any IT problems I can send one of my minions.
 
-<a href="https://www.bcbl.eu/es/conocenos/equipo/vicente-ferrer" target="_blank">See webpage</a>
-
-**Candice Frances**
-
-PhD student @ BCBL, she has done mostly behavioral research on cognition in animals, accents (obviously, in humans), and cognition in bilinguals (also human). Her current research focuses on how bilinguals learn new information in a foreign language and her free time focuses on attempting to dance.
-
-<a href="https://www.bcbl.eu/es/conocenos/equipo/candice-frances" target="_blank">See webpage</a>
+[See webpage](https://www.bcbl.eu/es/conocenos/equipo/vicente-ferrer)
 
 **Alberto Furgoni**
 
 PhD candidate @ BCBL with a background in applied linguistics and, consequently, language freak. His current research aims at better understanding the relationship between orthography and phonemic representations by means of behavioral methods. In his free time, he enjoys cooking and planning trips he cannot go on.
 
-<a href="https://www.bcbl.eu/es/conocenos/equipo/alberto-furgoni" target="_blank">See webpage</a>
-
-**Meritxell García**
-
-Currently working with functional and structural biomarkers of cognitive outcome after brain tumor resection.
-
-<a href="https://www.bcbl.eu/es/conocenos/equipo/meritxell-garcia" target="_blank">See webpage</a>
-
-**Marta García-Huéscar**
-
-Cognitive neuropsychologist currently studying the neural bases of memory and consciousness with fMRI. Also interested in machine learning and neural modelling. In the outside world, she enjoys live music, hiking, and photography.
-
-**Shuang Geng**
-
-PhD student @ BCBL. She is interested in the neural correlates of speech production and bilingual language processing. Now, she focuses on MEG data analysis to figure out language functions in patients. She likes relaxing music.
-
-<a href="https://www.bcbl.eu/es/conocenos/equipo/shuang-geng" target="_blank">See webpage</a>
-
-**Sandra Gisbert**
-
-PhD student @ BCBL. She works with tumor patients, before, during, and after surgery. She focuses on fMRI analysis and has an interest in brain reorganization after surgery. She enjoys reading and Harry Potter merchandise.
-
-<a href="https://www.bcbl.eu/es/conocenos/equipo/sandra-gisbert" target="_blank">See webpage</a>
+[See webpage](https://www.bcbl.eu/es/conocenos/equipo/alberto-furgoni)
 
 **Garikoitz Lerma-Usabiaga**
 
 He is interested in using behavioral, functional, and structural MRI techniques to investigate the neural basis of vision and reading, and in the development of quantitative methods to enhance neuroimaging reproducibility and clinical application. Currently, he is in his third year at Stanford University working on population receptive fields, diffusion MRI, and single-subject quantification methods to better understand and characterize reading in proficient and poor readers.
 
-<a href="https://www.bcbl.eu/es/conocenos/equipo/garikoitz-lerma-usabiaga" target="_blank">See webpage</a>
+[See webpage](https://www.bcbl.eu/es/conocenos/equipo/garikoitz-lerma-usabiaga)
 
-**Mengxing Liu**
+**Lucía Manso**
 
-PhD student @ BCBL, working on the language-related functions of the thalamus.
+PhD candidate @BCBL interested in the organization of neural networks, brain plasticity related to life changing events (learning a new language or even undergoing surgery) and computational neuroscience. When not at the lab she enjoys cooking and hiking.
 
-<a href="https://www.bcbl.eu/es/conocenos/equipo/mengxing-liu" target="_blank">See webpage</a>
-
-**Ning Mei**
-
-Undergrad in Arizona State, Master in New York University, and currently postgrad in BCBL. He is interested in topics like unconscious semantic processing, probabilistic programming, machine learning, and artificial general intelligence. With tons of experience in Python/R programming, he likes to make scripts that automate a small part of his life. Because doing so, he can spend more time watching basketball and statistically analyze basketball.
-
-<a href="https://www.bcbl.eu/es/conocenos/equipo/ning-mei" target="_blank">See webpage</a>
+[See webpage](https://www.bcbl.eu/es/conocenos/equipo/luca-manso)
 
 **Piermatteo Morucci**
 
 He is interested in how the brain implements semantic composition, abstract knowledge, and conscious perception. In his experiments, he uses behavioral, EEG, and MEG measures, sometimes simultaneously.
 
-<a href="https://www.bcbl.eu/es/conocenos/equipo/piermatteo-morucci" target="_blank">See webpage</a>
+[See webpage](https://www.bcbl.eu/es/conocenos/equipo/piermatteo-morucci)
 
-**Carlos Pérez-Serrano**
+**Jose Pérez-Navarro**
 
-PhD student @ BCBL and neuropsychologist, coming from the field of attention and consciousness and currently working on characterizing the neurodevelopmental basis of metacognition using a multi-modal MRI approach. Outside the lab, he is a Muay-Thai practitioner and enjoys reading dystopian literature.
+He is a predoctoral researcher at the Developmental Language Disorders group of the BCBL. He works on phonological and broader language development using behavioral and electrophysiological techniques. He is particularly interested in projects that, like Brainhack, make scientific work more collaborative and transparent.
 
-<a href="https://www.bcbl.eu/es/conocenos/equipo/carlos-prez-serrano" target="_blank">See webpage</a>
+[See webpage](https://www.bcbl.eu/en/conocenos/equipo/jose-prez-navarro)
 
-**Ileana Quiñones**
+**Abraham Sánchez **
 
-Postdoctoral researcher @ BCBL. Is there a causal link between individual differences in cognitive abilities and the architecture of the human connectome? Can the human connectome re-orchestrate the function(s) of its constituent nodes in order to cope with brain lesions? Does the malleability of the human connectome represent an adaptive advantage for post-surgery brain recovery processes? Her current research attempts to answer these questions using a combination of different non-invasive neuroimaging techniques, such as MRI, fMRI, and DTI.
+PhD student @ BCBL. Mainly interested in memory processes and how the brain establishes concepts from percepts.
 
-<a href="https://www.bcbl.eu/es/conocenos/equipo/ileana-quiones" target="_blank">See webpage</a>
-
-**Chiara Luna Rivolta**
-
-PhD student @ BCBL. She has a background in psychology and cognitive science. Her research is focused on understanding the neural basis of Spanish Sign Language, with an interest in comparing the temporal structure of signed and spoken languages.
-
-<a href="https://www.bcbl.eu/es/conocenos/equipo/chiara-luna-rivolta" target="_blank">See webpage</a>
-
-**Trisha Thomas**
-
-PhD student @ BCBL interested in speech perception, non-native speech processing, and auditory information retention.
-
-<a href="https://www.bcbl.eu/es/conocenos/equipo/trisha-thomas" target="_blank">See webpage</a>
+[See webpage](https://www.bcbl.eu/es/abraham-sanchez)
 
 **Manuel Carreiras**
 
 Ikerbasque Research Professor and Scientific Director @ BCBL. Working on research for over 30 years, he has lots of experience in psycho and neurolinguistics.
 
-<a href="https://www.bcbl.eu/es/conocenos/equipo/manuel-carreiras" target="_blank">See webpage</a>
+[See webpage](https://www.bcbl.eu/es/conocenos/equipo/manuel-carreiras)
+
+**We thank everyone who helped organize the previous edition of BrainHack Donostia! **
