@@ -1767,9 +1767,18 @@ table td {
     height: 150px;
 }
 
-/* Calendar background */
+/* Calendar */
 .view-cap, .view-container-border {
-    background-color: #f8f8f8;
+    background-color: white !important;
+}
+
+#calendarTitle {
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+    padding-left: 2px;
+    /* padding-top: 39px; */
+    font-size: 24px;
+    /* padding-bottom: 10px !important; */
 }
 
 
