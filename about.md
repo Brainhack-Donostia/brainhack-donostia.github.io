@@ -113,7 +113,7 @@ He is a predoctoral researcher at the Developmental Language Disorders group of 
 
 [See webpage](https://www.bcbl.eu/en/conocenos/equipo/jose-prez-navarro)
 
-**Abraham Sánchez **
+**Abraham Sánchez**
 
 PhD student @ BCBL. Mainly interested in memory processes and how the brain establishes concepts from percepts.
 
@@ -125,4 +125,4 @@ Ikerbasque Research Professor and Scientific Director @ BCBL. Working on researc
 
 [See webpage](https://www.bcbl.eu/es/conocenos/equipo/manuel-carreiras)
 
-**We thank everyone who helped organize the previous edition of BrainHack Donostia! **
+**We thank everyone who helped organize the previous edition of BrainHack Donostia!**
