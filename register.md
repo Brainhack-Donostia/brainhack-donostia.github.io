@@ -7,7 +7,7 @@ permalink: /registration/
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSchZpSOJmVOmZOvf_-cr5wMLkSQsW2eWIIpzQEbUiEC6-WPyA/viewform?embedded=true" width="100%" height="3696" frameborder="0" marginheight="0" marginwidth="5px">Loading…</iframe>
 
 <script>
-document.querySelector("iframe").addEventListener("load", 
+document.querySelector("iframe").addEventListener("load",
     function() {
         window.scrollTo({
     top: 0,
@@ -15,3 +15,4 @@ document.querySelector("iframe").addEventListener("load",
     behavior: 'smooth'
   });
 });
+</script>
