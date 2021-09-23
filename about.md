@@ -59,12 +59,6 @@ PhD student @ BCBL, currently working on fMRI sequence development but intereste
 
 [See webpage](https://www.bcbl.eu/es/ines-chavarria)
 
-**Catherine Clark**
-
-PhD student @ BCBL interested in reading and reading acquisition in typical and atypical readers. Currently studying cross-modal integration of visual and auditory information to support visual word recognition.
-
-[See webpage](https://www.bcbl.eu/es/conocenos/equipo/catherine-clark)
-
 **Florent Dueme**
 
 PhD student @ BCBL. He is a former French teacher and interpreter. Interested in phonetic transfer between a bilingual’s two languages and uses mostly behavioural techniques and acoustic analysis. Outside the lab, he likes reading, learning new languages, and doing sports.
