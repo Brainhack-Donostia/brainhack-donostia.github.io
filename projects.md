@@ -37,6 +37,24 @@ The activities carried out during Brainhack Donostia 2021 can result in useful o
     Eneko Uruñuela
   </p>
 </div>
+<div class="projects post-card" style="padding: 1.4em">
+  <h4 style="font-size: 1.8em">abstract2poster</h4>
+  <p style="padding-top: 1em; padding-bottom: 1em">Do you need your poster ready to print/upload in two hours? Abstract is ready but you cannot bother to read it anymore? 
+Imagine you could automatize the abstract->poster transformation, and then just tweak a few minor things to make it shine and impress everyone in that conference! 
+In the abstract2poster project we will work towards developping a pipeline to translate your abstract to a ready-to-present poster. How? We are planning to use `Jekyll` but other ideas are welcome!</p>
+  <p
+    style="
+      text-align: right;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      padding-right: 1.4em;
+      font-style: italic;
+    "
+  >
+    Amaia Carrion Castillo (@amaiacc)
+  </p>
+</div>
 
 
 </div>
