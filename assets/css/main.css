@@ -846,7 +846,7 @@ button:disabled :focus {
 @media only screen and (min-width: 48em) {
     .post-card {
         width: 48.4375%;
-        margin-right: 3.125%
+        margin-right: 0;
     }
 
     .post-card:last-of-type,
