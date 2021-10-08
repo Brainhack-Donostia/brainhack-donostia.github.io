@@ -858,11 +858,11 @@ button:disabled :focus {
 @media only screen and (min-width: 75em) {
     .post-card {
         width: 31.25%;
-        margin-right: 3.125%
+        margin-right: 0
     }
 
     .post-card:nth-child(2n+2) {
-        margin-right: 3.125%
+        margin-right: 0%
     }
 
     .post-card:last-of-type,
