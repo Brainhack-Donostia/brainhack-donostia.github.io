@@ -20,7 +20,7 @@ navigation: # Navigation links
 # tagline: >
 #   Online edition: November 9th - 13th
 
-hero_img: posts/bh_keynote.svg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
+hero_img: posts/bhd2021_banner_dates.svg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
 
 email: info.bhg-donostia@bcbl.eu # email for form submission
 
