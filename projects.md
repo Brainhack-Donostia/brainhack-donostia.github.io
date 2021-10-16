@@ -29,7 +29,7 @@ Activities carried out during Brainhack Donostia 2021 can result in useful outpu
 - Projects can involve _any stage of the scientific process_, from data acquisition to analysis and documentation, as well as data visualization and scientific publication.
 - Projects can also be focused on _creating tutorials or improving the documentation_ of a library/program, or even replicating a paper (and dockerize it!).
 
-## Projects submitted
+## Projects submitted so far
 
 <div class="post-list" itemscope="" itemtype="http://schema.org/Blog" style="padding-top: 1em !important;">
 
