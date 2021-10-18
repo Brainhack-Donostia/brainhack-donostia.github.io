@@ -20,13 +20,13 @@ permalink: /previous-editions/
 
 **BHD 2019**
 
-**Board:** Stefano Moia (Co-chair), Poliva Timofeeva (Co-chair).
+**Board:** Stefano Moia (Co-chair), Polina Timofeeva (Co-chair), Teresa Esteban, Vicente Ferrer, Candice Frances, Jordi Martorell, Carlos Pérez-Serrano.
 
-**Volunteers:** Daniel Alcalá, Jose Aguasvivas, Nicoletta Biondo, Matteo Diano, Teresa Esteban, Vicente Ferrer, Candice Frances, Sandra Gisbert, James Hartzell, Maddi Ibarbia , Jordi Martorell, Ning Mei, Carlos Pérez-Serrano, Jose Pérez-Navarro, Eneko Uruñuela, Manuel Carreiras.
+**Volunteers:** Daniel Alcalá, Jose Aguasvivas, Nicoletta Biondo, Matteo Diano, Sandra Gisbert, James Hartzell, Maddi Ibarbia, Ning Mei, Jose Pérez-Navarro, Eneko Uruñuela, Manuel Carreiras.
 
 **BHD 2020**
 
-**Board:** Eneko Uruñuela (Chair), Stefano Moia (Ex-chair), Poliva Timofeeva (Ex-chair), Daniel Alcalá, Jose Aguasvivas, César Caballero-Gaudes, Vicente Ferrer, Alberto Furgoni, Marta García, Chiara Luna Rivolta.
+**Board:** Eneko Uruñuela (Chair), Stefano Moia (Ex-chair), Polina Timofeeva (Ex-chair), Daniel Alcalá, Jose Aguasvivas, César Caballero-Gaudes, Vicente Ferrer, Alberto Furgoni, Marta García, Chiara Luna Rivolta.
 
 **Volunteers:** Hülya Aldemir, Irene Arrieta, Catherine Clark, Florent Dueme, Teresa Esteban, Candice Frances, Meritxell García, Shuang Geng, Sandra Gisbert, Garikoitz Lerma-Usabiaga, Mengxing Liu, Ning Mei, Piermatteo Morucci, Carlos Pérez-Serrano, Ileana Quiñones, Trisha Thomas, Manuel Carreiras.
 
