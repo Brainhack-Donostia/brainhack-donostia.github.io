@@ -67,6 +67,22 @@ In the abstract2poster project we will work towards developping a pipeline to tr
     Amaia Carrion Castillo (@amaiacc)
   </p>
 </div>
+<div class="projects post-card" style="padding: 1.4em">
+  <h4 style="font-size: 1.8em">Automatic plosive detection and VOT extraction using the Plosion index</h4>
+  <p style="padding-top: 1em; padding-bottom: 1em">Do you wish you didn't have to spend hours manually combing through your audio data to identify plosives and extract their voice onset times (VOT)? Introducing the Plosion Index! The Plosion index is a measurement from the speech recognition literature (Ananthapadmanabha, Prathosh, & Ramakrishnan; 2014) to facilitate the detection of plosives in natural language data. It is based on an algorithm that calculate at each time point the ratio between the instantaneous amplitude of an acoustic signal and the mean amplitude of the signal during the preceding few milliseconds. It is designed to detect brutal changes in amplitude typically linked to the puff of air expulsed out of the mouth during the release phase of a plosive. This mean that the Plosive index is not only able to detect plosives in speech data, but also to determine the exact moment of the plosive release, making it possible to automatize the calculation of VOT, that is the interval of time between the release of the plosive and the moment when the vocal chords start to vibrate to produce the following vowel.</p>
+  <p
+    style="
+      text-align: right;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      padding-right: 1.4em;
+      font-style: italic;
+    "
+  >
+    Florent Dueme
+  </p>
+</div>
 
 
 </div>
