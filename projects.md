@@ -83,6 +83,22 @@ In the abstract2poster project we will work towards developping a pipeline to tr
     Florent Dueme
   </p>
 </div>
+<div class="projects post-card" style="padding: 1.4em">
+  <h4 style="font-size: 1.8em">Universal data load for neural networks</h4>
+  <p style="padding-top: 1em; padding-bottom: 1em">There exit data loader pipeline for deep neural network project using Tensorflow or Pytorch, but they mainly focus on computer visions and natural language processing. When neuroscientists implement deep neural network models on neuroimaging or neurosignal data, a customized pipeline must be written from scratch every time. This project aims to provide a universal data loader, based on either Tensorflow or Pytorch data loader pipelines, so that it is easier for neurosientists to implement neural network modeling in the next steps. </p>
+  <p
+    style="
+      text-align: right;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      padding-right: 1.4em;
+      font-style: italic;
+    "
+  >
+    Ning Mei
+  </p>
+</div>
 
 
 </div>
