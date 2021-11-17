@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    -   cron: "0 0 */3 * *"  # At midnight every 3 days.
+    -   cron: "0 */12 * * *"  # Every 12 hours.
 
 jobs:
   backup:
