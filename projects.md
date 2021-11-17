@@ -107,7 +107,7 @@ BIDS is continuously evolving, incorporating new fields and modality through com
 
 Me and my collaborators already wrote a BIDS proposal draft and structured a prototype of a NIBS-BIDS dataset, that you can find here: https://gin.g-node.org/CIMeC/TMS-EEG_brain_connectivity_BIDS/src/master
 
-Our goal is to gather people interested in NIBS and/or BIDS, to share with them our project and try to test our NIBS-BIDS proposal on different datasets. We believe it is a great opportunity for those who are not familiar with the BIDS framework to learn about it and have some hands-on experience. It does not matter from which neuroimaging modality you are interested, since BIDS logic is basically the same for every technique.
+Our goal is to gather people who already have some hands-on experience in some NIBS technique and are interested in BIDS.
 
 BIDS is helping science a lot, let’s help BIDS back! </p>
   <p
