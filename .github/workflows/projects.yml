@@ -3,14 +3,14 @@ name: "Submitted Projects"
 on:
   push:
     branches:
-      - main
+      - master
   schedule:
     -   cron: "0 */12 * * *"  # Every 12 hours.
 
 jobs:
   backup:
     runs-on: macos-latest
-    name: Backup
+    name: Update Projects Page
     timeout-minutes: 15
     steps:
       -   uses: actions/checkout@v2
