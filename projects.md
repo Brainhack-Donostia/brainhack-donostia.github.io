@@ -99,6 +99,48 @@ In the abstract2poster project we will work towards developping a pipeline to tr
     Ning Mei
   </p>
 </div>
+<div class="projects post-card" style="padding: 1.4em">
+  <h4 style="font-size: 1.8em">Non-invasive brain stimulation BIDS proposal</h4>
+  <p style="padding-top: 1em; padding-bottom: 1em">Brain Imaging Data Structure (BIDS) is a common way to structure potentially any kind of neuroimaging data. Due to its intuitive and clear structure, it has been adopted in most neuroscientific fields as a common way to organize and share data that is compliant to the F.A.I.R. principles of open science. You don’t know about BIDS? Shame on you..  More on: https://bids.neuroimaging.io/  
+
+BIDS is continuously evolving, incorporating new fields and modality through community proposals. That is where we come in! We work in the field of non-invasive brain stimulation (NIBS), which is a modality not yet supported by BIDS. Current NIBS includes transcranial magnetic stimulation (TMS), transcranial electrical stimulation (tES, like tDCS, tACS, tRNS) and focused-ultrasound stimulation (FUS). Our project aims to build an official BIDS proposal on NIBS, that will help the whole field to structure and share data with a common framework (NIBS field desperately needs to be more open!).
+
+Me and my collaborators already wrote a BIDS proposal draft and structured a prototype of a NIBS-BIDS dataset, that you can find here: https://gin.g-node.org/CIMeC/TMS-EEG_brain_connectivity_BIDS/src/master
+
+Our goal is to gather people interested in NIBS and/or BIDS, to share with them our project and try to test our NIBS-BIDS proposal on different datasets. We believe it is a great opportunity for those who are not familiar with the BIDS framework to learn about it and have some hands-on experience. It does not matter from which neuroimaging modality you are interested, since BIDS logic is basically the same for every technique.
+
+BIDS is helping science a lot, let’s help BIDS back! </p>
+  <p
+    style="
+      text-align: right;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      padding-right: 1.4em;
+      font-style: italic;
+    "
+  >
+    Giacomo Bertazzoli
+  </p>
+</div>
+<div class="projects post-card" style="padding: 1.4em">
+  <h4 style="font-size: 1.8em">Physiological Signal Classification</h4>
+  <p style="padding-top: 1em; padding-bottom: 1em">Physiopy is is a python3 suite to format and analyse physiological recordings. One of the current development goals is to implementing an automatic signal classificator that, given a signal as input, is be able to determine the type of the signal.
+
+In this project we provide time-series data of 4 kinds of physiological signals (cardiac, respiratory chest, O2 and CO2) and the goal will be to collaborate to find robust features that allow discerning between them.</p>
+  <p
+    style="
+      text-align: right;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      padding-right: 1.4em;
+      font-style: italic;
+    "
+  >
+    David Romero-Bascones
+  </p>
+</div>
 
 
 </div>
