@@ -158,6 +158,22 @@ In this project we provide time-series data of 4 kinds of physiological signals 
     Bar Lehmann
   </p>
 </div>
+<div class="projects post-card" style="padding: 1.4em">
+  <h4 style="font-size: 1.8em">Build your personal website with GitHub</h4>
+  <p style="padding-top: 1em; padding-bottom: 1em">As a researcher, it is always useful to have your own website to showcase your CV, publications, talks, etc. This project will teach you how to build your personal website using GitHub. The project is aimed at anyone, regardless of your experience with programming and GitHub. Do not worry, you will not have to code the website as you will be using a template that has already been designed for academic websites (https://academicpages.github.io/) and GitHub already makes it super easy to deploy a site on its platform. </p>
+  <p
+    style="
+      text-align: right;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      padding-right: 1.4em;
+      font-style: italic;
+    "
+  >
+    Chiara Luna Rivolta
+  </p>
+</div>
 
 
 </div>
