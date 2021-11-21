@@ -46,7 +46,7 @@ Activities carried out during Brainhack Donostia 2021 can result in useful outpu
       font-style: italic;
     "
   >
-    Eneko Uruñuela
+    Eneko Uruñuela (@eurunuela)
   </p>
 </div>
 <div class="projects post-card" style="padding: 1.4em">
@@ -96,7 +96,7 @@ In the abstract2poster project we will work towards developping a pipeline to tr
       font-style: italic;
     "
   >
-    Ning Mei
+    Ning Mei (@nmningmei)
   </p>
 </div>
 <div class="projects post-card" style="padding: 1.4em">
@@ -138,7 +138,7 @@ In this project we provide time-series data of 4 kinds of physiological signals 
       font-style: italic;
     "
   >
-    David Romero-Bascones
+    David Romero-Bascones (@drombas)
   </p>
 </div>
 <div class="projects post-card" style="padding: 1.4em">
@@ -155,7 +155,7 @@ In this project we provide time-series data of 4 kinds of physiological signals 
       font-style: italic;
     "
   >
-    Bar Lehmann
+    Bar Lehmann (@barlehmann)
   </p>
 </div>
 <div class="projects post-card" style="padding: 1.4em">
@@ -171,7 +171,7 @@ In this project we provide time-series data of 4 kinds of physiological signals 
       font-style: italic;
     "
   >
-    Chiara Luna Rivolta
+    Chiara Luna Rivolta (@chiaralunariv)
   </p>
 </div>
 <div class="projects post-card" style="padding: 1.4em">
@@ -189,7 +189,7 @@ Collaborators of all levels of experience with git, GitHub, python, and physiolo
       font-style: italic;
     "
   >
-    Stefano Moia
+    Stefano Moia (@smoia)
   </p>
 </div>
 
