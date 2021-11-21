@@ -174,6 +174,24 @@ In this project we provide time-series data of 4 kinds of physiological signals 
     Chiara Luna Rivolta
   </p>
 </div>
+<div class="projects post-card" style="padding: 1.4em">
+  <h4 style="font-size: 1.8em">Physiopy: open development solutions for physiology in MRI</h4>
+  <p style="padding-top: 1em; padding-bottom: 1em">Physiopy is a community developing open science software for physiological files (e.g. vital signs, respiration, eye tracking, skin conductance, ...) handling and processing.
+Currently maintaining three libraries to format physiological files into BIDS (phys2bids), clean physiological traces and find their peaks (peakdet), and use physiological traces to compute nuisance regressors for fMRI denoising (phys2denoise), this (meta-)project aims to provide challenges for all levels of contributors within physiopy's environment, its three libraries, and its documentation.
+Collaborators of all levels of experience with git, GitHub, python, and physiology are welcome. Depending on the level of experience, we'll match collaborators and tasks, and help filling gaps and acquire the necessary skills to finish them.</p>
+  <p
+    style="
+      text-align: right;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      padding-right: 1.4em;
+      font-style: italic;
+    "
+  >
+    Stefano Moia
+  </p>
+</div>
 
 
 </div>
