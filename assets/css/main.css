@@ -819,6 +819,8 @@ button:disabled :focus {
 }
 
 .post-card {
+    margin-left: 1rem;
+    margin-right: 1rem;
     display: block;
     position: relative;
     width: 100%;
@@ -1444,14 +1446,15 @@ table td {
 }
 
 .hero {
-    margin: 3.75rem auto 2rem !important;
+    margin: 3.75rem auto 0 !important;
     min-height: 34.25rem;
     width: 100%;
     position: relative;
     background-color: #fff;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 200% 100%;
+    /* background-size: 200% 100%; */
+    background-size: cover !important;
 }
 
 @media only screen and (min-width: 62em) {
@@ -1546,6 +1549,8 @@ table td {
 
 .hero__meta {
     color: #313237 !important;
+    margin-top: 3rem;
+    font-size: 2rem;
 }
 
 @media only screen and (min-width: 48em) {
@@ -1557,7 +1562,7 @@ table td {
 .hero__wrap .hero__title {
     font-size: 1.8em;
     color: #313237 !important;
-    font-weight: 500;
+    font-weight: 100;
 }
 
 .speaker__title {
@@ -1568,10 +1573,10 @@ table td {
 @media only screen and (min-width: 48em) {
     .hero__wrap .hero__title {
         padding: 1rem 0;
-        font-size: 2.625em;
+        font-size: 5.625rem;
         line-height: 1.125rem;
         color: #313237 !important;
-        font-weight: 500;
+        font-weight: 100;
     }
 
     .speaker__title {
