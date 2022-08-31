@@ -14,12 +14,12 @@ permalink: /projects/
 
 We want to encourage participants to join the event with their mindset ready to collaborate on projects and hope it will also lead to a better chance of collaborating and networking. At the same time, we hope it will help project leaders get collaborators too.
 
-Activities carried out during Brainhack Donostia 2021 can result in useful outputs for the neuroscience community. **We highly encourage you to submit a project for this year's edition.** If you are in need of inspiration, have a look at the project ideas we have received so far, or check out the projects submitted to <a href="https://brainhack.org/global2020/projects" target="_blank">Brainhack Global</a> last year.
+Activities carried out during Brainhack Donostia 2022 can result in useful outputs for the neuroscience community. **We highly encourage you to submit a project for this year's edition.** If you are in need of inspiration, have a look at the project ideas we have received so far, or check out the projects submitted to <a href="https://brainhack.org/global2020/projects" target="_blank">Brainhack Global</a> last year.
 
 ### For attendees:
 
-- **Attendees are required to commit to a project for the duration of Brainhack Donostia 2021.**
-- Attendees can work on any of the projects on the <a href="https://brainhack.org/global2021/projects" target="_blank">Brainhack Global website</a>.
+- **Attendees are required to commit to a project for the duration of Brainhack Donostia 2022.**
+- Attendees can work on any of the projects on the <a href="https://brainhack.org/global2022/projects" target="_blank">Brainhack Global website</a>.
 - Attendees will receive an email days before the event to select the project they will work on.
 - Projects are the perfect chance for active collaboration, networking and hands-on learning, both during and after the event.
 

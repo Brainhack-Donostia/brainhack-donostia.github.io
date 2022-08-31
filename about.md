@@ -13,7 +13,7 @@ Despite the challenges of 2020 we continued to work to organize the very first v
 
 **Lucía Manso**
 
-Co-chair fo BHD2022. PhD candidate @BCBL interested in the organization of neural networks, brain plasticity related to life changing events (learning a new language or even undergoing surgery) and computational neuroscience. When not at the lab she enjoys cooking and hiking.
+Co-chair of BHD2022. PhD candidate @BCBL interested in the organization of neural networks, brain plasticity related to life changing events (learning a new language or even undergoing surgery) and computational neuroscience. When not at the lab she enjoys cooking and hiking.
 
 [See webpage](https://www.bcbl.eu/es/conocenos/equipo/luca-manso)
 
