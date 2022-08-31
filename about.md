@@ -17,6 +17,12 @@ Co-chair of BHD2022. PhD candidate @BCBL interested in the organization of neura
 
 [See webpage](https://www.bcbl.eu/es/conocenos/equipo/luca-manso)
 
+**Hana Zjakic**
+
+Co-chair of BHD2022. PhD candidate @BCBL interested in infant language development and early cognitive processes. She is currently using eye-tracking to explore predictive processing in monolingual & bilingual infants. Apart from research, she enjoys music, hiking and a good book & coffee.
+
+[See webpage](https://bcbl.eu/es/conocenos/equipo/hana-zjakic)
+
 **Eneko Uruñuela**
 
 Ex-chair of BHD. PhD student @ BCBL and biomedical engineer. His research focuses on the development of deconvolution methods for fMRI. As a proper engineer, he’s a computer/phone/tech/programming geek. He also loves hiking (especially at sunset) and photography, and is into playing the electric guitar. Finally, he’s a big (not so) secret fan of the 80s.
