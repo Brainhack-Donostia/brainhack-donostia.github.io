@@ -4,7 +4,9 @@ title: Schedule
 permalink: /schedule/
 ---
 
+<center>
 Stay tuned for the schedule of Brainhack Donostia 2022!
+</center>
 
 <!-- You can download the calendar to your device by clicking [here](https://calendar.google.com/calendar/ical/bhg-donostia%40bcbl.eu/public/basic.ics).
 
