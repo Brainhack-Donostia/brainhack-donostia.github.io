@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Projects
-permalink: $link
+permalink: /projects/
 ---
 
-**Got a project idea? Submit! Project submissions for Brainhack Donostia 2021 are now OPEN!** 
+**Got a project idea? Submit! Project submissions for Brainhack Donostia 2022 are now OPEN!** 
 
 **[Contact us](https://brainhack-donostia.github.io/contact/) if you are not sure about your project being eligible, or don't know how to fill in the submission form.**
 
@@ -30,7 +30,3 @@ Activities carried out during Brainhack Donostia 2021 can result in useful outpu
 - Projects can also be focused on _creating tutorials or improving the documentation_ of a library/program, or even replicating a paper (and dockerize it!).
 
 ## Projects submitted so far
-
-<div class="post-list" itemscope="" itemtype="http://schema.org/Blog" style="padding-top: 1em !important;">
-
-</div>
