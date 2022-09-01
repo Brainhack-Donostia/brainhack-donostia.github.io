@@ -55,7 +55,7 @@ PhD student @ BCBL studying cortical tracking of speech and music in bilingual i
 
 **Garikoitz Lerma-Usabiaga**
 
-He is interested in using behavioral, functional, and structural MRI techniques to investigate the neural basis of vision and reading, and in the development of quantitative methods to enhance neuroimaging reproducibility and clinical application. Currently, he is in his third year at Stanford University working on population receptive fields, diffusion MRI, and single-subject quantification methods to better understand and characterize reading in proficient and poor readers.
+He is interested in using behavioral, functional, and structural MRI techniques to investigate the neural basis of vision and reading, and in the development of quantitative methods to enhance neuroimaging reproducibility and clinical applications. Currently, he is a Juan de la Cierva and Ikerbasque Research fellow and he is working on population receptive fields, diffusion MRI, and single-subject quantification methods to better understand and characterize reading in proficient and poor readers.
 
 [See webpage](https://www.bcbl.eu/es/conocenos/equipo/garikoitz-lerma-usabiaga)
 
