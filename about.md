@@ -53,11 +53,35 @@ PhD student @ BCBL studying cortical tracking of speech and music in bilingual i
 
 [See webpage](https://www.bcbl.eu/en/conocenos/equipo/laura-fernandez-merino)
 
+**Ane Gurtubay Antolin**
+
+Ane is interested in using behavioral, functional, and structural MRI techniques to investigate the neural bases of higher order cognitive functions in neurotypical, visually deprived and clinical applications. She is currently a Juan de la Cierva postdoctoral fellow.
+
+[See webpage](https://bcbl.eu/es/ane-gurtubay-antolin)
+
+**Leandro Lecca**
+
+I am a biomedical engineer and a predoc student at the BCBL. My interests are data science, eyetracking and MRI techniques to investigate the neural basis of the role of the thalamus in cognitive attention.
+
+[See webpage](https://bcbl.eu/es/leandro-lecca)
+
 **Garikoitz Lerma-Usabiaga**
 
 He is interested in using behavioral, functional, and structural MRI techniques to investigate the neural basis of vision and reading, and in the development of quantitative methods to enhance neuroimaging reproducibility and clinical applications. Currently, he is a Juan de la Cierva and Ikerbasque Research fellow and he is working on population receptive fields, diffusion MRI, and single-subject quantification methods to better understand and characterize reading in proficient and poor readers.
 
 [See webpage](https://www.bcbl.eu/es/conocenos/equipo/garikoitz-lerma-usabiaga)
+
+**Mengxing Liu**
+
+Predoctoral researcher in the BCBL, focuses on the thalamocortical interactions and tractography.
+
+[See webpage](https://bcbl.eu/es/conocenos/equipo/mengxing-liu)
+
+**Ning Mei**
+
+My name is Ning Mei and I am doctoral candidate in BCBL studying unconscious processing and the role of metacognitive functions in perception using physiological methods, neuroimaging, and machine learning modeling.
+
+[See weebpage](https://bcbl.eu/es/conocenos/equipo/ning-mei)
 
 **Abraham Sánchez**
 
