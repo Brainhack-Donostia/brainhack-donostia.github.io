@@ -28,8 +28,11 @@ This year's edition will be held online, which means it will be **completely fre
 
 Brainhack Donostia 2022 will take place at the Basque Center on Cognition, Brain and Language. See the exact location on the map below.
 
+<center>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.954908042903!2d-1.9883195479103615!3d43.29426598347979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51afe05db924a1%3A0xaa992e65461e64d7!2sBCBL%20-%20Basque%20Center%20on%20Cognition%2C%20Brain%20and%20Language!5e0!3m2!1ses!2ses!4v1662973101046!5m2!1ses!2ses" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</center>
 
+ 
 ## Acknowledgements
 
 The Organising Committee would like to thank the <a href="https://www.bcbl.eu/en" target="_blank">Basque Center on Cognition, Brain and Language</a>, as well as everyone who put a lot of work into this event for helping this year's edition come to life.
