@@ -47,6 +47,12 @@ PhD student @ BCBL, currently working on fMRI sequence development but intereste
 
 [See webpage](https://www.bcbl.eu/es/ines-chavarria)
 
+**Patxi Elosegi**
+
+Predoctoral Researcher-Basque Government Predoc at BCBL in collaboration with the Max Planck Institue for Human Cognitive and Brain Sciences: “We are unconscious of the vast majority of our brain processes, which may be a required prerequisite for efficient data processing. Still, consciousness brings computational advantages such as filtering essential information and confidence estimates on what we are perceiving. My research uses neuroscientific and computational tools to study the difference between these two types of information processing in the brain with the aim of emulating them inside a computer”.
+
+[See webspage](https://bcbl.eu/es/patxi-elosegi)
+
 **Laura Fernandez-Merino**
 
 PhD student @ BCBL studying cortical tracking of speech and music in bilingual infants, and its role in language acquisition and speech perception. When she is not surfing brain waves in the BabyLab, she likes surfing real waves and playing piano.
