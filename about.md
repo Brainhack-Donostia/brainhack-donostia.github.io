@@ -87,7 +87,13 @@ Predoctoral researcher in the BCBL, focuses on the thalamocortical interactions 
 
 My name is Ning Mei and I am doctoral candidate in BCBL studying unconscious processing and the role of metacognitive functions in perception using physiological methods, neuroimaging, and machine learning modeling.
 
-[See weebpage](https://bcbl.eu/es/conocenos/equipo/ning-mei)
+[See webpage](https://bcbl.eu/es/conocenos/equipo/ning-mei)
+
+**Manuela Ruzzoli**
+
+Manuela’s research investigates the physiological and cognitive mechanisms associated with human behaviour in perception, attention and cognitive control. She is interested in identifying reliable brain states predictive of performance to foster self-regulation of cognition. To do that, Manuela uses EEG (event-related and ongoing activity) and non-invasive brain stimulation (TMS, tES), coupled with psychophysics, neuropsychology or behavioural tests.
+
+[See webpage](https://bcbl.eu/es/conocenos/equipo/manuela-ruzzoli)
 
 **Abraham Sánchez**
 
