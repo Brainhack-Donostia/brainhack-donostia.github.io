@@ -4,7 +4,7 @@ title: Schedule
 permalink: /schedule/
 ---
 
-You can download the calendar to your device by clicking [here](https://calendar.google.com/calendar/ical/bhg-donostia%40bcbl.eu/public/basic.ics).
+You can download the calendar to your device by clicking [here](https://calendar.google.com/calendar/ical/2d242ea0284abafddeb35be48f8ba0d3128eafececd1a49f6f5726317b4ecd3a%40group.calendar.google.com/public/basic.ics).
 
 Stay tuned for more details regarding the social dinner on November 24th!
 
