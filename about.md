@@ -65,6 +65,12 @@ Ane is interested in using behavioral, functional, and structural MRI techniques
 
 [See webpage](https://bcbl.eu/es/ane-gurtubay-antolin)
 
+**Marta La Pietra**
+
+PhD student @BCBL. Her main research interests concern cognitive conflict, violation of expectations, neurohumanities and figurative language (e.g., oxymorons). She uses behavioural and neuroimaging (M/EEG) techniques.
+
+[See webpage](https://bcbl.eu/en/marta-la-pietra)
+
 **Leandro Lecca**
 
 I am a biomedical engineer and a predoc student at the BCBL. My interests are data science, eyetracking and MRI techniques to investigate the neural basis of the role of the thalamus in cognitive attention.
