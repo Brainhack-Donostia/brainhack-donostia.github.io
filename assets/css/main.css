@@ -1573,14 +1573,14 @@ table td {
 @media only screen and (min-width: 48em) {
     .hero__wrap .hero__title {
         padding: 1rem 0;
-        font-size: 5.625rem;
+        font-size: 4.625rem;
         line-height: 1.125rem;
         color: #313237 !important;
         font-weight: 100;
     }
 
     .speaker__title {
-        font-size: 6em;
+        font-size: 5em;
         color: black;
     }    
 }
