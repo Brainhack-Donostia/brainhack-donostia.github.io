@@ -1,9 +1,8 @@
 import os
 import pandas as pd
 from string import Template
-import wget
 
-csv_file_path = "https://docs.google.com/spreadsheets/d/1CTYnf0aFwSdK2Ph2x-S9tITyOr3BeG9k5QtbMG91NXQ/export?format=csv&gid=0"
+csv_file_path = "https://docs.google.com/spreadsheets/d/1CTYnf0aFwSdK2Ph2x-S9tITyOr3BeG9k5QtbMG91NXQ/export?format=csv"
 project_card_path = "assets/templates/project_card.html"
 projects_page_path = "assets/templates/template_projects.md"
 
@@ -27,11 +26,8 @@ def populate_projects_page(html):
 
 
 def main():
-    # Download CSV file
-    filename = wget.download(csv_file_path)
-
     # Read CSV file
-    df = pd.read_csv(filename)
+    df = pd.read_csv(csv_file_path)
     df = df[df["Leader:"].notna()]
 
     prj_card = ""
@@ -47,8 +43,7 @@ def main():
 
     with open("projects.md", "wb") as f:
         f.write(prj_page.encode("utf-8"))
-
-    os.remove(filename)
+    f.close()
 
 if __name__ == "__main__":
     main()
