@@ -4,11 +4,11 @@ title: Projects
 permalink: $link
 ---
 
-**Got a project idea? Submit! Project submissions for Brainhack Donostia 2021 are now OPEN!** 
+**Got a project idea? Submit! Project submissions for Brainhack Donostia 2022 are now OPEN!** 
 
 **[Contact us](https://brainhack-donostia.github.io/contact/) if you are not sure about your project being eligible, or don't know how to fill in the submission form.**
 
-<center style="padding-bottom: 1em;"><a class="submission-button" href="https://forms.gle/cUcY4BB5sNjg1TuEA" target="_blank">Submit</a></center>
+<center style="padding-bottom: 1em;"><a class="submission-button" href="https://forms.gle/uRAKhhL2xRjqTgwK6" target="_blank">Submit</a></center>
 
 ## Key points
 
