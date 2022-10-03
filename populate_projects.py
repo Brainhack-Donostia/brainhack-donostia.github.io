@@ -3,10 +3,9 @@ import pandas as pd
 from string import Template
 import wget
 
-csv_file_path = "https://docs.google.com/spreadsheets/d/1AlflVlTg1KmajQrWBOUBT2XeoAUqfjB9SCQfDIPvSXo/export?format=csv&gid=565678921"
+csv_file_path = "https://docs.google.com/spreadsheets/d/1CTYnf0aFwSdK2Ph2x-S9tITyOr3BeG9k5QtbMG91NXQ/export?format=csv&gid=0"
 project_card_path = "assets/templates/project_card.html"
 projects_page_path = "assets/templates/template_projects.md"
-
 
 def populate_project_card(title, description, leader):
     with open(str(project_card_path), 'r') as card:
