@@ -14,12 +14,12 @@ permalink: /projects/
 
 We want to encourage participants to join the event with their mindset ready to collaborate on projects and hope it will also lead to a better chance of collaborating and networking. At the same time, we hope it will help project leaders get collaborators too.
 
-Activities carried out during Brainhack Donostia 2022 can result in useful outputs for the neuroscience community. **We highly encourage you to submit a project for this year's edition.** If you are in need of inspiration, have a look at the project ideas we have received so far, or check out the projects submitted to <a href="https://brainhack.org/global2020/projects" target="_blank">Brainhack Global</a> last year.
+Activities carried out during Brainhack Donostia 2021 can result in useful outputs for the neuroscience community. **We highly encourage you to submit a project for this year's edition.** If you are in need of inspiration, have a look at the project ideas we have received so far, or check out the projects submitted to <a href="https://brainhack.org/global2020/projects" target="_blank">Brainhack Global</a> last year.
 
 ### For attendees:
 
-- **Attendees are required to commit to a project for the duration of Brainhack Donostia 2022.**
-- Attendees can work on any of the projects on the <a href="https://brainhack.org/global2022/projects" target="_blank">Brainhack Global website</a>.
+- **Attendees are required to commit to a project for the duration of Brainhack Donostia 2021.**
+- Attendees can work on any of the projects on the <a href="https://brainhack.org/global2021/projects" target="_blank">Brainhack Global website</a>.
 - Attendees will receive an email days before the event to encourage them to select the project they will work on.
 - Projects are the perfect chance for active collaboration, networking and hands-on learning, both during and after the event.
 
@@ -32,3 +32,25 @@ Activities carried out during Brainhack Donostia 2022 can result in useful outpu
 - Note that submitting your project through the Brainhack Donostia website will give you more visibility as it will be displayed on the Brainhack Global website too.
 
 ## Projects submitted so far
+
+<div class="post-list" itemscope="" itemtype="http://schema.org/Blog" style="padding-top: 1em !important;">
+
+<div class="projects post-card" style="padding: 1.4em">
+  <h4 style="font-size: 1.8em">Tedana: TE-dependent analysis of multi-echo fMRI</h4>
+  <p style="padding-top: 1em; padding-bottom: 1em">TE-dependent analysis (tedana) is a Python library for denoising multi-echo functional magnetic resonance imaging (fMRI) data. tedana originally came about as a part of the ME-ICA pipeline, although it has since diverged.</p>
+  <p
+    style="
+      text-align: right;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      padding-right: 1.4em;
+      font-style: italic;
+    "
+  >
+    Eneko Uruñuela
+  </p>
+</div>
+
+
+</div>
