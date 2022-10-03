@@ -35,7 +35,7 @@ def main():
     for pj_index, prj_row in df.iterrows():
         prj_title = prj_row["Project title:"]
         prj_descr = prj_row["Project description:"]
-        prj_leader = prj_row["Leader:"]
+        prj_leader = prj_row["Project leader:"]
 
         prj_card += populate_project_card(prj_title, prj_descr, prj_leader)
 
