@@ -28,13 +28,13 @@ def populate_projects_page(html):
 def main():
     # Read CSV file
     df = pd.read_csv(csv_file_path)
-    df = df[df["Leader:"].notna()]
+    df = df[df["Project leader:"].notna()]
 
     prj_card = ""
 
     for pj_index, prj_row in df.iterrows():
         prj_title = prj_row["Project title:"]
-        prj_descr = prj_row["Project description:"]
+        prj_descr = prj_row["What is the purpose of the project?"]
         prj_leader = prj_row["Project leader:"]
 
         prj_card += populate_project_card(prj_title, prj_descr, prj_leader)
