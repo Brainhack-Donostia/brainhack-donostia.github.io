@@ -51,6 +51,23 @@ Activities carried out during Brainhack Donostia 2022 can result in useful outpu
     Eneko Uruñuela
   </p>
 </div>
+<div class="projects post-card" style="padding: 1.4em">
+  <h4 style="font-size: 1.8em">NeuroCausal: a FAIRer neuropsychology</h4>
+  <p style="padding-top: 1em; padding-bottom: 1em">We are working with clinicians, neuroimagers, and software developers to develop an open source platform for the storage, sharing, synthesis and meta-analysis of human clinical data to the service of the clinical and cognitive neuroscience community so that the future of neuropsychology can be transdiagnostic, open, and FAIR.
+Following the steps of what enable a similar transition in functional neuroimaging, we are breaking down our over-ambitious goal in two stages: (1) create a meta-analytical platform covering lesion-related data hence allowing causal inferences; (2) a data-sharing platform tailored to clinical needs.</p>
+  <p
+    style="
+      text-align: right;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      padding-right: 1.4em;
+      font-style: italic;
+    "
+  >
+    Valentina Borghesani
+  </p>
+</div>
 
 
 </div>
