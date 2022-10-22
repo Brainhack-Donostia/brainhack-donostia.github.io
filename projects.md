@@ -68,6 +68,22 @@ Following the steps of what enable a similar transition in functional neuroimagi
     Valentina Borghesani
   </p>
 </div>
+<div class="projects post-card" style="padding: 1.4em">
+  <h4 style="font-size: 1.8em">RTP2: Reproducible Tract Profiles</h4>
+  <p style="padding-top: 1em; padding-bottom: 1em">Combining quantitative MRI (qMRI) maps with white matter tracts. </p>
+  <p
+    style="
+      text-align: right;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      padding-right: 1.4em;
+      font-style: italic;
+    "
+  >
+    Garikoitz Lerma-Usabiaga
+  </p>
+</div>
 
 
 </div>
