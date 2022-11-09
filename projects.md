@@ -106,6 +106,26 @@ We have a team of a handful places across the Americas, Europe, and Asia, willin
     Maximilien Chaumon
   </p>
 </div>
+<div class="projects post-card" style="padding: 1.4em">
+  <h4 style="font-size: 1.8em">containerize bidspm</h4>
+  <p style="padding-top: 1em; padding-bottom: 1em">bidspm is an SPM centric automated pipeline to preprocess BIDS datasets and to run fmri statistical on them by relying on the BIDS stats model for model and contrast specification.
+
+Currently the pipeline can run on Matlab and Octave.
+
+The pupose of this project is to create containerized versions (Docker, Singularity) of the pipeline to help reusability and reproducibility.</p>
+  <p
+    style="
+      text-align: right;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      padding-right: 1.4em;
+      font-style: italic;
+    "
+  >
+    Remi Gau
+  </p>
+</div>
 
 
 </div>
