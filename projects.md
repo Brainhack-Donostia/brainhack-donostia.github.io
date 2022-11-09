@@ -84,6 +84,28 @@ Following the steps of what enable a similar transition in functional neuroimagi
     Garikoitz Lerma-Usabiaga
   </p>
 </div>
+<div class="projects post-card" style="padding: 1.4em">
+  <h4 style="font-size: 1.8em">Hacking Brainhack!</h4>
+  <p style="padding-top: 1em; padding-bottom: 1em">We're preparing a global MEG/EEG meeting next year in October with our non-profit conference organisation CuttingEEG. We call it CuttingGardens. It is made of "Gardens" that host their own local event, and connect together and with the global community via live sessions. We would like to create a platform similar to https://brainhack.org/global2022/ on which we could:
+
+    offer resources for applying Gardens, similar to what Brainhack has here.
+    collect Garden candidates via a submission form similar to what Brainhack has here for local events.
+    Display the catalog of tutorial, lectures, and other local events in a dynamic way, perhaps in a similar way as what Brainhack has here for projects
+
+We have a team of a handful places across the Americas, Europe, and Asia, willing to be a Garden. We'd like to facilitate more joining and think Brainhack is a great model!</p>
+  <p
+    style="
+      text-align: right;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      padding-right: 1.4em;
+      font-style: italic;
+    "
+  >
+    Maximilien Chaumon
+  </p>
+</div>
 
 
 </div>
