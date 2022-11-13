@@ -126,6 +126,38 @@ The pupose of this project is to create containerized versions (Docker, Singular
     Remi Gau
   </p>
 </div>
+<div class="projects post-card" style="padding: 1.4em">
+  <h4 style="font-size: 1.8em">MRIQC & fMRIPrep - physiology and task visualization with carpetplot</h4>
+  <p style="padding-top: 1em; padding-bottom: 1em">Continue improving MRIQC's and fMRIPrep's carpet plot views with more timeseries that inform about physiological recordings and the task paradigm.</p>
+  <p
+    style="
+      text-align: right;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      padding-right: 1.4em;
+      font-style: italic;
+    "
+  >
+    Oscar Esteban
+  </p>
+</div>
+<div class="projects post-card" style="padding: 1.4em">
+  <h4 style="font-size: 1.8em">MRIQC - QC Dashboard</h4>
+  <p style="padding-top: 1em; padding-bottom: 1em">Developing a web interface to manage the QC of a project with MRIQC reports. The system should be containerized and support users, sessions, tracking of assessments, blinding of identifying information, shuffling of subjects, and IQM collection.</p>
+  <p
+    style="
+      text-align: right;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      padding-right: 1.4em;
+      font-style: italic;
+    "
+  >
+    Oscar Esteban
+  </p>
+</div>
 
 
 </div>
