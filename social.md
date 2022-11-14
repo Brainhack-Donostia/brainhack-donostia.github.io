@@ -10,7 +10,7 @@ Welcome cocktail - a la donostiarra.
 
 ## THURSDAY 24th
 
-To enjoy the full Basque experience, the social dinner will be held at a cider-house (https://www.petritegi.com/en/cider-house). Apart from the menu, this dinner includes a visit and explanation on how cider is produced.
+To enjoy the full Basque experience, the social dinner will be held at [a cider-house](https://www.petritegi.com/en/cider-house). Apart from the menu, this dinner includes a visit and explanation on how cider is produced.
 
 Since the cider-house is outside Donostia, we will meet to go together using public transport (more info will be given on the first day of the event). However, to return to Donostia, we will arrange other means of transport which is included in the social event.
 
