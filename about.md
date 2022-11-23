@@ -107,6 +107,12 @@ PhD student @ BCBL. Mainly interested in memory processes and how the brain esta
 
 [See webpage](https://www.bcbl.eu/es/abraham-sanchez)
 
+**Katerina Tsaroucha**
+
+Predoctoral researcher at the BCBL, mainly focused on bilingual language processing and language production. She uses behavioural and neuroimaging techniques (EEG).
+
+[See webpage](https://www.bcbl.eu/en/aikaterini-tsaroucha)
+
 **Manuel Carreiras**
 
 Ikerbasque Research Professor and Scientific Director @ BCBL. Working on research for over 30 years, he has lots of experience in psycho and neurolinguistics.
