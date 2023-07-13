@@ -9,38 +9,58 @@ description: "Coming soon!"
 
 # Team names, titles and social links
 people:
-- name: Kay Garland
-  pic: 1
-  position: Lead Designer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
+- name: Ihintza Malharin
+  pic: ihintzaM 
+  position: Brainhack Donosti organizing chair  
 
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
+- name: Marco Flores-Coronado 
+  pic: marcoFC
+  position: Brainhack Donosti organizing chair
 
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
+- name: Chiara Luna Rivolta 
+  pic: chiaraLR
+  position: Brainhack Donosti treasury 
+    
+- name: Anique Schüller
+  pic: aniqueS
+  position: Brainhack Donosti treasury 
+
+- name: Jiaqi (Mo) Mao
+  pic: jiaqiM
+  position: Brainhack Donosti treasury 
+    
+- name: Inés Chavarría 
+  pic: inesC
+  position: Brainhack Donosti projects
+
+- name:  Cristina Comella
+  pic: cristinaC
+  position: Brainhack Donosti projects 
+
+- name: Yi-Ting (Silvia) Yang 
+  pic: yi-tingY
+  position: Brainhack Donosti projects 
+
+- name:  Ana Bautista
+  pic: anaB 
+  position: Brainhack Donosti design
+
+- name: Leandro Lecca
+  pic: leandroL
+  position: Brainhack Donosti IT 
+
+- name: Ryland Miller 
+  pic: rylandM
+  position: Brainhack Donosti IT 
+
+- name: Cesar Caballero-Gaudes 
+  pic: CesarCG
+  position: Brainhack Donosti talks
+    
+- name: Garikoitz Lerma-Usabiaga
+  pic: garikoitzLU
+  position: Brainhack Donosti talks
+
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
@@ -51,8 +71,9 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: Mikeletegi Pasealekua, 69, 20009
+  - line: Donostia-San Sebastián
+  - line: Gipuzkoa, Spain
 
 # Build settings
 markdown: kramdown
