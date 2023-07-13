@@ -277,8 +277,8 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('/agency-jekyll-theme//img/header-bg.jpg');
-    background-position: center center;
+    background-image: url('/agency-jekyll-theme//img/logos/donostia3title.png');
+    background-position: center center;a
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -666,7 +666,7 @@ aside.clients img {
 
 section#contact {
     background-color: #222;
-    background-image: url('/agency-jekyll-theme//img/map-image.png');
+    background-image: url('/agency-jekyll-theme//img/logos/donostia3title.png');
     background-position: center;
     background-repeat: no-repeat;
 }
