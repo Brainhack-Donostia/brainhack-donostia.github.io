@@ -70,11 +70,11 @@ h6 {
 }
 
 .bg-light-gray {
-    background-color: #f7f7f7;
+    background-color: #000;
 }
 
 .bg-darkest-gray {
-    background-color: #222;
+    background-color: #f7f7f7;
 }
 
 .btn-primary {
@@ -134,7 +134,7 @@ fieldset[disabled] .btn-primary.active {
     font-family: Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
-    color: #fff;
+    color: #ffeb2b;
     background-color: #00adef;
 }
 
@@ -398,7 +398,7 @@ section h3.section-subheading {
     margin-top: -12px;
     text-align: center;
     font-size: 20px;
-    color: #fff;
+    color: #ffeb2b;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
@@ -415,7 +415,7 @@ section h3.section-subheading {
     padding: 25px;
     max-width: 400px;
     text-align: center;
-    background-color: #fff;
+    background-color: #ffeb2b;
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
@@ -454,7 +454,7 @@ section h3.section-subheading {
     left: 40px;
     width: 2px;
     margin-left: -1.5px;
-    background-color: #f1f1f1;
+    background-color: #000;
 }
 
 .timeline>li {
@@ -665,8 +665,8 @@ aside.clients img {
 }
 
 section#contact {
-    background-color: #222;
-    background-image: url('/agency-jekyll-theme//img/logos/donostia3title.png');
+    background-color: #000;
+    background-image: url('/agency-jekyll-theme//img/logos/donostiacontact.png');
     background-position: center;
     background-repeat: no-repeat;
 }
