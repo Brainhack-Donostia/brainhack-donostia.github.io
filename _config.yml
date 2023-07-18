@@ -1,0 +1,80 @@
+url: https://y7kim.github.io
+baseurl: /agency-jekyll-theme/
+
+# Site settings
+title: Brain Hack Donosti 2023
+email: bhg-donostia@bcbl.eu
+description: "Coming soon!"
+
+
+# Team names, titles and social links
+people:
+- name: Ihintza Malharin
+  pic: ihintzaM 
+  position: Brainhack Donosti organizing chair  
+
+- name: Marco Flores-Coronado 
+  pic: marcoFC
+  position: Brainhack Donosti organizing chair
+
+- name: Chiara Luna Rivolta 
+  pic: chiaraLR
+  position: Brainhack Donosti treasury 
+    
+- name: Anique Schüller
+  pic: aniqueS
+  position: Brainhack Donosti treasury 
+
+- name: Jiaqi (Mo) Mao
+  pic: jiaqiM
+  position: Brainhack Donosti treasury 
+    
+- name: Inés Chavarría 
+  pic: inesC
+  position: Brainhack Donosti projects
+
+- name:  Cristina Comella
+  pic: cristinaC
+  position: Brainhack Donosti projects 
+
+- name: Yi-Ting (Silvia) Yang 
+  pic: yi-tingY
+  position: Brainhack Donosti projects 
+
+- name:  Ana Bautista
+  pic: anaB 
+  position: Brainhack Donosti design
+
+- name: Leandro Lecca
+  pic: leandroL
+  position: Brainhack Donosti IT 
+
+- name: Ryland Miller 
+  pic: rylandM
+  position: Brainhack Donosti IT 
+
+- name: Cesar Caballero-Gaudes 
+  pic: CesarCG
+  position: Brainhack Donosti talks
+    
+- name: Garikoitz Lerma-Usabiaga
+  pic: garikoitzLU
+  position: Brainhack Donosti talks
+
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/BHDonostia
+  - title: github
+    url: http://github.com/Brainhack-Donostia
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: Mikeletegi Pasealekua, 69, 20009
+  - line: Donostia-San Sebastián
+  - line: Gipuzkoa, Spain
+
+# Build settings
+markdown: kramdown
+permalink: pretty
