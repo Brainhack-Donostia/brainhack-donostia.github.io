@@ -22,8 +22,28 @@ $ jekyll serve
 
 #Git branches
 
-Commit and push changes on BHD2023 or a personal sub-branch from there. When you are sure about your changes, push them to submaster. Pull request will be done trough submaster branch
+Commit and push changes on BHD2023 or a personal sub-branch from there. When you are sure about your changes, push them to BHD2023 and open a pull request.
 NOTE: remember to run pull before working locally
+-Changing to BHD2023 branch
+$ git checkout BHD2023
+- Creating your subranch from BHD2023
+$ git checkout -b YourAmazingSubbranch
+- Checking the status of the current branch
+$ git status
+- Adding untracked changes
+$ git add filename1 filename2 
+or to add all
+$ git add .
+- Commit changes
+$ git commit -m "Your message explaining your commited work"
+- Push changes from locall to repo
+$ git push -u origin BHD2023
+- Merging with master
+$ git checkout master 
+$ git merge BHD2023 
+- You could also push your commit to a specific branch intead of merging and without checkout master
+$ git push -u origin master
+
 ## How to use
 
 To edit the format of the page, you will find everything inside 'your/system/path/brainhack-donostia.github.io/_/_includes'
