@@ -13,6 +13,10 @@ body {
 .text-muted {
     color: #{{ site.data.template.color.muted }};
 }
+.text-yellow {
+    color:#ffe95e ;
+
+}
 
 .text-primary {
     color: #{{ site.data.template.color.primary }};
@@ -63,6 +67,9 @@ h6 {
 
 .bg-light-gray {
     background-color: #000;
+}
+.bg-yellow {
+    background-color: #ffe95e;
 }
 
 .bg-darkest-gray {
@@ -339,7 +346,7 @@ section h3.section-subheading {
     text-transform: none;
     font-family: {{ site.data.template.font.secondary }};
     font-size: 16px;
-    font-style: italic;
+    font-style: helvetica;
     font-weight: 400;
 }
 
@@ -645,6 +652,7 @@ section h3.section-subheading {
 .team-member h4 {
     margin-top: 25px;
     margin-bottom: 0;
+    color: #ffffff;
     text-transform: none;
 }
 
