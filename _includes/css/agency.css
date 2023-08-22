@@ -426,7 +426,7 @@ section h3.section-subheading {
     margin: 0;
     font-family: {{ site.data.template.font.secondary }};
     font-size: 16px;
-    font-style: italic;
+    font-style: helvetica;
 }
 
 #portfolio * {
