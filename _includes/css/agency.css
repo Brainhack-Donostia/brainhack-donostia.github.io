@@ -17,6 +17,10 @@ body {
     color:#ffe95e ;
 
 }
+.text-white {
+    color:#ffffff ;
+
+}
 
 .text-primary {
     color: #{{ site.data.template.color.primary }};
