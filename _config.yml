@@ -4,7 +4,7 @@ baseurl:
 # Site settings
 title: Brain Hack Donostia 2023
 email: bhg-donostia@bcbl.eu
-description: "Coming soon!"
+description: "Site for Brainhack Donostia 2023"
 
 
 # Team names, titles and social links
@@ -13,8 +13,8 @@ people:
   pic: ihintzaM 
   position: Brainhack Donosti organizing chair
   social:
-      url: https://www.bcbl.eu/en/ihintza-malharin
-
+    -title: #
+     url: https://www.bcbl.eu/en/ihintza-malharin
 - name: Marco Flores-Coronado 
   pic: marcoFC
   position: Brainhack Donosti organizing chair
