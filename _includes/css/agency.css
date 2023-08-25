@@ -664,10 +664,7 @@ section h3.section-subheading {
     margin-top: 0;
 }
 
-aside.clients img {
-    margin: 50px auto;
-}
-
+/*-------------------------------------CONTACT-----------------------------------------*/
 section#contact {
     background-color: #000;
     background-image: url('{{ site.baseurl }}/img/logos/donostiacontact.png');
@@ -732,7 +729,11 @@ section#contact:-ms-input-placeholder {
 section#contact .text-danger {
     color: #e74c3c;
 }
+/*---------------------------------FUNDING---------------------------------------------*/
 
+aside.clients img {
+    margin: 50px auto;
+}
 footer {
     padding: 25px 0;
     text-align: center;
