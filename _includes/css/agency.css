@@ -188,7 +188,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     font-family: Helvetica ,Helvetica ,Helvetica,Helvetica,Helvetica;
-    color: #{{ site.data.template.color.primary }};
+    color: #ffeb2b;
 }
 
 .navbar-default .navbar-brand:hover,
