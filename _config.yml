@@ -13,67 +13,79 @@ people:
   pic: ihintzaM 
   position: Chair
   social:
-    -title: #
-     url: https://bcbl.eu/en/ihintza-malharin
+    - title: firefox
+      url: https://www.bcbl.eu/en/ihintza-malharin
 - name: Marco Flores-Coronado 
   pic: marcoFC
   position: Chair
   social:
+    - title: firefox
       url: https://www.bcbl.eu/en/marco-a-flores-coronado
 - name: Chiara Luna Rivolta 
   pic: chiaraLR
   position: Treasury 
   social:
+    - title: firefox
       url: https://www.bcbl.eu/en/chiara-luna-rivolta  
 - name: Anique Schüller
   pic: aniqueS
   position: Treasury 
   social:
+    - title: firefox
       url: https://www.bcbl.eu/en/anique-schuller
 - name: Jiaqi (Mo) Mao
   pic: jiaqiM
   position: Treasury
   social:
+    - title: firefox
       url: https://www.bcbl.eu/en/jiaqi-mo-mao   
 - name: Inés Chavarría 
   pic: inesC
   position: Projects
   social:
+    - title: firefox
       url: https://www.bcbl.eu/en/ines-chavarria
 - name:  Cristina Comella
   pic: cristinaC
   position: Projects 
   social:
+    - title: firefox
       url: https://www.bcbl.eu/en/node/7402
 - name: Yi-Ting (Silvia) Yang 
   pic: yi-tingY
   position: Projects
   social:
+    - title: firefox
       url: https://www.bcbl.eu/en/yi-ting-silvia-yang
 - name:  Ana Bautista
   pic: anaB 
   position: Design
   social:
+    - title: firefox
       url: https://www.bcbl.eu/en/leandro-lecca
 - name: Leandro Lecca
   pic: leandroL
   position: IT 
   social:
+    - title: firefox
       url: https://www.bcbl.eu/en/leandro-lecca
 - name: Ryland Miller 
   pic: rylandM
   position: IT 
   social:
+    - title: firefox
       url: https://www.bcbl.eu/en/node/7471
 - name: Cesar Caballero-Gaudes 
   pic: CesarCG
   position: Talks 
   social:
+    - title: firefox
       url:  https://www.bcbl.eu/en/conocenos/equipo/cesar-caballero-gaudes  
 - name: Garikoitz Lerma-Usabiaga
   pic: garikoitzLU
   position: Talks
   social:
+    - title: firefox
       url: https://www.bcbl.eu/en/conocenos/equipo/garikoitz-lerma-usabiaga
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
