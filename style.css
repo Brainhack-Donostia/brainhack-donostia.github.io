@@ -1,10 +1,10 @@
 ---
 layout: style
 .my-heading {
-    margin-bottom: 0.2em; /* Adjust this value to decrease the space */
+    margin-bottom: 0.4em; /* Adjust this value to decrease the space */
 }
 
 .my-paragraph {
-    margin-top: 0.1em; /* Adjust this value to decrease the space */
+    margin-top: 0.3em; /* Adjust this value to decrease the space */
 }
 ---
