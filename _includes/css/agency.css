@@ -131,14 +131,14 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-xl {
     padding: 20px 40px;
-    border-color: #{{ site.data.template.color.primary }};
+    border-color: #ffeb2b;
     border-radius: 3px;
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-size: 18px;
     font-weight: 700;
-    color: #ffeb2b;
-    background-color: #{{ site.data.template.color.primary }};
+    color: #000000;
+    background-color: #ffeb2b;
 }
 
 .btn-xl:hover,
@@ -188,14 +188,14 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     font-family: Helvetica ,Helvetica ,Helvetica,Helvetica,Helvetica;
-    color: #{{ site.data.template.color.primary }};
+    color: #ffeb2b;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #{{ site.data.template.color.secondary }};
+    color: #ffffff;
 }
 
 .navbar-default .navbar-collapse {
@@ -664,10 +664,18 @@ section h3.section-subheading {
     margin-top: 0;
 }
 
-aside.clients img {
-    margin: 50px auto;
+/*-------------------------------------PROGRAM-----------------------------------------*/
+section#program {
+    background-color: #000;
+    background-image: url('{{ site.baseurl }}/img/logos/donostiaprogram.png');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
+section#program .section-heading {
+    color: #fff;
+}
+/*-------------------------------------CONTACT-----------------------------------------*/
 section#contact {
     background-color: #000;
     background-image: url('{{ site.baseurl }}/img/logos/donostiacontact.png');
@@ -732,7 +740,11 @@ section#contact:-ms-input-placeholder {
 section#contact .text-danger {
     color: #e74c3c;
 }
+/*---------------------------------FUNDING---------------------------------------------*/
 
+aside.clients img {
+    margin: 50px auto;
+}
 footer {
     padding: 25px 0;
     text-align: center;
