@@ -664,6 +664,17 @@ section h3.section-subheading {
     margin-top: 0;
 }
 
+/*-------------------------------------PROGRAM-----------------------------------------*/
+section#program {
+    background-color: #000;
+    background-image: url('{{ site.baseurl }}/img/logos/donostiacontact.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#program .section-heading {
+    color: #fff;
+}
 /*-------------------------------------CONTACT-----------------------------------------*/
 section#contact {
     background-color: #000;
