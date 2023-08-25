@@ -667,7 +667,7 @@ section h3.section-subheading {
 /*-------------------------------------PROGRAM-----------------------------------------*/
 section#program {
     background-color: #000;
-    background-image: url('{{ site.baseurl }}/img/logos/donostiacontact.png');
+    background-image: url('{{ site.baseurl }}/img/logos/donostiaprogram.png');
     background-position: center;
     background-repeat: no-repeat;
 }
