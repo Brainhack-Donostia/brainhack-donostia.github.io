@@ -1,3 +1,13 @@
 ---
 layout: style
 ---
+#program {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust this as needed to control the centering within the viewport */
+}
+
+.verticalhorizontal {
+    text-align: center;
+}
