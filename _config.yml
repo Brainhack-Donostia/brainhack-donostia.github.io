@@ -57,6 +57,12 @@ people:
   social:
     - title: firefox
       url: https://www.bcbl.eu/en/yi-ting-silvia-yang
+- name: Cristina Tobias
+  pic: cristina
+  position: Projects
+  social:
+    - title: firefox
+      url: https://github.com/Cristina-Tobias
 - name:  Ana Bautista
   pic: anaB 
   position: Design
