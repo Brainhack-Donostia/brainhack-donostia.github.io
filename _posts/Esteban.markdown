@@ -7,6 +7,7 @@ img: OscarSpeaker.png
 thumbnail: oscar-thumbnail.png
 alt: image-alt
 
+category: Web Development
 description: Title: Pre-registering methods-oriented neuroimaging research, why, when, and how?
 
 ---
