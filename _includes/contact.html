@@ -9,30 +9,33 @@
         <div class="row">
             <div class="col-md-6">
                 <form  id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mqkvlekn" method="post">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="control-group form-group">
-                                <input type="text" class="form-control" id="full-name" placeholder="Your name" required data-validation-required-message="Please enter your full name.">
-                                <p class="help-block text-danger"></p>
+                    <fieldset id="fs-frm-inputs">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="control-group form-group">
+                                    <input type="text" class="form-control" name="name" id="full-name" placeholder="Your name" required data-validation-required-message="Please enter your full name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="control-group form-group">
+                                    <input type="email" class="form-control" name="_replyto" id="email-address" placeholder="Your email address" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="control-group form-group">
+                                    <textarea  class="form-control" name="message" placeholder="Your question*" id="message" required data-validation-required-message="Please enter a project."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">I have a question!</button>
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="control-group form-group">
-                                <input type="email" class="form-control" id="email-address" placeholder="Your email address" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="control-group form-group">
-                                <textarea  class="form-control" placeholder="Your question*" id="message" required data-validation-required-message="Please enter a project."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="col-md-12 text-center">
-                            <div id="success"></div>
-                            <button type="submit" class="btn btn-xl">I have a question!</button>
-                        </div>
-                    </div>
+                    </fieldset>
                 </form>
             </div>
             <div class="col-md-6">
