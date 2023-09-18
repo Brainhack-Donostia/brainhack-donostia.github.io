@@ -1,0 +1,14 @@
+---
+title: Oscar Esteban
+subtitle: Pre-registering methods-oriented neuroimaging research, why, when, and how 
+layout: default
+modal-id: 3
+date: 2014-07-17
+img: OscarSpeaker.png
+thumbnail: OscarSpeaker.png
+alt: image-alt
+project-date: April 2014
+description: Streamlined pRF mapping and optimized stimulation for fMRI vision research
+
+---
+
