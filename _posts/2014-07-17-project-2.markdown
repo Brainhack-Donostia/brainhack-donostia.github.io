@@ -2,10 +2,10 @@
 title: BHD 2023
 subtitle: Program
 layout: default
-modal-id: 1
+modal-id: 6
 date: 2014-07-17
-img: Schedule.png
-thumbnail: schedule-thumbnail.png
+img: Program.png
+thumbnail: logo_title.png
 alt: image-alt
 project-date: April 2014
 
