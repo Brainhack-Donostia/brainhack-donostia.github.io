@@ -1,5 +1,5 @@
 ---
-title: David Lindhart
+title: David Linhardt
 subtitle: "Streamlined pRF mapping and optimized stimulation for fMRI vision research"
 layout: default
 modal-id: 5
