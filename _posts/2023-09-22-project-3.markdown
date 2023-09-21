@@ -2,7 +2,7 @@
 title: Stefano Moia,
 subtitle: Open development, the journey from software to communities and back.
 layout: default
-modal-id: 1
+modal-id: 3
 date: 2014-07-17
 img: StefanoYellow.png
 thumbnail: StefanoYellow.png
