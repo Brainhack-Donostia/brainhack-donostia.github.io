@@ -4,7 +4,7 @@ subtitle: The waste clearance system of the brain, novel imaging techniques and 
 layout: default
 modal-id: 2
 date: 2014-07-17
-img: MerelYellow.png
+img: MerelWhite.png
 thumbnail: MerelYellow.png
 alt: image-alt
 project-date: April 2014
