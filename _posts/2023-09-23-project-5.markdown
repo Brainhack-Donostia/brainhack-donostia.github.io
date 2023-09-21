@@ -2,7 +2,7 @@
 title: Qihui Xu, Ihintza Malharin
 subtitle: Computational modelling, what is it and how can it benefit research in neurosciences?
 layout: default
-modal-id: 4
+modal-id: 5
 date: 2014-07-17
 img: IhintzaQihuiYellow.png
 thumbnail: IhintzaQihuiYellow.png
