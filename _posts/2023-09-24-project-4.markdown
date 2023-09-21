@@ -4,7 +4,7 @@ subtitle: Pre-registering methods-oriented neuroimaging research, why, when, and
 layout: default
 modal-id: 4
 date: 2014-07-17
-img: OscarYellow.png
+img: OscarWhite.png
 thumbnail: OscarYellow.png
 alt: image-alt
 project-date: April 2014
