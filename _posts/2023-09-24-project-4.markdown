@@ -2,7 +2,7 @@
 title: Oscar Esteban
 subtitle: Pre-registering methods-oriented neuroimaging research, why, when, and how 
 layout: default
-modal-id: 3
+modal-id: 4
 date: 2014-07-17
 img: OscarYellow.png
 thumbnail: OscarYellow.png
