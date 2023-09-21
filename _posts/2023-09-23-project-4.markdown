@@ -4,8 +4,8 @@ subtitle: Computational modelling, what is it and how can it benefit research in
 layout: default
 modal-id: 4
 date: 2014-07-17
-img: Qihui_&_Ihintza.png
-thumbnail: Qihui_&_Ihintza.png
+img: IhintzaQihuiYellow.png
+thumbnail: IhintzaQihuiYellow.png
 alt: image-alt
 project-date: April 2014
 
