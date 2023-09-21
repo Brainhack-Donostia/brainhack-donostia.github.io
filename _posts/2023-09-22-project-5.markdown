@@ -1,6 +1,6 @@
 ---
 title: Qihui Xu, Ihintza Malharin
-subtitle: Computational modelling, what is it and how can it benefit research in neurosciences?
+subtitle: "Postdoctoral Researcher & PhD Student @ BCBL, Basque Center on Cognition, Brain and Language"
 layout: default
 modal-id: 5
 date: 2014-07-17
@@ -10,7 +10,7 @@ alt: image-alt
 project-date: April 2014
 
 category: Web Development
-description: From the Perceptron in the 1950’s to ChatGPT today, computational modelling has been used in a variety of fields, gaining popularity among researchers and the general public alike. After reviewing a few of its practical applications, Qihui and Ihintza will present a simple tutorial on the creation of a neural network that can be used to tackle a simple cognitive task.
+description: "Computational modelling, what is it and how can it benefit research in neurosciences?: From the Perceptron in the 1950’s to ChatGPT today, computational modelling has been used in a variety of fields, gaining popularity among researchers and the general public alike. After reviewing a few of its practical applications, Qihui and Ihintza will present a simple tutorial on the creation of a neural network that can be used to tackle a simple cognitive task."
 
 
 ---
