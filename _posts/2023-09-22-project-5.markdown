@@ -4,8 +4,8 @@ subtitle: Open development, the journey from software to communities and back.
 layout: default
 modal-id: 1
 date: 2014-07-17
-img: Stefano.png
-thumbnail: Stefano.png
+img: StefanoYellow.png
+thumbnail: StefanoYellow.png
 alt: image-alt
 project-date: April 2014
 
