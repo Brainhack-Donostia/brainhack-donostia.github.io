@@ -4,7 +4,7 @@ subtitle: "Streamlined pRF mapping and optimized stimulation for fMRI vision res
 layout: default
 modal-id: 1
 date: 2014-07-17
-img: DavidYellow.png
+img: DavidWhite.png
 thumbnail: DavidYellow.png
 alt: image-alt
 project-date: April 2014
