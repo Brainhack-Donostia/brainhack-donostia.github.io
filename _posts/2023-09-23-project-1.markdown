@@ -2,7 +2,7 @@
 title: David Linhardt
 subtitle: "Streamlined pRF mapping and optimized stimulation for fMRI vision research"
 layout: default
-modal-id: 5
+modal-id: 1
 date: 2014-07-17
 img: DavidYellow.png
 thumbnail: DavidYellow.png
