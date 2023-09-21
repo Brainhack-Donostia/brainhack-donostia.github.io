@@ -1,6 +1,6 @@
 ---
 title: BHD 2023
-subtitle: Program
+subtitle: Brainhack Donostia 2023 program!
 layout: default
 modal-id: 6
 date: 2014-07-17
