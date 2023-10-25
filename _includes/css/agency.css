@@ -678,7 +678,20 @@ section#program img{
 section#program .section-heading {
     color: #fff;
 }
-/*-------------------------------------CONTACT-----------------------------------------*/
+/*-------------------------------------social-----------------------------------------*/
+section#social {
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+section#social img{
+	max-width:100%;
+	height: auto;
+	position: center top;
+}
+section#social .section-heading {
+    color: #fff;
+}/*-------------------------------------CONTACT-----------------------------------------*/
 section#contact {
     background-color: #000;
     background-image: url('{{ site.baseurl }}/img/logos/donostiacontact.png');
