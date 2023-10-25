@@ -1,16 +1,17 @@
 ---
-title: Stefano Moia,
-subtitle: Open development, the journey from software to communities and back.
+title: Qihui Xu, Ihintza Malharin
+subtitle: "Postdoctoral Researcher & PhD Student @ BCBL, Basque Center on Cognition, Brain and Language"
 layout: default
-modal-id: 1
+modal-id: 5
 date: 2014-07-17
-img: Stefano.png
-thumbnail: Stefano.png
+img: IhintzaQihuiWhite.png
+thumbnail: IhintzaQihuiYellow.png
 alt: image-alt
 project-date: April 2014
 
 category: Web Development
-description: Writing scientific code, especially without the proper background, is difficult. Openly writing good scientific code is even more difficult, not only for the coding part, but also for the added challenges and inevitable insecurity that making something public brings along. Or is it? In this talk, we'll start with looking into practices, approaches, and tools that can help improve any type of code (and text!) writing. We will then discuss how making code open (and following open science practices in general) can make things easier, and how this action might foster not only a project, but also scientific communities. Finally, we will look into practices to work within such communities, and how such practices can improve code (and text) writing in return.
+description: "Computational modelling, what is it and how can it benefit research in neurosciences?: From the Perceptron in the 1950’s to ChatGPT today, computational modelling has been used in a variety of fields, gaining popularity among researchers and the general public alike. After reviewing a few of its practical applications, Qihui and Ihintza will present a simple tutorial on the creation of a neural network that can be used to tackle a simple cognitive task."
+
 
 ---
 

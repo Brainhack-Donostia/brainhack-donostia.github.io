@@ -1,0 +1,19 @@
+---
+title: David Linhardt
+subtitle: "PhD Student @ High Field MR Center, Center for Medical Physics and Biomedical Engineering, Medical University of Vienna"
+layout: default
+modal-id: 1
+date: 2014-07-17
+img: DavidWhite.png
+thumbnail: DavidYellow.png
+alt: image-alt
+project-date: April 2014
+
+category: Web Development
+description: "Streamlined pRF mapping and optimized stimulation for fMRI vision research: Population receptive field (pRF) mapping allows for the investigation of retinotopic organization preserved from the retina to the visual cortex. Their analysis pipeline is a comprehensive, containerized software solution that ensures consistency in analyses and reproducible workflows for the next generation of pRF studies. By integrating various software packages, it covers all necessary steps from fMRI data pre-processing to result visualization. Additionally, the team introduced a simulation framework that enables the exploration of optimized stimulation patterns for pRF mapping. Moving beyond standard stimuli, such as bars and wedges/rings, these optimized patterns offer a more tailored approach to address specific research questions. By combining the simplified pRF mapping pipeline with optimized stimuli, they propose an alternative clinical method for diagnosing visual field deficits."
+
+
+---
+
+
+

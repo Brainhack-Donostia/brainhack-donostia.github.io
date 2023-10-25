@@ -1,0 +1,18 @@
+---
+title: Stefano Moia,
+subtitle: "Postdoctoral Researcher @ EPFL & University of Geneva, BHD Founding Chair"
+layout: default
+modal-id: 3
+date: 2014-07-17
+img: StefanoWhite.png
+thumbnail: StefanoYellow.png
+alt: image-alt
+project-date: April 2014
+
+category: Web Development
+description: "Open development, the journey from software to communities and back: Writing scientific code, especially without the proper background, is difficult. Openly writing good scientific code is even more difficult, not only for the coding part, but also for the added challenges and inevitable insecurity that making something public brings along. Or is it? In this talk, we'll start with looking into practices, approaches, and tools that can help improve any type of code (and text!) writing. We will then discuss how making code open (and following open science practices in general) can make things easier, and how this action might foster not only a project, but also scientific communities. Finally, we will look into practices to work within such communities, and how such practices can improve code (and text) writing in return."
+
+---
+
+
+
