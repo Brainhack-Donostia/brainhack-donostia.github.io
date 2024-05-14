@@ -41,7 +41,7 @@ people:
       url: https://www.bcbl.eu/en/jiaqi-mo-mao   
 - name: Inés Chavarría 
   pic: inesC
-  position: Projects
+  position: Projects & Help Desk
   social:
     - title: firefox
       url: https://www.bcbl.eu/en/ines-chavarria
@@ -69,6 +69,13 @@ people:
   social:
     - title: firefox
       url: https://www.bcbl.eu/en/leandro-lecca
+- name: Lucía Manso
+  pic: LuciaM
+  position: Design
+  social:
+    - title: firefox
+      url: https://www.bcbl.eu/en/lucia-manso
+
 - name: Leandro Lecca
   pic: leandroL
   position: IT 
