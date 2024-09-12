@@ -4,8 +4,8 @@ subtitle: "Lab Section Coordinator (MRI & behavioral) @  Basque Center on Cognit
 layout: default
 modal-id: 5
 date: 2024-11-25
-img: IhintzaQihuiWhite.png
-thumbnail: IhintzaQihuiYellow.png
+img: 
+thumbnail: 
 alt: image-alt
 project-date: November 2024
 
