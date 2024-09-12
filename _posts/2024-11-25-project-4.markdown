@@ -1,0 +1,14 @@
+---
+title: 
+subtitle: "Ryland Miller - Research Assistant @ Basque Center on Cognition, Brain and Language"
+layout: default
+modal-id: 3
+date: 2024-11-25
+img:
+thumbnail: 
+alt: image-alt
+project-date: November 2024
+description: "Ryland received his Bachelor's degree in Computer and Information Sciences from the University of Oregon in 2018. He then worked as a Senior Research Technician in the Dosenbach and Greene Labs at Washington University in St. Louis School of Medicine. At WUSM, Ryland helped develop FIRMM (a software that tracks motion in real-time during functional MRI scans), maintained and improved scripts to analyze resting state functional MRI data, and taught programming skills to other lab members. He is currently completing his Master’s degree in the Cognitive Neuroscience of Language and working as a research assistant at the BCBL.  His main focus is on the proper and efficient use of computing resources in fMRI data analysis. To this end, he works on improving methodologies for MRI data collection, storage, and analysis and on teaching other researchers about these best practices."
+
+---
+
