@@ -1,6 +1,6 @@
 ---
 title: Programming transparency - Introduction to GitHub
-subtitle: "Marco Flores-Coronado - PhD Student @ BCBL"
+subtitle: "Marco Flores-Coronado - PhD Student <br /> @ BCBL"
 layout: default
 modal-id: 1
 date: 2023-11-25
