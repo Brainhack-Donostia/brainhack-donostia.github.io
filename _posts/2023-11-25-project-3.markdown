@@ -5,7 +5,7 @@ layout: default
 modal-id: 3
 date: 2023-11-26
 img: davidrywhite.png
-thumbnail: davidrylandyellow.png
+thumbnail: davidryyellow.png
 alt: image-alt
 project-date: November 2023
 
