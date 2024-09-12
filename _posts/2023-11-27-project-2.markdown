@@ -1,6 +1,6 @@
 ---
 title: What crosses your mind when you sleep? Cognitive processes and conscious experience in the sleeping brain.
-subtitle: "Nicolas Decat - PhD Student \ @ Paris Brain Institute "
+subtitle: "Nicolas Decat - PhD Student \ <br /> @ Paris Brain Institute "
 layout: default
 modal-id: 2
 date: 2023-11-27
