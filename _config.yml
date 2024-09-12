@@ -2,106 +2,87 @@ url: https://brainhack-donostia.github.io
 baseurl: 
 
 # Site settings
-title: BrainHack Donostia 2023
+title: BrainHack Donostia 2024
 email: info.bhg-donostia@bcbl.eu
-description: "Site for Brainhack Donostia 2023"
+description: "Site for Brainhack Donostia 2024"
 
 
 # Team names, titles and social links
 people:
-- name: Ihintza Malharin
-  pic: ihintzaM 
-  position: Chair
+- name: Nirmitee Mulay
+  pic: nirmiteeM
+  position: Chair 
   social:
     - title: firefox
-      url: https://www.bcbl.eu/en/ihintza-malharin
-- name: Marco Flores-Coronado 
-  pic: marcoFC
-  position: Chair
+      url: https://www.bcbl.eu/en/conocenos/equipo/nirmitee-mulay
+- name: Emanuele Ciardo
+  pic: emanueleC
+  position: Website
   social:
     - title: firefox
-      url: https://www.bcbl.eu/en/marco-a-flores-coronado
-- name: Chiara Luna Rivolta 
-  pic: chiaraLR
-  position: Treasury 
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/chiara-luna-rivolta  
-- name: Anique Schüller
-  pic: aniqueS
-  position: Treasury 
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/anique-schuller
-- name: Jiaqi (Mo) Mao
-  pic: jiaqiM
+      url: https://www.bcbl.eu/en/conocenos/equipo/emanuele-ciardo
+- name: Noemi Bonfiglio
+  pic: noemiB
   position: Treasury
   social:
     - title: firefox
-      url: https://www.bcbl.eu/en/jiaqi-mo-mao   
-- name: Inés Chavarría 
-  pic: inesC
-  position: Projects & Help Desk
+      url: https://www.bcbl.eu/en/conocenos/equipo/noemi-bonfiglio
+- name: Joaquin  Ordonez
+  pic: joaquinO
+  position: Treasury
+  social:
+     - title: firefox
+       url: https://www.bcbl.eu/en/joaquin-ordonez
+- name: Maria de Almeida Ribeiro 
+  pic: mariaAR
+  position: Socials
   social:
     - title: firefox
-      url: https://www.bcbl.eu/en/ines-chavarria
-- name:  Cristina Comella
-  pic: cristinaC
-  position: Projects 
+      url: https://www.bcbl.eu/en/maria-de-almeida-ribeiro
+- name: Kirill Aksenov 
+  pic: kirillA
+  position: Socials
   social:
     - title: firefox
-      url: https://www.bcbl.eu/en/node/7402
-- name: Yi-Ting (Silvia) Yang 
-  pic: yi-tingY
-  position: Projects
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/yi-ting-silvia-yang
-- name: Cristina Tobias
-  pic: cristina
-  position: Projects
-  social:
-    - title: firefox
-      url: https://github.com/Cristina-Tobias
-- name:  Ana Bautista
-  pic: anaB 
-  position: Design
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/leandro-lecca
-- name: Lucía Manso
-  pic: LuciaM
-  position: Design
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/lucia-manso
-
-- name: Leandro Lecca
-  pic: leandroL
-  position: IT 
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/leandro-lecca
-- name: Ryland Miller 
-  pic: rylandM
-  position: IT 
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/node/7471
-- name: Cesar Caballero-Gaudes 
-  pic: CesarCG
-  position: Talks 
-  social:
-    - title: firefox
-      url:  https://www.bcbl.eu/en/conocenos/equipo/cesar-caballero-gaudes  
-- name: Garikoitz Lerma-Usabiaga
-  pic: garikoitzLU
+      url: https://www.bcbl.eu/en/conocenos/equipo/kirill-aksenov
+- name: Manuela Ruzzoli
+  pic: manuelaR
   position: Talks
   social:
     - title: firefox
+      url: https://www.bcbl.eu/en/conocenos/equipo/manuela-ruzzoli
+- name: Garikoitz Lerma-Usabiga
+  pic: garikoitzL
+  position: Talks 
+  social:
+    - title: firefox
       url: https://www.bcbl.eu/en/conocenos/equipo/garikoitz-lerma-usabiaga
+- name: Alejandro Tabas
+  pic: alejandroT
+  position: Projects
+  social:
+    - title: firefox
+      url: https://www.bcbl.eu/en/conocenos/equipo/alejandro-tabas
+- name: Ihintza Malharin
+  pic: ihintzaM 
+  position: Website
+  social:
+    - title: firefox
+      url: https://www.bcbl.eu/en/ihintza-malharin
+- name: Melissa Donati 
+  pic: melissaD
+  position: Website
+  social:
+    - title: firefox
+      url: https://www.bcbl.eu/en/melissa-donati
+- name: Marco Flores-Coronado
+  pic: marcoF
+  position: Website
+  social:
+    - title: firefox
+      url: https://www.bcbl.eu/en/marco-a-flores-coronado
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+        # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
     url: http://twitter.com/BHDonostia
@@ -111,7 +92,7 @@ social:
 # Postal address (add as many lines as necessary)
 address:
   - line: Mikeletegi Pasealekua, 69, 20009
-  - line: Donostia-San Sebastián
+  - line: Donostia-San Sebastiá
   - line: Gipuzkoa, Spain
 
 # Build settings
