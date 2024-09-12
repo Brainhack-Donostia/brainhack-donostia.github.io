@@ -1,19 +1,17 @@
 ---
-title: Programming transparency: Introduction to GitHub
-subtitle: "Marco Flores-Coronado - PhD Student @ Basque Center on Cognition, Brain and Language"
+title: 
+subtitle: "David Carcedo - Lab Section Coordinator (MRI & behavioral) @  Basque Center on Cognition, Brain and Language"
 layout: default
-modal-id: 1
+modal-id: 2
 date: 2024-11-25
 img: 
 thumbnail: 
 alt: image-alt
 project-date: November 2024
 
-category: 
-description: 
+description: "David holds a degree in Psychology from the University of the Basque Country (UPV). Additionally, he is a certified technician in diagnostic imaging and nuclear medicine (Inmakulada Tolosa). With 12 years of experience as a laboratory technician at the Basque Center on Cognition, Brain, and Language (BCBL), he serves as the MRI Coordinator at BCBL. During his master’s thesis (Universitat de Valencia), he worked extensively on converting a multimodal dataset from a BCBL project into BIDS format. This has involved magnetic resonance imaging (MRI) data, electroencephalography (EEG) data, neuropsychological questionnaires, and medical information collected over multiple time points and across three different treatment groups."
 
 
 ---
-
 
 
