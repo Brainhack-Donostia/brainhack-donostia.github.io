@@ -1,0 +1,18 @@
+---
+title: Variability in functional cortical organization
+subtitle: "Bianca Serio - PhD Student @  Max Planck School of Cognition, Max Planck Institute for Human Cognitive and Brain Sciences"
+layout: default
+modal-id: 4
+date: 2024-11-25
+img: 
+thumbnail: 
+alt: image-alt
+project-date: November 2025
+
+category: 
+description: "Bianca earned a BSc in Psychology and an MRes in Developmental Neuroscience and Psychopathology from University College London (UK). She conducted research for her Master’s thesis at Yale University (USA), taking a multidimensional approach to understand the emergence of sex differences in internalizing symptoms in adolescence. She is currently a final year PhD student at the Max Planck School of Cognition, based at the Max Planck Institute for Human Cognitive and Brain Sciences in Leipzig (Germany). Her research focuses on applying computational approaches to investigate principles of functional brain organization, more specifically studying how features of functional connectivity vary within and between individuals, taking evidence from sex differences, deep phenotyping, pubertal development, and psychopathology. She uses multimodal data in her work, derived from human neuroimaging, serum and salivary hormone sampling, clinical assessments, and self-reported questionnaires. Ultimately, Bianca aims for her work to highlight the importance of considering sex as a biological variable in clinical research to improve health outcomes, particularly in the field of women’s health, which has historically been largely neglected.."
+
+---
+
+
+
