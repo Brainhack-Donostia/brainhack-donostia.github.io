@@ -4,8 +4,8 @@ subtitle: "Nicolas Decat - PhD Student @ Paris Brain Institute "
 layout: default
 modal-id: 2
 date: 2024-11-27
-img: 
-thumbnail: 
+img: nicolas_decat.png
+thumbnail: nicolasyellow.png
 alt: image-alt
 project-date: November 2024
 
