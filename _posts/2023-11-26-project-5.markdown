@@ -1,6 +1,6 @@
 ---
 title: TBD
-subtitle: "Eva Méndez - Associate Professor \ @ Universidad Carlos III de Madrid "
+subtitle: "Eva Méndez - Associate Professor \ <br /> @ Universidad Carlos III de Madrid "
 layout: default
 modal-id: 5
 date: 2023-11-26
