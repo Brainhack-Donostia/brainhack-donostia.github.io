@@ -3,7 +3,7 @@ title: TBD
 subtitle: "Eva Méndez - Associate Professor @ Universidad Carlos III de Madrid "
 layout: default
 modal-id: 5
-date: 2024-11-25
+date: 2024-11-26
 img: 
 thumbnail: 
 alt: image-alt
