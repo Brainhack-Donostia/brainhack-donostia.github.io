@@ -1,18 +1,17 @@
----
-title: Standardizing Neuroimaging Data: Introduction to Brain Imaging Data Structure (BIDS)
-subtitle: "Ryland Miller"
+title: Variability in functional cortical organization
+subtitle: "David Carcedo - Lab Section Coordinator (MRI & behavioral) @  Basque Center on Cognition, Brain and Language"
 layout: default
 modal-id: 3
-date: 2024-11-25
-img:
+date: 2024-11-26
+img: 
 thumbnail: 
 alt: image-alt
-project-date: November 2024
+project-date: November 2025
 
-category:
-description:
-abstract:
+category: 
+description: ""
 
+abstract: ""
 
 ---
 
