@@ -1,6 +1,6 @@
 ---
 title: TBD
-subtitle: "Eva Méndez - Associate Professor @ Universidad Carlos III de Madrid "
+subtitle: "Eva Méndez - Associate Professor \ @ Universidad Carlos III de Madrid "
 layout: default
 modal-id: 5
 date: 2023-11-26
@@ -10,9 +10,9 @@ alt: image-alt
 project-date: November 2023
 
 category: 
-description: "Eva is a professor in the Department of Library and Information Science at Carlos III University of Madrid, where she has also been the Deputy Vice-Chancellor of Scientific Policy and Strategy and Digital Education. She is the director of the OpenScienceLab research group where various meta-research projects for Open Science are developed, including citizen science as a fundamental component of Open Science. Dr. Méndez was the president of the European Commission's Open Science Policy Platform (2018-2020) and is currently a member of the Board of Directors of CoARA (Coalition for Advancing Research Assessment)."
-abstract: TBD
+description: "TBD"
 
+bio: "Eva is a professor in the Department of Library and Information Science at Carlos III University of Madrid, where she has also been the Deputy Vice-Chancellor of Scientific Policy and Strategy and Digital Education. She is the director of the OpenScienceLab research group where various meta-research projects for Open Science are developed, including citizen science as a fundamental component of Open Science. Dr. Méndez was the president of the European Commission's Open Science Policy Platform (2018-2020) and is currently a member of the Board of Directors of CoARA (Coalition for Advancing Research Assessment)."
 
 
 ---
