@@ -4,8 +4,8 @@ subtitle: "Bianca Serio - PhD Student @  Max Planck School of Cognition, Max Pla
 layout: default
 modal-id: 4
 date: 2024-11-26
-img: 
-thumbnail: 
+img: bianca_serio.png
+thumbnail: biancayellow.png
 alt: image-alt
 project-date: November 2025
 
