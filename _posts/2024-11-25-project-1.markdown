@@ -14,5 +14,3 @@ abstract: "There is a strong will within the research community for open science
 
 
 ---
-
-
