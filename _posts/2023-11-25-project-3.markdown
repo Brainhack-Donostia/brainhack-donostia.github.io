@@ -4,7 +4,7 @@ subtitle: "David Carcedo - Lab Section Coordinator (MRI & behavioral) @  Basque 
 layout: default
 modal-id: 3
 date: 2023-11-26
-img: david_ryland.png
+img: davidrywhite.png
 thumbnail: davidrylandyellow.png
 alt: image-alt
 project-date: November 2023
