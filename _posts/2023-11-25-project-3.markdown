@@ -1,6 +1,6 @@
 ---
 title: Standardizing Neuroimaging Data - Introduction to Brain Imaging Data Structure (BIDS)
-subtitle: "David Carcedo - Lab Section Coordinator \ Ryland Miller - Research Assistant @ Basque Center on Cognition, Brain and Language"
+subtitle: "David Carcedo - Lab Section Coordinator \ Ryland Miller - Research Assistant \ @ BCBL"
 layout: default
 modal-id: 3
 date: 2023-11-26
