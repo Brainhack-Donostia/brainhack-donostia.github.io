@@ -3,7 +3,7 @@ title: Variability in functional cortical organization
 subtitle: "Bianca Serio - PhD Student @  Max Planck School of Cognition, Max Planck Institute for Human Cognitive and Brain Sciences"
 layout: default
 modal-id: 4
-date: 2024-11-25
+date: 2024-11-26
 img: 
 thumbnail: 
 alt: image-alt
