@@ -1,0 +1,20 @@
+---
+title: What crosses your mind when you sleep? Cognitive processes and conscious experience in the sleeping brain.
+subtitle: "Nicolas Decat - PhD Student @ Paris Brain Institute "
+layout: default
+modal-id: 2
+date: 2024-11-27
+img: 
+thumbnail: 
+alt: image-alt
+project-date: November 2024
+
+category:
+description: "Nicolas’ training focused on cognitive science, completing my Bachelor's and Master's degrees in Lille University (France), the University of Nebraska at Omaha (USA), and the University of Trento (Italy). He specialised in the field of sleep and consciousness through research experiences on the link between mind-wandering and creativity, on the neural correlates of lucid dreaming and on a clustering approach to better characterize sleep (CHUV Lausanne, Switzerland; Monash Biomedical Imaging, Australia; Wisconsin Institute for Sleep and Consciousness, USA). He is now a 2nd-year PhD student at the Paris Brain Institute, supervised by Delphine Oudiette et Thomas Andrillon. Nicolas is interested in what crosses our mind as we fall asleep. he uses high-density EEG to Investigate how the sleep onset period favors creative insight and characterize conscious experiences occurring during this transitory state using machine learning."
+abstract: "As we drift into sleep, our body becomes still, our breathing slows down, and we gradually lose awareness of our surroundings. Though the body appears to go into standby mode, the brain remains active, producing a variety of conscious experiences throughout the night. These experiences range from simple thoughts to intricate and immersive dreams. The nature and purpose of these nocturnal conscious experiences have been a subject of much research. Using high-density electroencephalography (EEG) and serial awakening paradigms, research has attempted to link mental content with specific signatures of brain activity to understand the mechanisms underlying the fluctuations of conscious experience during sleep. Furthermore, incorporating  memory, creativity and perception tasks into these paradigms shed light on the potential roles that dreams play in our waking cognition.  In addition, I will discuss the significance of effective scientific communication in research. Scientific concepts, like consciousness and many others, can be difficult to grasp. Clear communication ensures that findings are understood, replicated, and built upon. It also makes scientific concepts more accessible and engaging, fostering a deeper appreciation for science. Data visualization and storytelling-based talks are crucial tools in bridging the gap between complex research and public understanding, thereby enhancing the overall impact of scientific endeavors."
+
+
+---
+
+
+
