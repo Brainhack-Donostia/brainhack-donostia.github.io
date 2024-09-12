@@ -1,5 +1,5 @@
 ---
-title: Programming transparency: Introduction to GitHub
+title: Programming transparency - Introduction to GitHub
 subtitle: "Marco Flores-Coronado - PhD Student @ Basque Center on Cognition, Brain and Language"
 layout: default
 modal-id: 1
@@ -14,4 +14,5 @@ description: "Marco completed his bachelor studies in Hispanic Philology and Lit
 
 abstract: "There is a strong will within the research community for open science. Git repositories have become a tool for democratizing analysis pipelines, scientific software, and resource sharing. Moreover, Git allows researchers and developers to have transparency in their research methodology, with the potential for collaboration and community building besides frontiers. During this event, we will talk about the relevance of open-sourcing code while aiming to teach Git essential tools alongside the GitHub platform. Attendees will learn the basic Git workflow, Git commands, branching, undoing changes, and forking. All these tools will be useful for beginners and more experienced people during the hands-on projects part of BrainHack Donostia 2024."
 
+---
 ---
