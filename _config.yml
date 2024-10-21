@@ -81,6 +81,18 @@ people:
   social:
     - title: firefox
       url: https://www.bcbl.eu/en/marco-a-flores-coronado
+- name: Vincenzo Verbeni
+  pic: vincenzoV
+  position: Talks
+  social:
+    - title: firefox
+      url: https://www.bcbl.eu/en/vincenzo-verbeni
+- name: Ryland Miller
+  pic: rylandM
+  position: Project
+  social:
+    - title: firefox
+      url: https://www.bcbl.eu/en/ryland-l-miller
 
         # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
