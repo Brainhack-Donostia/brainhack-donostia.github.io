@@ -93,6 +93,13 @@ people:
   social:
     - title: firefox
       url: https://www.bcbl.eu/en/ryland-l-miller
+- name: Francisca Campos Matias
+  pic: franciscaC
+  position: Help Desk
+  social:
+    - title: firefox
+      url: https://www.bcbl.eu/en/francisca-campos-matias
+
 
         # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
