@@ -17,7 +17,7 @@ people:
       url: https://www.bcbl.eu/en/conocenos/equipo/nirmitee-mulay
 - name: Emanuele Ciardo
   pic: emanueleC
-  position: Website
+  position: Chair
   social:
     - title: firefox
       url: https://www.bcbl.eu/en/conocenos/equipo/emanuele-ciardo
@@ -35,13 +35,13 @@ people:
        url: https://www.bcbl.eu/en/joaquin-ordonez
 - name: Maria de Almeida Ribeiro 
   pic: mariaAR
-  position: Socials
+  position: Keep People Happy
   social:
     - title: firefox
       url: https://www.bcbl.eu/en/maria-de-almeida-ribeiro
 - name: Kirill Aksenov 
   pic: kirillA
-  position: Socials
+  position: Keep People Happy 
   social:
     - title: firefox
       url: https://www.bcbl.eu/en/conocenos/equipo/kirill-aksenov
@@ -51,12 +51,12 @@ people:
   social:
     - title: firefox
       url: https://www.bcbl.eu/en/conocenos/equipo/manuela-ruzzoli
-- name: Garikoitz Lerma-Usabiga
-  pic: garikoitzL
+- name: Cesar Caballero-Gaudes
+  pic: cesarC
   position: Talks 
   social:
     - title: firefox
-      url: https://www.bcbl.eu/en/conocenos/equipo/garikoitz-lerma-usabiaga
+      url: https://www.bcbl.eu/en/conocenos/equipo/cesar-caballero-gaudes
 - name: Alejandro Tabas
   pic: alejandroT
   position: Projects
@@ -95,10 +95,17 @@ people:
       url: https://www.bcbl.eu/en/ryland-l-miller
 - name: Francisca Campos Matias
   pic: franciscaC
-  position: Help Desk
+  position: Keep People Happy
   social:
     - title: firefox
       url: https://www.bcbl.eu/en/francisca-campos-matias
+- name: Catarina Domingos
+  pic: catarinaD
+  position: Keep People Happy
+  social:
+    - title: firefox
+      url: https://welcome.isr.tecnico.ulisboa.pt/author/catarinadomingos/
+
 
 
         # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
