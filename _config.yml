@@ -69,12 +69,6 @@ people:
   social:
     - title: firefox
       url: https://www.bcbl.eu/en/marco-a-flores-coronado
-- name: Vincenzo Verbeni
-  pic: vincenzoV
-  position: Talks
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/vincenzo-verbeni
 - name: Ryland Miller
   pic: rylandM
   position: Project
