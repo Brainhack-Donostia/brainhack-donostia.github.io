@@ -9,12 +9,12 @@ description: "Site for Brainhack Donostia 2024"
 
 # Team names, titles and social links
 people:
-- name: Nirmitee Mulay
-  pic: nirmiteeM
+- name: Clementine Levy-Fidel
+  pic: clementineL
   position: Chair 
   social:
     - title: firefox
-      url: https://www.bcbl.eu/en/conocenos/equipo/nirmitee-mulay
+      url: https://www.bcbl.eu/en/clementine-levy-fidel
 - name: Emanuele Ciardo
   pic: emanueleC
   position: Chair
