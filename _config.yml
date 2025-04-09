@@ -39,24 +39,6 @@ people:
   social:
      - title: firefox
        url: https://www.bcbl.eu/en/jose-antonio-gonzalo
-- name: Manuela Ruzzoli
-  pic: manuelaR
-  position: Talks
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/conocenos/equipo/manuela-ruzzoli
-- name: Cesar Caballero-Gaudes
-  pic: cesarC
-  position: Talks 
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/es/conocenos/equipo/cesar-caballero-gaudes 
-- name: Alejandro Tabas
-  pic: alejandroT
-  position: Projects
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/conocenos/equipo/alejandro-tabas
 - name: Melissa Donati 
   pic: melissaD
   position: Website/Design
@@ -105,6 +87,24 @@ people:
   social:
     - title: firefox
       url: https://www.bcbl.eu/en/conocenos/equipo/nirmitee-mulay
+- name: Manuela Ruzzoli
+  pic: manuelaR
+  position: Talks
+  social:
+    - title: firefox
+      url: https://www.bcbl.eu/en/conocenos/equipo/manuela-ruzzoli
+- name: Cesar Caballero-Gaudes
+  pic: cesarC
+  position: Talks 
+  social:
+    - title: firefox
+      url: https://www.bcbl.eu/es/conocenos/equipo/cesar-caballero-gaudes 
+- name: Alejandro Tabas
+  pic: alejandroT
+  position: Projects
+  social:
+    - title: firefox
+      url: https://www.bcbl.eu/en/conocenos/equipo/alejandro-tabas
 
 
 
