@@ -75,18 +75,24 @@ people:
   social:
     - title: firefox
       url: https://www.bcbl.eu/en/francisca-campos-matias
+- name: Francisca Campos Matias
+  pic: franciscaC
+  position: Program
+  social:
+    - title: firefox
+      url: https://www.bcbl.eu/en/francisca-campos-matias
+- name: Irtisha Chakraborty 
+  pic: irtishaC
+  position: Program
+  social:
+    - title: firefox
+      url: https://www.bcbl.eu/en/irtisha-chakraborty
 - name: Catarina Domingos
   pic: catarinaD
   position: Keep People Happy
   social:
     - title: firefox
       url: https://welcome.isr.tecnico.ulisboa.pt/author/catarinadomingos/
-- name: Irtisha Chakraborty 
-  pic: irtishaC
-  position: Keep People Happy
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/irtisha-chakraborty
 
 
 
