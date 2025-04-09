@@ -33,6 +33,12 @@ people:
   social:
      - title: firefox
        url: https://www.bcbl.eu/en/joaquin-ordonez
+- name: Jose Antonio Gonzalo
+  pic: joseA
+  position: Treasury
+  social:
+     - title: firefox
+       url: https://www.bcbl.eu/en/jose-antonio-gonzalo
 - name: Maria de Almeida Ribeiro 
   pic: mariaAR
   position: Keep People Happy
