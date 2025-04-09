@@ -27,12 +27,12 @@ body {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.75;
 }
 
 p.large {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 a,
@@ -367,7 +367,7 @@ section h3.section-subheading {
 
 #portfolio .portfolio-item {
     right: 0;
-    margin: 0 0 15px;
+    margin: 0;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -394,7 +394,7 @@ section h3.section-subheading {
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-    position: absolute;
+    position: relative;
     top: 50%;
     width: 100%;
     height: 20px;
@@ -439,7 +439,7 @@ section h3.section-subheading {
 
 @media(min-width:767px) {
     #portfolio .portfolio-item {
-        margin: 0 0 30px;
+        margin: 0 0 15px;
     }
 }
 
