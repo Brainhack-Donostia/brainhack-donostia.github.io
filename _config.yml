@@ -2,25 +2,25 @@ url: https://brainhack-donostia.github.io
 baseurl: 
 
 # Site settings
-title: BrainHack Donostia 2024
+title: BrainHack Donostia 2025
 email: info.bhg-donostia@bcbl.eu
 description: "Site for Brainhack Donostia 2024"
 
 
 # Team names, titles and social links
 people:
-- name: Nirmitee Mulay
-  pic: nirmiteeM
+- name: Clementine Levy-Fidel
+  pic: clementineL
   position: Chair 
   social:
     - title: firefox
-      url: https://www.bcbl.eu/en/conocenos/equipo/nirmitee-mulay
-- name: Emanuele Ciardo
-  pic: emanueleC
+      url: https://www.bcbl.eu/en/clementine-levy-fidel
+- name: Monika Utrosa Skerjanec
+  pic: monikaU
   position: Chair
   social:
     - title: firefox
-      url: https://www.bcbl.eu/en/conocenos/equipo/emanuele-ciardo
+      url: https://www.bcbl.eu/en/monika-utrosa-skerjanec
 - name: Noemi Bonfiglio
   pic: noemiB
   position: Treasury
@@ -33,18 +33,54 @@ people:
   social:
      - title: firefox
        url: https://www.bcbl.eu/en/joaquin-ordonez
-- name: Maria de Almeida Ribeiro 
-  pic: mariaAR
-  position: Keep People Happy
+- name: Jose Antonio Gonzalo
+  pic: joseA
+  position: Treasury
+  social:
+     - title: firefox
+       url: https://www.bcbl.eu/en/jose-antonio-gonzalo
+- name: Melissa Donati 
+  pic: melissaD
+  position: Website/Design
   social:
     - title: firefox
-      url: https://www.bcbl.eu/en/maria-de-almeida-ribeiro
-- name: Kirill Aksenov 
-  pic: kirillA
-  position: Keep People Happy 
+      url: https://www.bcbl.eu/en/melissa-donati
+- name: Marco Flores-Coronado
+  pic: marcoF
+  position: Website
   social:
     - title: firefox
-      url: https://www.bcbl.eu/en/conocenos/equipo/kirill-aksenov
+      url: https://www.bcbl.eu/en/marco-a-flores-coronado
+- name: Francisca Campos Matias
+  pic: franciscaC
+  position: Program
+  social:
+    - title: firefox
+      url: https://www.bcbl.eu/en/francisca-campos-matias
+- name: Irtisha Chakraborty 
+  pic: irtishaC
+  position: Program
+  social:
+    - title: firefox
+      url: https://www.bcbl.eu/en/irtisha-chakraborty
+- name: Cristina Comella 
+  pic: cristinaC
+  position: Program/Design
+  social:
+    - title: firefox
+      url: https://www.bcbl.eu/en/conocenos/equipo/cristina-comella
+- name: Chiara Bernini
+  pic: chiaraB
+  position: Design
+  social:
+    - title: firefox
+      url: https://www.bcbl.eu/en/chiara-bernini
+- name: Nirmitee Mulay
+  pic: nirmiteeM
+  position: Design
+  social:
+    - title: firefox
+      url: https://www.bcbl.eu/en/conocenos/equipo/nirmitee-mulay
 - name: Manuela Ruzzoli
   pic: manuelaR
   position: Talks
@@ -63,55 +99,6 @@ people:
   social:
     - title: firefox
       url: https://www.bcbl.eu/en/conocenos/equipo/alejandro-tabas
-- name: Ihintza Malharin
-  pic: ihintzaM 
-  position: Website
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/ihintza-malharin
-- name: Melissa Donati 
-  pic: melissaD
-  position: Website
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/melissa-donati
-- name: Marco Flores-Coronado
-  pic: marcoF
-  position: Website
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/marco-a-flores-coronado
-- name: Vincenzo Verbeni
-  pic: vincenzoV
-  position: Talks
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/vincenzo-verbeni
-- name: Ryland Miller
-  pic: rylandM
-  position: Project
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/ryland-l-miller
-- name: Francisca Campos Matias
-  pic: franciscaC
-  position: Keep People Happy
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/francisca-campos-matias
-- name: Catarina Domingos
-  pic: catarinaD
-  position: Keep People Happy
-  social:
-    - title: firefox
-      url: https://welcome.isr.tecnico.ulisboa.pt/author/catarinadomingos/
-- name: Irtisha Chakraborty 
-  pic: irtishaC
-  position: Keep People Happy
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/irtisha-chakraborty
-
 
 
 
