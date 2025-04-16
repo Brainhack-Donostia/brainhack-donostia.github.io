@@ -87,6 +87,12 @@ people:
   social:
     - title: firefox
       url: https://www.bcbl.eu/en/conocenos/equipo/nirmitee-mulay
+- name: Antje Walter
+  pic: antjeW
+  position: Public relations
+  social:
+    - title: firefox
+      url: https://www.bcbl.eu/en/antje-walter
         # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
