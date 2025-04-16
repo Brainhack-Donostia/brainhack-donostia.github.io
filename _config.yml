@@ -81,12 +81,6 @@ people:
   social:
     - title: firefox
       url: https://www.bcbl.eu/en/conocenos/equipo/nirmitee-mulay
-- name: Manuela Ruzzoli
-  pic: manuelaR
-  position: Talks
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/conocenos/equipo/manuela-ruzzoli
         # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
