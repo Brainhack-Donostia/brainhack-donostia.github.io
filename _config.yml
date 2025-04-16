@@ -93,15 +93,6 @@ people:
   social:
     - title: firefox
       url: https://www.bcbl.eu/es/conocenos/equipo/cesar-caballero-gaudes 
-- name: Alejandro Tabas
-  pic: alejandroT
-  position: Projects
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/conocenos/equipo/alejandro-tabas
-
-
-
 
         # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
