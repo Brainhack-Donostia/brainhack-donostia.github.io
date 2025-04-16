@@ -87,13 +87,6 @@ people:
   social:
     - title: firefox
       url: https://www.bcbl.eu/en/conocenos/equipo/manuela-ruzzoli
-- name: Cesar Caballero-Gaudes
-  pic: cesarC
-  position: Talks 
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/es/conocenos/equipo/cesar-caballero-gaudes 
-
         # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
