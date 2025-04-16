@@ -4,7 +4,7 @@ baseurl:
 # Site settings
 title: BrainHack Donostia 2025
 email: info.bhg-donostia@bcbl.eu
-description: "Site for Brainhack Donostia 2024"
+description: "Site for Brainhack Donostia 2025"
 
 
 # Team names, titles and social links
@@ -51,6 +51,12 @@ people:
   social:
     - title: firefox
       url: https://www.bcbl.eu/en/marco-a-flores-coronado
+- name: Daniel Nieto Carrero
+  pic: danielN
+  position: IT
+  social:
+    - title: firefox
+      url: https://www.bcbl.eu/en/node/7816
 - name: Francisca Campos Matias
   pic: franciscaC
   position: Program
@@ -71,38 +77,22 @@ people:
       url: https://www.bcbl.eu/en/conocenos/equipo/cristina-comella
 - name: Chiara Bernini
   pic: chiaraB
-  position: Design
+  position: Design/Public relations
   social:
     - title: firefox
       url: https://www.bcbl.eu/en/chiara-bernini
 - name: Nirmitee Mulay
   pic: nirmiteeM
-  position: Design
+  position: Design/Public relations
   social:
     - title: firefox
       url: https://www.bcbl.eu/en/conocenos/equipo/nirmitee-mulay
-- name: Manuela Ruzzoli
-  pic: manuelaR
-  position: Talks
+- name: Antje Walter
+  pic: antjeW
+  position: Public relations
   social:
     - title: firefox
-      url: https://www.bcbl.eu/en/conocenos/equipo/manuela-ruzzoli
-- name: Cesar Caballero-Gaudes
-  pic: cesarC
-  position: Talks 
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/es/conocenos/equipo/cesar-caballero-gaudes 
-- name: Alejandro Tabas
-  pic: alejandroT
-  position: Projects
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/conocenos/equipo/alejandro-tabas
-
-
-
-
+      url: https://www.bcbl.eu/en/antje-walter
         # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
