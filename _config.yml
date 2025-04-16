@@ -51,6 +51,12 @@ people:
   social:
     - title: firefox
       url: https://www.bcbl.eu/en/marco-a-flores-coronado
+- name: Daniel Nieto Carrero
+  pic: danielN
+  position: IT
+  social:
+    - title: firefox
+      url: https://www.bcbl.eu/en/node/7816
 - name: Francisca Campos Matias
   pic: franciscaC
   position: Program
