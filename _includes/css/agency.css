@@ -12,6 +12,8 @@ body {
 
 .text-muted {
     color: #{{ site.data.template.color.muted }};
+    text-align: justify;
+    text-align:last: center;
 }
 .text-yellow {
     color:#ffe95e ;
@@ -507,7 +509,8 @@ section h3.section-subheading {
     margin-left: 0;
     border: 7px solid #f1f1f1;
     border-radius: 100%;
-    text-align: center;
+    text-align: justify;
+    text-align-last:center;
     color: #fff;
     background-color: #000;
 }
