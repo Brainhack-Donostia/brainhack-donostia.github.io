@@ -13,23 +13,33 @@ The resulting jekyll theme uses Ruby >=2.5, GCC and Make.
 
 - Copy the brainhack repository
 
-'git clone https://github.com/Brainhack-Donostia/brainhack-donostia.github.io.git'
+'''
+git clone https://github.com/Brainhack-Donostia/brainhack-donostia.github.io.git
+'''
 
 - Move to brainhack repository
 
-'cd brainhack-donostia.github.io.git'
+'''
+cd brainhack-donostia.github.io.git
+''''
 
 - Install required gems 
 
-'bundle install'
+'''
+bundle install
+'''
 
 - To check local changes or to display on a local host 
 
-'bundle exec jekyll serve --trace'
+'''
+bundle exec jekyll serve --trace
+'''
 
 or
 
-'jekyll serve'
+'''
+jekyll serve
+'''
 
 # Git branches
 
@@ -39,41 +49,61 @@ Commit and push changes on BHD2025 or a personal sub-branch from there. When you
 
 - Changing to BHD2025 branch  
 
-'git checkout BHD2025'
+'''
+git checkout BHD2025
+'''
 
 - Creating your sub-branch from BHD2025  
 
-'git checkout -b YourAmazingSubbranch'
+'''
+git checkout -b YourAmazingSubbranch
+'''
 
 - Checking the status of the current branch  
 
-'git status'
+'''
+git status
+'''
 
 - Adding untracked changes
   
-'git add filename1'
+'''
+git add filename1
+'''
 
 or to add all (not recommended)  
 
-'git add .'
+'''
+git add .
+'''
 
 - Commit changes 
  
-'git commit -m "Your message explaining your commited work"'
+'''
+git commit -m "Your message explaining your commited work"
+'''
 
 - Push changes from locall to repo 
  
-'git push -u origin BHD2025'
+'''
+git push -u origin BHD2025
+'''
 
 - Merging with master (only if you know what you are doing)
   
-'git checkout master'   
+'''
+git checkout master
+'''   
 
-'git merge BHD2025'
+'''
+git merge BHD2025
+'''
 
 - You could also push your commit to a specific branch intead of merging and without checkout master. Then you merge from the website GUI
 
-'git push -u origin BHD2025'
+'''
+git push -u origin BHD2025
+'''
 
 ## How to use
 
@@ -116,7 +146,8 @@ Portfolio subfolder contains the pictures to be displayed for the calendar and t
 ### Team
 
 Team members and info are in '_config.yml'You can add aditional information as twitter, facebook, stack-overflow and linkedin:
-		'- name: Grogru
+'''
+		- name: Grogru
 		  pic: babyyoda.png
 		  position: Cuteness leader
 		  social:
@@ -125,7 +156,8 @@ Team members and info are in '_config.yml'You can add aditional information as t
 		    - title: facebook
 		      url: #
 		    - title: stack-overflow
-		      url: #'
+		      url: #
+'''
 
 =========
 For more details, read [documentation](http://jekyllrb.com/)
