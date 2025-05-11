@@ -13,8 +13,21 @@ The resulting jekyll theme uses Ruby >=2.5, GCC and Make.
 
 ### Copy the brainhack repository
 
+*Make sure you have your git credentials in order!* If you are working on a fresh git install run:
 
-git clone https://github.com/Brainhack-Donostia/brainhack-donostia.github.io.git
+
+    git config --global user.name "yourGithubName"
+    git config --global user.email "yourgithubemail@domain.com"
+
+I definetly suggest you working with ssh keys so that you dont need to prompt any password everytime you push. For that check [ssh-key linux] (https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux) or [ss-key mac](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=mac). 
+
+To clone the repo with ssh key run
+
+    git clone git@github.com:Brainhack-Donostia/brainhack-donostia.github.io.git
+
+To clone the repo with HTTPS (asking for password for pushing)
+
+    git clone https://github.com/Brainhack-Donostia/brainhack-donostia.github.io.git
 
 
 ### Move to brainhack repository
