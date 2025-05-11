@@ -33,15 +33,15 @@ or
 
 # Git branches
 
-Commit and push changes on BHD2023 or a personal sub-branch from there. When you are sure about your changes, push them to BHD2023 and open a pull request.
+Commit and push changes on BHD2025 or a personal sub-branch from there. When you are sure about your changes, push them to BHD2025 and open a pull request.
 
 **NOTE: remember to run pull before working locally**
 
-- Changing to BHD2023 branch  
+- Changing to BHD2025 branch  
 
-'git checkout BHD2023'
+'git checkout BHD2025'
 
-- Creating your sub-branch from BHD2023  
+- Creating your sub-branch from BHD2025  
 
 'git checkout -b YourAmazingSubbranch'
 
@@ -63,13 +63,13 @@ or to add all (not recommended)
 
 - Push changes from locall to repo 
  
-'git push -u origin BHD2023'
+'git push -u origin BHD2025'
 
 - Merging with master (only if you know what you are doing)
   
 'git checkout master'   
 
-'git merge BHD2023'
+'git merge BHD2025'
 
 - You could also push your commit to a specific branch intead of merging and without checkout master. Then you merge from the website GUI
 
@@ -93,7 +93,7 @@ Within such folder you will find several html named after the section they stand
 Portfolio projects are in '/_posts'
 
 You need to create a markdown for each post. The files must be named something like this:
-yyyy-mm-dd-project-n.markdown , i.e., 2023-01-01-project-1.markdown
+yyyy-mm-dd-project-n.markdown , i.e., 2025-01-01-project-1.markdown
 
 Images are in /img/portfolio'
 
@@ -101,7 +101,7 @@ Images are in /img/portfolio'
 
 Images are in 'your/system/path/brainhack-donostia.github.io/img'
 
-Team subfolder contains the pictures of BHD 2023 team. Images are 620px*820px
+Team subfolder contains the pictures of BHD 2025 team. Images are 620px*820px
 
 Portfolio subfolder contains the pictures to be displayed for the calendar and the talks section:  
 
