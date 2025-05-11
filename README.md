@@ -11,25 +11,25 @@ The resulting jekyll theme uses Ruby >=2.5, GCC and Make.
 
 # How to install
 
-- Copy the brainhack repository
+### Copy the brainhack repository
 
 
 git clone https://github.com/Brainhack-Donostia/brainhack-donostia.github.io.git
 
 
-- Move to brainhack repository
+### Move to brainhack repository
 
 
     cd brainhack-donostia.github.io.git
 
 
-- Install required gems 
+### Install required gems 
 
 
     bundle install
 
 
-- To check local changes or to display on a local host 
+### To check local changes or to display on a local host 
 
 
     bundle exec jekyll serve --trace
@@ -47,25 +47,25 @@ Commit and push changes on BHD2025 or a personal sub-branch from there. When you
 
 **NOTE: remember to run pull before working locally**
 
-- Changing to BHD2025 branch
+### Changing to BHD2025 branch
 
 
     git checkout BHD2025
 
 
-- Creating your sub-branch from BHD2025
+### Creating your sub-branch from BHD2025
 
 
     git checkout -b YourAmazingSubbranch
 
 
-- Checking the status of the current branch
+### Checking the status of the current branch
 
 
     git status
 
 
-- Adding untracked changes
+### Adding untracked changes
 
 
     git add filename1
@@ -77,19 +77,19 @@ or to add all (not recommended)
     git add .
 
 
-- Commit changes
+### Commit changes
 
 
     git commit -m "Your message explaining your commited work"
 
 
-- Push changes from locall to repo
+### Push changes from locall to repo
 
 
     git push -u origin BHD2025
 
 
-- Merging with master (only if you know what you are doing)
+### Merging with master (only if you know what you are doing)
 
 
     git checkout master
@@ -98,7 +98,7 @@ or to add all (not recommended)
     git merge BHD2025
 
 
-- You could also push your commit to a specific branch intead of merging and without checkout master. Then you merge from the website GUI
+### You could also push your commit to a specific branch intead of merging and without checkout master. Then you merge from the website GUI
 
 
     git push -u origin BHD2025
