@@ -47,26 +47,26 @@ Commit and push changes on BHD2025 or a personal sub-branch from there. When you
 
 **NOTE: remember to run pull before working locally**
 
-- Changing to BHD2025 branch  
+- Changing to BHD2025 branch
 
 
     git checkout BHD2025
 
 
-- Creating your sub-branch from BHD2025  
+- Creating your sub-branch from BHD2025
 
 
     git checkout -b YourAmazingSubbranch
 
 
-- Checking the status of the current branch  
+- Checking the status of the current branch
 
 
     git status
 
 
 - Adding untracked changes
-  
+
 
     git add filename1
 
@@ -77,23 +77,22 @@ or to add all (not recommended)
     git add .
 
 
-- Commit changes 
- 
+- Commit changes
+
 
     git commit -m "Your message explaining your commited work"
 
 
-- Push changes from locall to repo 
- 
+- Push changes from locall to repo
+
 
     git push -u origin BHD2025
 
 
 - Merging with master (only if you know what you are doing)
-  
+
 
     git checkout master
-   
 
 
     git merge BHD2025
