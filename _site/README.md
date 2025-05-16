@@ -7,59 +7,115 @@ The resulting jekyll theme uses Ruby >=2.5, GCC and Make.
 
  For more information on specific OS setting see: https://jekyllrb.com/docs/installation/
 
+*IMPORTANT NOTE!* MacOS have a preinstalled ruby version that is not gonna work. Follow the official jekyll documentation to install other one outside main system. Finally, if you can't exec the server try runnin bundle update so that it uses the gems you already have *DO NOT PUSH GEM CHANGES TO MASTER!* 
 
 # How to install
 
-- copy the brainhack repository
+### Copy the brainhack repository
 
-$ git clone https://github.com/Brainhack-Donostia/brainhack-donostia.github.io.git
+*Make sure you have your git credentials in order!* If you are working on a fresh git install run:
 
--move to brainhack repository
 
-$ cd brainhack-donostia.github.io.git
+    git config --global user.name "yourGithubName"
+    git config --global user.email "yourgithubemail@domain.com"
 
-$ bundle install
+I definetly suggest you working with ssh keys so that you dont need to prompt any password everytime you push. For that check [ssh-key linux] (https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux) or [ss-key mac](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=mac). 
 
--To check local changes or to display on a local host 
+To clone the repo with ssh key run
 
-$ bundle exec jekyll serve --trace
+    git clone git@github.com:Brainhack-Donostia/brainhack-donostia.github.io.git
+
+To clone the repo with HTTPS (asking for password for pushing)
+
+    git clone https://github.com/Brainhack-Donostia/brainhack-donostia.github.io.git
+
+
+### Move to brainhack repository
+
+
+    cd brainhack-donostia.github.io.git
+
+
+### Install required gems 
+
+
+    bundle install
+
+
+### To check local changes or to display on a local host 
+
+
+    bundle exec jekyll serve --trace
+
 
 or
 
-$ jekyll serve 
 
-#Git branches
+    jekyll serve
 
-Commit and push changes on BHD2023 or a personal sub-branch from there. When you are sure about your changes, push them to BHD2023 and open a pull request.
+
+# Git branches
+
+Commit and push changes on BHD2025 or a personal sub-branch from there. When you are sure about your changes, push them to BHD2025 and open a pull request.
 
 **NOTE: remember to run pull before working locally**
 
--Changing to BHD2023 branch  
-$ git checkout BHD2023
+### Changing to BHD2025 branch
 
-- Creating your subranch from BHD2023  
-$ git checkout -b YourAmazingSubbranch
 
-- Checking the status of the current branch  
-$ git status
+    git checkout BHD2025
 
-- Adding untracked changes  
-$ git add filename1 filename2   
-or to add all  
-$ git add .
 
-- Commit changes  
-$ git commit -m "Your message explaining your commited work"
+### Creating your sub-branch from BHD2025
 
-- Push changes from locall to repo  
-$ git push -u origin BHD2023
 
-- Merging with master  
-$ git checkout master   
-$ git merge BHD2023
+    git checkout -b YourAmazingSubbranch
 
-- You could also push your commit to a specific branch intead of merging and without checkout master  
-$ git push -u origin master
+
+### Checking the status of the current branch
+
+
+    git status
+
+
+### Adding untracked changes
+
+
+    git add filename1
+
+
+or to add all (not recommended)  
+
+
+    git add .
+
+
+### Commit changes
+
+
+    git commit -m "Your message explaining your commited work"
+
+
+### Push changes from locall to repo
+
+
+    git push -u origin BHD2025
+
+
+### Merging with master (only if you know what you are doing)
+
+
+    git checkout master
+
+
+    git merge BHD2025
+
+
+### You could also push your commit to a specific branch intead of merging and without checkout master. Then you merge from the website GUI
+
+
+    git push -u origin BHD2025
+
 
 ## How to use
 
@@ -74,34 +130,35 @@ Within such folder you will find several html named after the section they stand
 		Your amazing second paragraph. </h3>'
 
  
-###Portfolio 
+### Portfolio 
 
 Portfolio projects are in '/_posts'
 
 You need to create a markdown for each post. The files must be named something like this:
-yyyy-mm-dd-project-n.markdown , i.e., 2023-01-01-project-1.markdown
+yyyy-mm-dd-project-n.markdown , i.e., 2025-01-01-project-1.markdown
 
 Images are in /img/portfolio'
 
-###Images
+### Images
 
 Images are in 'your/system/path/brainhack-donostia.github.io/img'
 
-Team subfolder contains the pictures of BHD 2023 team. Images are 620px*820px
+Team subfolder contains the pictures of BHD 2025 team. Images are 620px*820px
 
 Portfolio subfolder contains the pictures to be displayed for the calendar and the talks section:  
 
--thumbnails: '400px*289px'
--Displayed image when clicked: 600px*450px
--About subfolder contains the images to be displayed on BHD timeline. Images are 200px*200px
--Logos subfolder contains the images for the header, projects,register, and the sponsors section :
--header background: 1900px*1250px
--contact and register: 1469px*725px
--sponsors: 295px*86px
+- thumbnails: '400px*289px'
+- Displayed image when clicked: 600px*450px
+- About subfolder contains the images to be displayed on BHD timeline. Images are 200px*200px
+- Logos subfolder contains the images for the header, projects,register, and the sponsors section :
+- header background: 1900px*1250px
+- contact and register: 1469px*725px
+- sponsors: 295px*86px
 
-###Team
+### Team
 
 Team members and info are in '_config.yml'You can add aditional information as twitter, facebook, stack-overflow and linkedin:
+
 		- name: Grogru
 		  pic: babyyoda.png
 		  position: Cuteness leader
@@ -113,11 +170,6 @@ Team members and info are in '_config.yml'You can add aditional information as t
 		    - title: stack-overflow
 		      url: #
 
-# To do
-- Add posts for each one of the speakers and one for the calendar
-- Try to add a link to a google calendar file or similar
-- Change images from the timeline
-- Change colors for the lettering (probably on /_includes/css/agency.css )
 
 =========
 For more details, read [documentation](http://jekyllrb.com/)

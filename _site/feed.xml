@@ -1,24 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Brain Hack Donosti 2023</title>
-    <description>Coming soon!</description>
-    <link>http://localhost:4000/agency-jekyll-theme//</link>
-    <atom:link href="http://localhost:4000/agency-jekyll-theme//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 18 Jul 2023 16:09:20 +0200</pubDate>
-    <lastBuildDate>Tue, 18 Jul 2023 16:09:20 +0200</lastBuildDate>
-    <generator>Jekyll v4.3.2</generator>
+    <title>BrainHack Donostia 2025</title>
+    <description>Site for Brainhack Donostia 2025</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 16 May 2025 10:37:16 +0200</pubDate>
+    <lastBuildDate>Fri, 16 May 2025 10:37:16 +0200</lastBuildDate>
+    <generator>Jekyll v4.4.1</generator>
     
       <item>
-        <title>BHD 2023</title>
+        <title>What crosses your mind when you sleep? Cognitive processes and conscious experience in the sleeping brain.</title>
         <description>
 </description>
-        <pubDate>Thu, 17 Jul 2014 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/agency-jekyll-theme//web%20development/2014/07/17/project-2/</link>
-        <guid isPermaLink="true">http://localhost:4000/agency-jekyll-theme//web%20development/2014/07/17/project-2/</guid>
+        <pubDate>Mon, 27 Nov 2023 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2023/11/27/project-2/</link>
+        <guid isPermaLink="true">http://localhost:4000/2023/11/27/project-2/</guid>
         
         
-        <category>Web Development</category>
+      </item>
+    
+      <item>
+        <title>TBD</title>
+        <description>
+</description>
+        <pubDate>Sun, 26 Nov 2023 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2023/11/26/project-5/</link>
+        <guid isPermaLink="true">http://localhost:4000/2023/11/26/project-5/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Variability in functional cortical organization</title>
+        <description>
+</description>
+        <pubDate>Sun, 26 Nov 2023 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2023/11/26/project-4/</link>
+        <guid isPermaLink="true">http://localhost:4000/2023/11/26/project-4/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Standardizing Neuroimaging Data - Introduction to Brain Imaging Data Structure (BIDS)</title>
+        <description>
+</description>
+        <pubDate>Sun, 26 Nov 2023 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2023/11/26/project-3/</link>
+        <guid isPermaLink="true">http://localhost:4000/2023/11/26/project-3/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Programming transparency - Introduction to GitHub</title>
+        <description>&lt;hr /&gt;
+</description>
+        <pubDate>Sat, 25 Nov 2023 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2023/11/25/project-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/2023/11/25/project-1/</guid>
+        
         
       </item>
     
