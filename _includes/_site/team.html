@@ -9,22 +9,21 @@
             </div>
             <div class="row">
                 {% for member in site.people %}
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
-                        <h4>{{ member.name }}</h4>
-                        <p class="text-yellow text-center">{{ member.position }}</p>
-                        <ul class="list-inline social-buttons">
-                            {% for network in member.social %}
-                            <li>
-                                <a href="{{ network.url }}">
-                                    <i class="fa fa-{{ network.title }}"></i>
-                                </a>
-                            </li>
-                            {% endfor %}
-
-                        </ul>
-                    </div>
+                <div class="col-sm-4 text-center">
+					<div class="team-member">
+					    <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
+					    <h4>{{ member.name }}</h4>
+					    <h3>{{ member.position }}</h3>
+					    <ul class="list-inline social-buttons">
+					        {% for network in member.social %}
+					        <li>
+					            <a href="{{ network.url }}">
+					                <i class="fa fa-{{ network.title }}"></i>
+					            </a>
+					        </li>
+					        {% endfor %}
+					    </ul>
+					</div>
                 </div>
                 {% endfor %}
             </div>
