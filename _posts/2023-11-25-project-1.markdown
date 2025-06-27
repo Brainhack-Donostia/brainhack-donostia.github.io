@@ -1,19 +1,21 @@
 ---
-title: Programming transparency - Introduction to GitHub
-subtitle: "Marco Flores-Coronado - PhD Student <br /> @ BCBL"
+title: "TREASURE: An institutional pilot project to reward early stage researchers for reproducible, reusable, and open research practices and outputs at the University of Coimbra"
+subtitle: "Inês A. T. Almeida, Junior researcher <br /> @ University of Coimbra "
 layout: default
-modal-id: 1
-date: 2023-11-25
-img: marco_flores.jpg
-thumbnail: marcoyellow.png
+modal-id: 4
+date: 2024-11-19
+img: ines_almeida.png
+thumbnail: ines_almeida_noback.png
 alt: image-alt
-project-date: November 2023
+project-date: November 2025
 
-category:
-description: "There is a strong will within the research community for open science. Git repositories have become a tool for democratizing analysis pipelines, scientific software, and resource sharing. Moreover, Git allows researchers and developers to have transparency in their research methodology, with the potential for collaboration and community building besides frontiers. During this event, we will talk about the relevance of open-sourcing code while aiming to teach Git essential tools alongside the GitHub platform. Attendees will learn the basic Git workflow, Git commands, branching, undoing changes, and forking. All these tools will be useful for beginners and more experienced people during the hands-on projects part of BrainHack Donostia 2024."
+category: 
+description: "Masters’ and PhD candidates earn their degree by completing a thesis, which typically contains one or more research articles. Yet, along the research path, researchers may create other outputs (e.g., protocols, methods, data, code), use reproducible and transparent practices (e.g., evidence synthesis, reporting guidelines, use of unique identifiers) and engage academics and non-academics to develop, conduct and disseminate (e.g., public engagement) the research. Implementing and sharing these practices and outputs accelerates progress by facilitating reuse, reproducibility and replication. To change research practice and culture, however, we must recognize and reward researchers for sharing more than research articles. 
+In this implementation-focused opt-in pilot program, we aim to offer University of Coimbra Masters’ and PhD candidates a formal reward for implementing reproducible, reusable and open research practices in their thesis research. We are co-creating the reward criteria with a Local Advisory Board (graduate students, course coordinators, and supervisors), with advice from an expert External Board. 
+The criteria include: (a) list of practices (e.g., reporting of null results, author contributions statements) and outputs (e.g., reusable step-by-step protocols, materials) from which the students can select, (b) assessment criteria for each practice/output (focus on quality), and (c) number of practices/outputs that must be implemented. The criteria are designed to be adaptable to different disciplines and projects. 
+The program will open in mid-2025. We will monitor participation, selected practices and outputs, and disciplines, for program improvement. In this talk we will present the program and share lessons learned during its development and implementation."
 
-bio: "Marco completed his bachelor studies in Hispanic Philology and Literature at the National Autonomous University of Mexico. There, he carried out his own research project funded by the Psychology School regarding reading abilities in children with Autism Spectrum Disorder and eyetracking. Afterwards, he completed an MSc in Computational Modeling and Scientific Calculus with a specialization in robotics at the Autonomous University of Morelos State (UAEM), Mexico. During this period, he developed a computer model that simulated Cortical connections between different brain areas, and that accounts for audiovisual integration during speech perception. Soon after, he won a Caixa INPhINIT doctoral grant to continue his studies with a PhD in Cognitive Neurosciences at the Basque Center on Cognition Brain and Language (BCBL) and the University of the Basque Country (UPV-EHU) within the Signal Processing in Neuroimaging research group, and the Speech and Bilingualism group. Currently, he is developing analysis methods to improve MRI signal quality during overt speech production experiments. This will hinder investigation in speech production with MRI. His research interest is language processing but he follows a multidisciplinary perspective including tools from robotics, signal engineering, cognitive sciences, and computer science."
-
+bio: ""
 
 ---
 ---
