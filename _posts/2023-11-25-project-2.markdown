@@ -1,0 +1,40 @@
+---
+title: "When defaults return gibberish. Exploring different approaches to fitting models
+with categorical predictors (in R)"
+subtitle: "Inigo Urrestarazu - PreDoctoral Researcher \ <br /> @ Universidad del Pais Vasco "
+layout: default
+modal-id: 5
+date: 2024-11-19
+img: inigo_aziti.png
+thumbnail: inigo_aziti_noback.png
+alt: image-alt
+project-date: November 2025
+
+category: 
+description: "Statistical models frequently include categorical variables as predictors. By default, R
+handles these predictors using indicator coding: one level is treated as the reference
+(intercept), and the remaining levels are modeled as deviations from it. This convention
+often leads to outputs that are di@icult to interpret, particularly when the predictor has
+more than two levels. In such cases, model summaries only provide comparisons against
+the reference level, requiring additional pairwise comparisons to assess other contrasts.
+The complexity increases further with interaction terms, which also reflect deviations
+relative to the reference level. An alternative is sum coding, where levels are assigned
+equidistant numeric values that sum to zero. Although sum coding can be useful, it
+quickly becomes unintuitive when applied to variables with multiple levels. A third, more
+interpretable strategy is to index categorical predictors: the model estimates a
+conditional mean for each level, and contrasts of interest are computed post hoc. This
+approach simplifies interpretation. Besides, indexing categorical predictors aligns well
+with Bayesian regression, where priors must be placed on all model parameters, and
+assigning priors to conditional means is often conceptually and practically easier than
+assigning them to di@erences from a reference. This talk explores these three
+approaches—indicator coding, sum coding, and indexing—and discusses their
+implications for model interpretation and communication of results, both in Frequentist
+and Bayesian frameworks."
+
+bio: ""
+
+
+---
+
+
+
