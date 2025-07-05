@@ -33,7 +33,7 @@ people:
   social:
      - title: firefox
        url: https://www.bcbl.eu/en/joaquin-ordonez
-- name: Jose Antonio Gonzalo
+- name: Jose Antonio Gonzalo Gimeno
   pic: joseA
   position: Treasury
   social:
@@ -69,7 +69,7 @@ people:
   social:
     - title: firefox
       url: https://www.bcbl.eu/en/irtisha-chakraborty
-- name: Cristina Comella 
+- name: Cristina Comella Luengo
   pic: cristinaC
   position: Program/Design
   social:
@@ -94,6 +94,14 @@ people:
     - title: firefox
       url: https://www.bcbl.eu/en/antje-walter
         # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+
+- name: Seyma Takir 
+  pic: seymaT
+  position: Website
+  social:
+    - title: firefox
+      url: https://www.bcbl.eu/en/seyma-takir
+
 social:
   - title: twitter
     url: http://twitter.com/BHDonostia
