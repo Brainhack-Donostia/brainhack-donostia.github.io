@@ -1,5 +1,5 @@
 ---
-title: "TREASURE: An institutional pilot project to reward early stage researchers for reproducible, reusable, and open research practices and outputs at the University of Coimbra"
+title: "TREASURE: An institutional project to reward early stage researchers"
 subtitle: "Inês A. T. Almeida, Junior researcher <br /> @ University of Coimbra "
 layout: default
 modal-id: 4
