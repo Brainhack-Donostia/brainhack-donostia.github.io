@@ -4,6 +4,8 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+------------------------------------------------
+
 body {
     overflow-x: hidden;
     font-family: Helvetica,Helvetica,Helvetica,Helvetica,;
@@ -688,6 +690,14 @@ section#program img{
 }
 section#program .section-heading {
     color: #fff;
+}
+section#program  th{
+  border-style: dotted;
+  border-color:#ffe95e;
+}
+section#program  td{
+  border-style: dotted;
+  border-color:#ffe95e;
 }
 /*-------------------------------------social-----------------------------------------*/
 section#social {
