@@ -2,7 +2,7 @@
 title: "Emergence of Language in the Human Brain"
 subtitle: "Jean Remi-King - Researcher \ <br /> @ Ecole Normale Superieure, MetaAI "
 layout: default
-modal-id: 2
+modal-id: 4
 date: 2024-11-19
 img: nick_souter.jpg
 thumbnail: nick_souter_noback.png
@@ -10,17 +10,9 @@ alt: image-alt
 project-date: November 2025
 
 category:
-description: "The storage and processing of large datasets, including neuroimaging data, uses energy, and therefore has a carbon footprint. This session will focus on how computing leads to carbon emissions, and what can be done to reduce your personal research computing footprint. Specifically, context will be provided on: <br />
-
-- The scale of impact of the ICT sector on the climate <br />
-- The impact of accumulating unused ‘dark data’ <br />
-- The importance of carbon intensity <br />
-- How to cut back on unnecessary computing <br />
-- Current methods for tracking computing energy usage and carbon emissions <br />
-
-The content discussed here will include specific examples from neuroimaging research, including how one can reduce the carbon footprint of preprocessing in fMRIPrep, and the effect of fMRI software choice on energy usage. The messages and approaches discussed here will also apply to any discipline requiring the processing of large amounts of data, beyond neuroimaging alone."
-
-
+description: "Deep learning has made major progress in natural language processing. Beyond these technical performance, these algorithms offer new methods to understand and model how language is processed in the human brain. <br />
+Using both encoding (representation -> brain) and decoding (brain -> representations), we show that the comparison between modern speech and language models effectively accounts for brain responses to natural speech as recorded with EEG, MEG, iEEG and fMRI, including in children between 2 and 12 years old. <br />
+This systematic comparison provides an operational foundation to model language in the adult and developing brain, and thus offers a new path to understand the neural and computational bases of this human-specific ability."
 
 ---
 
