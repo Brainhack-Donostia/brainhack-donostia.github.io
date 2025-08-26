@@ -1,0 +1,20 @@
+---
+title: "Emergence of Language in the Human Brain"
+subtitle: "Jean Remi-King - Researcher \ <br /> @ Ecole Normale Superieure, MetaAI "
+layout: default
+modal-id: 4
+date: 2024-11-19
+img: Jean_Remi-King.png
+thumbnail: Jean_Remi-King_noback.png
+alt: image-alt
+project-date: November 2025
+
+category:
+description: "Deep learning has made major progress in natural language processing. Beyond these technical performance, these algorithms offer new methods to understand and model how language is processed in the human brain. <br />
+Using both encoding (representation -> brain) and decoding (brain -> representations), we show that the comparison between modern speech and language models effectively accounts for brain responses to natural speech as recorded with EEG, MEG, iEEG and fMRI, including in children between 2 and 12 years old. <br />
+This systematic comparison provides an operational foundation to model language in the adult and developing brain, and thus offers a new path to understand the neural and computational bases of this human-specific ability."
+
+---
+
+
+

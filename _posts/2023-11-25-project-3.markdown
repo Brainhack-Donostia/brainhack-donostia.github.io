@@ -2,7 +2,7 @@
 title: "How to reduce the carbon footprint of your research computing"
 subtitle: "Nick Souter - Research Fellow \ <br /> @ University of Sussex "
 layout: default
-modal-id: 2
+modal-id: 3
 date: 2024-11-19
 img: nick_souter.jpg
 thumbnail: nick_souter_noback.png
