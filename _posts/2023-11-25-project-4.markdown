@@ -1,6 +1,6 @@
 ---
 title: "Emergence of Language in the Human Brain"
-subtitle: "Nick Souter - Research Fellow \ <br /> @ University of Sussex "
+subtitle: "Jean Remi-King - Researcher \ <br /> @ Ecole Normale Superieure, MetaAI "
 layout: default
 modal-id: 2
 date: 2024-11-19
