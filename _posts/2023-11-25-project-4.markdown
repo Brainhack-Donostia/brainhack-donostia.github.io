@@ -4,8 +4,8 @@ subtitle: "Jean Remi-King - Researcher \ <br /> @ Ecole Normale Superieure, Meta
 layout: default
 modal-id: 4
 date: 2024-11-19
-img: nick_souter.jpg
-thumbnail: nick_souter_noback.png
+img: Jean_Remi-King.png
+thumbnail: Jean_Remi-King_noback.png
 alt: image-alt
 project-date: November 2025
 
