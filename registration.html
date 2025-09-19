@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <title> BHD 2025 - Brainhack Donostia 2025</title>
+   
+  </head>
+  <body>
+      <!-- Hero: logo backgorund -->
+      <section class="hero is-bold" 
+              style="background: url('logo_title.png') center center / cover no-repeat; height:300px;">
+      </section>
+
+      <!-- text under the logo-->
+      <section class="section">
+        <div class="container has-text-centered">
+          <h1 class="title" style="color:white; background-color:black; display:inline-block; padding:10px 20px; border-radius:8px;">
+            BHD 2025 - Brainhack Donostia 2025
+          </h1>
+          <br><br>
+          <p class="subtitle" style="color:black; margin-top:10px;">
+            Welcome to the registration form of the 2025 edition of Brainhack Donostia! <br><br>
+            Please fill in this form. <br>
+            It will help us to better understand your profile and make suggestions about activities that are best suited to your interests and skills. <br>
+             Your data will be treated confidentially.
+          </p>
+        </div>
+      </section>
+
+
+     <br>
+
+
+
+    <form id="form" class="container m-4 pl-4">
+
+     <!-- SECTION 1: Personal data-->
+  <section class="section">
+ 
+    <h3 class="title is-4">Personal data</h3>
+
+   
+
+      <div class="field">
+        <label class="label">Name <span class="has-text-danger">*</span> </label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Name"
+            name="Name"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Surname(s) <span class="has-text-danger">*</span> </label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Surname(s)"
+            name="Surname(s)"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Date of Birth <span class="has-text-danger">*</span> </label>
+        <div class="control">
+          <input
+            class="input"
+            type="date"
+            name="DateOfBirth"
+            required
+          />
+        </div>
+      </div>
+      
+    
+      <div class="field">
+        <label class="label">Email <span class="has-text-danger">*</span> </label>
+        <div class="control">
+          <input
+            class="input"
+            type="email"
+            placeholder="Your Email"
+            name="Email"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Phone number <span class="has-text-danger">*</span> </label>
+        <div class="control">
+          <input class="input" type="tel" name="Phone" placeholder="+34 600 000 000" required>
+        </div>
+      </div>
+      
+
+
+      <div class="field">
+        <label class="label">GitHub Account <span class="has-text-danger">*</span> </label>
+        <div class="control">
+          <input
+            class="input"
+            type="gitHubaccount"
+            placeholder="GitHub Account"
+            name="GitHub Account"
+            required
+          />
+        </div>
+      </div>
+   
+      <div class="field">
+        <label class="label">Preferred pronouns <span class="has-text-danger">*</span> </label>
+        <div class="control">
+          <label class="radio">
+            <input type="radio" name="Pronouns" value="she/her/her" required/> She / Her / Her
+          </label>
+          <label class="radio">
+            <input type="radio" name="Pronouns" value="he/him/his" required/> He / Him / His
+          </label>
+          <label class="radio">
+            <input type="radio" name="Pronouns" value="they/them/their" required/> They / Them / Their
+          </label>
+          <label class="radio">
+            <input type="radio" name="Pronouns" value="prefer_not_to_say" required/> Prefer not to say
+          </label>
+          <label class="radio">
+            <input type="radio" name="Pronouns" value="other" required/> Other
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Affiliation(institution, country) <span class="has-text-danger">*</span> </label>
+        <div class="control">
+          <input
+            class="input"
+            type="Affiliation"
+            placeholder="Affiliation (institution, country)"
+            name="Affiliation"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="field">
+  <label class="label">Do you consider yourself a member of any of the following traditionally underrepresented groups in science? <span class="has-text-danger">*</span> </label>
+  <div class="control">
+    <label class="checkbox">
+      <input type="checkbox" name="underrepresented[]" value="Women"> Women
+    </label><br>
+    <label class="checkbox">
+      <input type="checkbox" name="underrepresented[]" value="LGBTQ+"> LGBTQ+
+    </label><br>
+    <label class="checkbox">
+      <input type="checkbox" name="underrepresented[]" value="Disabled"> Disabled
+    </label><br>
+    <label class="checkbox">
+      <input type="checkbox" name="underrepresented[]" value="Neurodiverse"> Neurodiverse
+    </label><br>
+    <label class="checkbox">
+      <input type="checkbox" name="underrepresented[]" value="Caregiver"> Caregiver
+    </label><br>
+    <label class="checkbox">
+      <input type="checkbox" name="underrepresented[]" value="Non-European ancestry"> Non-European ancestry
+    </label><br>
+    <label class="checkbox">
+      <input type="checkbox" name="underrepresented[]" value="Underrepresented country">
+      Underrepresented country (based outside Europe & North America)
+    </label><br>
+    <label class="checkbox">
+      <input type="checkbox" name="underrepresented[]" value="Prefer not to say"> Prefer not to say
+    </label><br>
+    <label class="checkbox">
+      <input type="checkbox" name="underrepresented[]" value="None"> None
+    </label><br>
+    <label class="checkbox">
+      <input type="checkbox" name="underrepresented[]" value="Other"> Other...
+    </label>
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Career level <span class="has-text-danger">*</span> </label>
+  <div class="control">
+    <label class="radio">
+      <input type="radio" name="Career" value="High school student"> High school student
+     </label><br>
+    <label class="radio">
+      <input type="radio" name="Career" value="Undergraduate student"> Undergraduate student
+    </label><br>
+    <label class="radio">
+      <input type="radio" name="Career" value="Graduate student"> Graduate student
+    </label><br>
+    <label class="radio">
+      <input type="radio" name="Career" value="Researcher"> Researcher
+    </label><br>
+    <label class="radio">
+      <input type="radio" name="Career" value="Tenured"> Tenured
+    </label><br>
+    <label class="radio">
+      <input type="radio" name="Career" value="Other"> Other...
+    </label>
+  </div>
+</div>
+
+    <div class="field">
+        <label class="label">Have you ever participated in a Brainhack/Hackathon? <span class="has-text-danger">*</span> </label>
+        <div class="control">
+          <label class="radio">
+            <input type="radio" name="Participation" value="yes" required/> Yes
+          </label>
+           <label class="radio">
+            <input type="radio" name="Participation" value="no" required/> No
+          </label>
+        </div>
+    </div>
+    
+    <div class="field">
+        <label class="label">Which editions did you participate in? (Please specify year and place) <span class="has-text-danger">*</span> </label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Editions"
+            name="Editions"
+            
+          />
+        </div>
+      </div>
+ 
+      </section>
+     <!-- SECTION 4: Brainhacker background -->
+  <section class="section">
+    
+    <h3 class="title is-4">Brainhacker background</h3>
+    <p class="subtitle is-6">Your answers will help us to better understand your profile and make suggestions about activities that are best suited to your interests.</p>
+     
+   
+  <!-- Programming languages (multiple choice - checkboxes) -->
+      <div class="field">
+        <label class="label">I have experience in the following programming languages: <span class="has-text-danger">*</span> </label>
+        <div class="control">
+          <label class="checkbox"><input type="checkbox" name="experience_programming_languages[]" value="Python"> Python</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_programming_languages[]" value="Matlab"> Matlab</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_programming_languages[]" value="Julia"> Julia</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_programming_languages[]" value="Web"> Web</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_programming_languages[]" value="Java"> Java</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_programming_languages[]" value="C++"> C++</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_programming_languages[]" value="R"> R</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_programming_languages[]" value="Unix Command Line"> Unix Command Line</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_programming_languages[]" value="Shell Scripting"> Shell Scripting</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_programming_languages[]" value="Workflows"> Workflows</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_programming_languages[]" value="Containerization"> Containerization</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_programming_languages[]" value="Documentation"> Documentation</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_programming_languages[]" value="None"> None</label><br>
+          <div style="margin-top:6px;">
+            <input class="input" type="text" name="experience_programming_languages_other" placeholder="Other (please specify)">
+          </div>
+        </div>
+      </div>
+
+      <!-- Neuroscientific techniques -->
+      <div class="field">
+        <label class="label">I have experience in the following neuroscientific techniques : <span class="has-text-danger">*</span> </label>
+        <div class="control">
+          <label class="checkbox"><input type="checkbox" name="experience_neuro_techniques[]" value="Behavioral"> Behavioral</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neuro_techniques[]" value="DWI"> DWI</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neuro_techniques[]" value="ECG"> ECG</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neuro_techniques[]" value="ECoG"> ECoG</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neuro_techniques[]" value="EEG"> EEG</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neuro_techniques[]" value="Eye Tracking"> Eye Tracking</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neuro_techniques[]" value="fMRI"> fMRI</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neuro_techniques[]" value="fNIRS"> fNIRS</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neuro_techniques[]" value="MEG"> MEG</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neuro_techniques[]" value="MRI"> MRI</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neuro_techniques[]" value="PET"> PET</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neuro_techniques[]" value="tDCS"> tDCS</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neuro_techniques[]" value="TMS"> TMS</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neuro_techniques[]" value="None"> None</label><br>
+          <input class="input" type="text" name="experience_neuro_techniques_other" placeholder="Other (please specify)">
+        </div>
+      </div>
+
+        <!-- Neurosoftware -->
+      <div class="field">
+        <label class="label">I have experience in the following neurosoftware : <span class="has-text-danger">*</span> </label>
+        <div class="control">
+          <label class="checkbox"><input type="checkbox" name="experience_neurosoftware[]" value="SPM"> SPM</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neurosoftware[]" value="FSL"> FSL</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neurosoftware[]" value="Freesurfer"> Freesurfer</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neurosoftware[]" value="AFNI"> AFNI</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neurosoftware[]" value="ANTs"> ANTs</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neurosoftware[]" value="Nipype"> Nipype</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neurosoftware[]" value="DIPY"> DIPY</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neurosoftware[]" value="MRtrix"> MRtrix</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neurosoftware[]" value="FieldTrip"> FieldTrip</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neurosoftware[]" value="Brainstorm"> Brainstorm</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neurosoftware[]" value="BIDS"> BIDS</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neurosoftware[]" value="NWB"> NWB</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neurosoftware[]" value="Datalad"> Datalad</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neurosoftware[]" value="C-PAC"> C-PAC</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neurosoftware[]" value="fMRIPrep"> fMRIPrep</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_neurosoftware[]" value="None"> None</label><br>
+          <input class="input" type="text" name="experience_neurosoftware_other" placeholder="Other (please specify)">
+        </div>
+      </div>
+
+      <!-- Methods -->
+      <div class="field">
+        <label class="label">I have experience in the following methods: <span class="has-text-danger">*</span> </label>
+        <div class="control">
+          <!-- list kept consistent with the original form -->
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="Bayesian Approaches"> Bayesian Approaches</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="Causality"> Causality</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="Connectome"> Connectome</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="Data Visualisation"> Data Visualisation</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="Deep Learning"> Deep Learning</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="Dentric Computation"> Dentric Computation</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="Diffusion"> Diffusion</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="Diversity Inclusivity Equality"> Diversity Inclusivity Equality</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="EEG Event related response modelling"> EEG Event related response modelling</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="EEG Source Modelling"> EEG Source Modelling</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="Granger Causality"> Granger Causality</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="Hypothesis Testing"> Hypothesis Testing</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="ICA"> ICA</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="Information Theory"> Information Theory</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]]" value="Machine Learning"> Machine Learning</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="Modelling"> Modelling</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="MR Methodologies"> MR Methodologies</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="Neural Decoding"> Neural Decoding</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="Neural Encoding"> Neural Encoding</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="Neural Networks"> Neural Networks</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="PCA"> PCA</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="Physiology"> Physiology</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="Reinforcement Learning"> Reinforcement Learning</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="Reproducible Scientific Methods"> Reproducible Scientific Methods</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="Single Neuron Models"> Single Neuron Models</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="Statistical Modelling"> Statistical Modelling</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="Systems Neuroscience"> Systems Neuroscience</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="Tractography"> Tractography</label><br>
+          <label class="checkbox"><input type="checkbox" name="experience_methods[]" value="None"> None</label><br>
+          <input class="input" type="text" name="experience_methods_other" placeholder="Other (please specify)">
+
+        </div>
+        </div>
+
+          <div class="field">
+          <label class="label">My experience with Git is... <span class="has-text-danger">*</span> </label>
+          <div class="control">
+            <label class="radio">
+              <input type="radio" name="git" value="0 None" required /> 0 None
+            </label>
+            <label class="radio">
+              <input type="radio" name="git" value="1 Commit & Push" required /> 1 Commit & Push
+            </label>
+            <label class="radio">
+              <input type="radio" name="git" value="2 Branches Prs" required /> 2 Branches Prs
+            </label>
+            <label class="radio">
+              <input type="radio" name="git" value="3 Continuous Integration" required /> 3 Continuous Integration
+            </label>
+            <label class="radio">
+              <input type="radio" name="git" value="other" required /> Other
+            </label>
+          </div>
+        </div>
+
+
+      </section>
+
+  <!-- SECTION 5: BHD2050's resolutions -->
+<section class="section">
+  <h3 class="title is-4">BHD2025's resolutions</h3>
+  <p class="subtitle is-6">Your answers will help us to better understand your profile and make suggestions about activities that are best suited to your interests.</p>
+
+  <!-- Programming languages (multiple choice - checkboxes) -->
+  <div class="field">
+    <label class="label">During this edition of the BHD, I would like to learn more about the following programming languages: <span class="has-text-danger">*</span> </label>
+    <div class="control">
+      <label class="checkbox"><input type="checkbox" name="learn_programming_languages[]" value="Python"> Python</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_programming_languages[]" value="Matlab"> Matlab</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_programming_languages[]" value="Julia"> Julia</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_programming_languages[]" value="Web"> Web</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_programming_languages[]" value="Java"> Java</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_programming_languages[]" value="C++"> C++</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_programming_languages[]" value="R"> R</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_programming_languages[]" value="Unix Command Line"> Unix Command Line</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_programming_languages[]" value="Shell Scripting"> Shell Scripting</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_programming_languages[]" value="Workflows"> Workflows</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_programming_languages[]" value="Containerization"> Containerization</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_programming_languages[]" value="Documentation"> Documentation</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_programming_languages[]" value="None"> None</label><br>
+      <div style="margin-top:6px;">
+        <input class="input" type="text" name="learn_programming_languages_other" placeholder="Other (please specify)">
+      </div>
+    </div>
+  </div>
+
+  <!-- Neuroscientific techniques -->
+  <div class="field">
+    <label class="label">During this edition of the BHD, I would like to learn more about the following neuroscientific techniques: <span class="has-text-danger">*</span> </label>
+    <div class="control">
+      <label class="checkbox"><input type="checkbox" name="learn_neuro_techniques[]" value="Behavioral"> Behavioral</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neuro_techniques[]" value="DWI"> DWI</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neuro_techniques[]" value="ECG"> ECG</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neuro_techniques[]" value="ECoG"> ECoG</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neuro_techniques[]" value="EEG"> EEG</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neuro_techniques[]" value="Eye Tracking"> Eye Tracking</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neuro_techniques[]" value="fMRI"> fMRI</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neuro_techniques[]" value="fNIRS"> fNIRS</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neuro_techniques[]" value="MEG"> MEG</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neuro_techniques[]" value="MRI"> MRI</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neuro_techniques[]" value="PET"> PET</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neuro_techniques[]" value="tDCS"> tDCS</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neuro_techniques[]" value="TMS"> TMS</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neuro_techniques[]" value="None"> None</label><br>
+      <input class="input" type="text" name="learn_neuro_techniques_other" placeholder="Other (please specify)">
+    </div>
+  </div>
+
+  <!-- Neurosoftware -->
+  <div class="field">
+    <label class="label">During this edition of the BHD, I would like to learn more about the following neurosoftware: <span class="has-text-danger">*</span> </label>
+    <div class="control">
+      <label class="checkbox"><input type="checkbox" name="learn_neurosoftware[]" value="SPM"> SPM</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neurosoftware[]" value="FSL"> FSL</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neurosoftware[]" value="Freesurfer"> Freesurfer</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neurosoftware[]" value="AFNI"> AFNI</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neurosoftware[]" value="ANTs"> ANTs</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neurosoftware[]" value="Nipype"> Nipype</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neurosoftware[]" value="DIPY"> DIPY</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neurosoftware[]" value="MRtrix"> MRtrix</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neurosoftware[]" value="FieldTrip"> FieldTrip</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neurosoftware[]" value="Brainstorm"> Brainstorm</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neurosoftware[]" value="BIDS"> BIDS</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neurosoftware[]" value="NWB"> NWB</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neurosoftware[]" value="Datalad"> Datalad</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neurosoftware[]" value="C-PAC"> C-PAC</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neurosoftware[]" value="fMRIPrep"> fMRIPrep</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_neurosoftware[]" value="None"> None</label><br>
+      <input class="input" type="text" name="learn_neurosoftware_other" placeholder="Other (please specify)">
+    </div>
+  </div>
+
+
+  <!-- Methods -->
+  <div class="field">
+    <label class="label">During this edition of the BHD, I would like to learn more about the following methods:<span class="has-text-danger">*</span> </label>
+    <div class="control">
+      <!-- list kept consistent with the original form -->
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="Bayesian Approaches"> Bayesian Approaches</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="Causality"> Causality</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="Connectome"> Connectome</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="Data Visualisation"> Data Visualisation</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="Deep Learning"> Deep Learning</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="Dentric Computation"> Dentric Computation</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="Diffusion"> Diffusion</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="Diversity Inclusivity Equality"> Diversity Inclusivity Equality</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="EEG Event related response modelling"> EEG Event related response modelling</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="EEG Source Modelling"> EEG Source Modelling</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="Granger Causality"> Granger Causality</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="Hypothesis Testing"> Hypothesis Testing</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="ICA"> ICA</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="Information Theory"> Information Theory</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="Machine Learning"> Machine Learning</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="Modelling"> Modelling</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="MR Methodologies"> MR Methodologies</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="Neural Decoding"> Neural Decoding</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="Neural Encoding"> Neural Encoding</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="Neural Networks"> Neural Networks</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="PCA"> PCA</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="Physiology"> Physiology</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="Reinforcement Learning"> Reinforcement Learning</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="Reproducible Scientific Methods"> Reproducible Scientific Methods</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="Single Neuron Models"> Single Neuron Models</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="Statistical Modelling"> Statistical Modelling</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="Systems Neuroscience"> Systems Neuroscience</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="Tractography"> Tractography</label><br>
+      <label class="checkbox"><input type="checkbox" name="learn_methods[]" value="None"> None</label><br>
+      <input class="input" type="text" name="learn_methods_other" placeholder="Other (please specify)">
+    </div>
+  </div>
+</section>
+
+
+<!-- SECTION 6: Consents -->
+<section class="section">
+  <h3 class="title is-4">Consents</h3>
+
+  <!-- Anonymized data consent (required in the original form) -->
+  <div class="field">
+    <label class="label">Do you give the Brainhack Donostia Organizing Committee the consent to use your anonymized data for statistical purposes? <span class="has-text-danger">*</span></label>
+    <div class="control">
+      <label class="radio"><input type="radio" name="consent_anonymized_data" value="Yes" required> Yes</label>
+      <label class="radio"><input type="radio" name="consent_anonymized_data" value="No" required> No</label>
+    </div>
+  </div>
+
+  <!-- Zoom recording info + consent -->
+  <div class="field">
+    <label class="label">Recording & Sharing <span class="has-text-danger">*</span> </label>
+    <div class="control">
+      <p class="help">All the talks and tutorials will be held on Zoom and they may be recorded. The videos may be shared on the Brainhack Global channels. Attendees' thumbnail windows and name tags might appear in the videos.</p>
+      <div style="margin-top:8px;">
+        <label class="radio"><input type="radio" name="consent_zoom_recording" value="Yes" required> I consent to possible recording / sharing</label><br>
+        <label class="radio"><input type="radio" name="consent_zoom_recording" value="No" required> I do not consent to possible recording / sharing</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pictures consent -->
+  <div class="field">
+    <label class="label">Pictures consent <span class="has-text-danger">*</span> </label>
+    <div class="control">
+      <p class="help">Pictures may be taken during the workshop and may be shared on the Brainhack Donostia or Brainhack Global public channels.</p>
+      <div style="margin-top:8px;">
+        <label class="radio"><input type="radio" name="consent_pictures" value="Yes" required> I consent to possible pictures / sharing</label><br>
+        <label class="radio"><input type="radio" name="consent_pictures" value="No" required> I do not consent to possible pictures / sharing</label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h3 class="title is-4">Travel Grant</h3>
+
+  <div class="field">
+    <label class="label">Would you like to apply for a travel grant? <span class="has-text-danger">*</span></label>
+    <div class="control">
+      <label class="radio"><input type="radio" name="apply_travel_grant" value="Yes" onclick="document.getElementById('travel_grant_statement').style.display='block'"> Yes</label>
+      <label class="radio"><input type="radio" name="apply_travel_grant" value="No" onclick="document.getElementById('travel_grant_statement').style.display='none'"> No</label>
+    </div>
+  </div>
+
+  <!-- Statement of purpose (only if Yes selected) -->
+  <div class="field" id="travel_grant_statement" style="display:none;">
+    <label class="label">Statement of Purpose</label>
+    <div class="control">
+      <p class="help">
+        In this statement, please explain why attending this workshop would be valuable to your professional development.  
+        You can touch on:  
+        - Your interest in the workshop topic.  
+        - How attending would benefit your career or studies.  
+        - Any relevant contributions or aspirations within your field.  
+        - Your need for financial assistance to attend.  
+      </p>
+      <textarea class="textarea" name="travel_grant_statement" placeholder="Please write your statement of purpose here..."></textarea>
+    </div>
+  </div>
+ </section>
+  <section class="section">
+   <h3 class="title is-4">BCBL Membership</h3>
+
+  <div class="field">
+    <label class="label">Are you a BCBL member? <span class="has-text-danger">*</span></label>
+    <div class="control">
+      <label class="radio">
+        <input type="radio" name="bcbl_member" value="Yes" onclick="document.getElementById('volunteer_question').style.display='block'"> Yes
+      </label>
+      <label class="radio">
+        <input type="radio" name="bcbl_member" value="No" onclick="document.getElementById('volunteer_question').style.display='none'"> No
+      </label>
+    </div>
+  </div>
+
+  <!-- Volunteer question (only if Yes selected) -->
+  <div class="field" id="volunteer_question" style="display:none;">
+    <label class="label">Do you want to be a volunteer at Brainhack? <span class="has-text-danger">*</span></label>
+    <div class="control">
+      <label class="radio"><input type="radio" name="volunteer_brainhack" value="Yes"> Yes</label>
+      <label class="radio"><input type="radio" name="volunteer_brainhack" value="No"> No</label>
+    </div>
+  </div>
+
+  <hr>
+
+</section>
+
+
+      <!-- Additional Information -->  
+
+      <div class="field">
+        <label class="label">Additional Information</label>
+        <div class="control">
+          <textarea
+            class="textarea"
+            placeholder="Any additional information"
+            name="Notes"
+          ></textarea>
+        </div>
+      </div>
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-primary" type="submit" id="submit-button">
+            Sign Up
+          </button>
+        </div>
+        <div class="control">
+          <button
+            class="button is-danger"
+            type="button"
+            onclick="document.getElementById('form').reset();"
+          >
+            Cancel
+          </button>
+        </div>
+      </div>
+    </form>
+    <div
+      id="message"
+      style="
+        display: none;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 4px;
+        font-weight: bold;
+      "
+    ></div>
+
+    <script>
+      
+      const form = document.getElementById("form");
+      const submitButton = document.getElementById("submit-button");
+      const messageDiv = document.getElementById("message");
+
+
+
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        messageDiv.textContent = "Submitting...";
+        messageDiv.style.display = "block";
+        messageDiv.style.backgroundColor = "beige";
+        messageDiv.style.color = "black";
+        submitButton.disabled = true;
+        submitButton.classList.add("is-loading");
+
+        try {
+          const formData = new FormData(this);
+          const formDataObj = {};
+
+          // Convert FormData to object
+          for (let [key, value] of formData.entries()) {
+            formDataObj[key] = value;
+          }
+
+        // Add timestamp
+        formDataObj["Timestamp"] = new Date().toLocaleString(); // readable format
+
+
+          // Submit form data
+          const scriptURL =
+            "https://script.google.com/macros/s/AKfycbySC99y3-oOTg9mAdLHkTXDSoi6A0PfJPZmJzEJMH7MldhgpfsxzA2HVT7YIoEtqr9S_A/exec";
+
+          const response = await fetch(scriptURL, {
+            redirect: "follow",
+            method: "POST",
+            body: JSON.stringify(formDataObj),
+            headers: {
+              "Content-Type": "text/plain;charset=utf-8",
+            },
+          });
+
+          const data = await response.json();
+
+          if (data.status === "success") {
+            messageDiv.textContent =
+              data.message || "Data submitted successfully!";
+            messageDiv.style.backgroundColor = "#48c78e";
+            messageDiv.style.color = "white";
+            form.reset();
+          
+            if (formDataObj["volunteer_brainhack"] === "Yes") {
+              // Volunteers skip payment page
+              window.location.href =
+                "thankyou.html";
+            }
+            else {
+              // Non-volunteers go to payment page
+              window.location.href =
+                "https://www.bcbl.eu/events/brainhackregistration2025/en/registration/";
+            }
+            
+
+
+          } else {
+            throw new Error(data.message || "Submission failed");
+          }
+        } catch (error) {
+          console.error("Error:", error);
+          messageDiv.textContent = "Error: " + error.message;
+          messageDiv.style.backgroundColor = "#f14668";
+          messageDiv.style.color = "white";
+        } finally {
+          submitButton.disabled = false;
+          submitButton.classList.remove("is-loading");
+
+          setTimeout(() => {
+            messageDiv.textContent = "";
+            messageDiv.style.display = "none";
+          }, 4000);
+        }
+      });
+
+    </script>
+  </body>
+</html>
+
