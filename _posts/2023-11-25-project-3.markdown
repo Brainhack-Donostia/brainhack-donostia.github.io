@@ -18,7 +18,11 @@ description: "The storage and processing of large datasets, including neuroimagi
 - How to cut back on unnecessary computing <br />
 - Current methods for tracking computing energy usage and carbon emissions <br />
 
-The content discussed here will include specific examples from neuroimaging research, including how one can reduce the carbon footprint of preprocessing in fMRIPrep, and the effect of fMRI software choice on energy usage. The messages and approaches discussed here will also apply to any discipline requiring the processing of large amounts of data, beyond neuroimaging alone."
+The content discussed here will include specific examples from neuroimaging research, including how one can reduce the carbon footprint of preprocessing in fMRIPrep, and the effect of fMRI software choice on energy usage. The messages and approaches discussed here will also apply to any discipline requiring the processing of large amounts of data, beyond neuroimaging alone. <br />
+
+<br />
+<strong> About </strong><br />
+Nick is a postdoctoral researcher in the School of Psychology at the University of Sussex. In recent years, his work has focused on measuring and reducing the carbon footprint of computing required in human neuroimaging research, with a specific focus on functional magnetic resonance imaging (fMRI). This has included generating evidence-based recommendations aimed at multiple stages of the research process, from study planning, to data processing, to data dissemination. Nick has delivered workshops focused on green computing in relation to neuroimaging specifically and to research high-performance computing more generally. Nick's current work also focuses on the effect of working time reduction and long working hours, including novel collection in the Sussex 4 Day Week study and analysis of UK Biobank data."
 
 
 

@@ -31,7 +31,7 @@ approaches—indicator coding, sum coding, and indexing—and discusses their
 implications for model interpretation and communication of results, both in Frequentist
 and Bayesian frameworks."
 
-bio: ""
+bio: "Iñigo earned his BAs in Translation and Interpreting, and in Basque Studies at the University of the Basque Country, where he also completed an MA in Theoretical and Experimental Linguistics. He is currently finishing a joint PhD in Linguistics at the University of the Basque Country and the University of Pau and the Adour Region. His dissertation analyses phenomena related to nasality in Zuberoan Basque from a phonetic perspective, focusing on the prenasalization of word-initial voiced stops and the loss of nasality in formerly nasalized vowels. During his PhD, he developed a strong interest in statistics and programming, and has taught several introductory courses on statistics for linguists and cognitive scientists. More recently, he has focused on Bayesian statistical approaches, which he values, among others, for their natural capacity to investigate both between and within-individual variability."
 
 
 ---
