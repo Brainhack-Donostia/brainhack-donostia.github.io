@@ -14,7 +14,7 @@ description: "Deep learning has made major progress in natural language processi
 Using both encoding (representation -> brain) and decoding (brain -> representations), we show that the comparison between modern speech and language models effectively accounts for brain responses to natural speech as recorded with EEG, MEG, iEEG and fMRI, including in children between 2 and 12 years old. <br />
 This systematic comparison provides an operational foundation to model language in the adult and developing brain, and thus offers a new path to understand the neural and computational bases of this human-specific ability. <br />
 <br />
-<h4> About </h4><br />
+<strong> About </strong><br />
 Jean-Rémi King is a CNRS researcher at École Normale Supérieure currently detached to Meta AI, where he leads the Brain & AI team. This team aims to identify the brain and computational bases of human intelligence, with a focus on language. For this, they develop deep learning algorithms to decode and model brain activity recorded with MEG, EEG, electrophysiology and fMRI."
 
 
