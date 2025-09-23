@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Thank you for your registration!</h1>
+      <p id="thankyou-message"></p>
+    </div>
+  </section>
+
+  <script>
+    // URL parametresinden gönüllü bilgisi alınıyor
+    const urlParams = new URLSearchParams(window.location.search);
+    const volunteer = urlParams.get("volunteer");
+
+    const msgEl = document.getElementById("thankyou-message");
+    msgEl.textContent = "You registered as a volunteer. No payment is required. See you at Brainhack!";
+    
+  </script>
+</body>
+</html>
