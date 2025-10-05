@@ -13,9 +13,13 @@ category:
 description: "Masters’ and PhD candidates earn their degree by completing a thesis, which typically contains one or more research articles. Yet, along the research path, researchers may create other outputs (e.g., protocols, methods, data, code), use reproducible and transparent practices (e.g., evidence synthesis, reporting guidelines, use of unique identifiers) and engage academics and non-academics to develop, conduct and disseminate (e.g., public engagement) the research. Implementing and sharing these practices and outputs accelerates progress by facilitating reuse, reproducibility and replication. To change research practice and culture, however, we must recognize and reward researchers for sharing more than research articles. 
 In this implementation-focused opt-in pilot program, we aim to offer University of Coimbra Masters’ and PhD candidates a formal reward for implementing reproducible, reusable and open research practices in their thesis research. We are co-creating the reward criteria with a Local Advisory Board (graduate students, course coordinators, and supervisors), with advice from an expert External Board. 
 The criteria include: (a) list of practices (e.g., reporting of null results, author contributions statements) and outputs (e.g., reusable step-by-step protocols, materials) from which the students can select, (b) assessment criteria for each practice/output (focus on quality), and (c) number of practices/outputs that must be implemented. The criteria are designed to be adaptable to different disciplines and projects. 
-The program will open in mid-2025. We will monitor participation, selected practices and outputs, and disciplines, for program improvement. In this talk we will present the program and share lessons learned during its development and implementation."
+The program will open in mid-2025. We will monitor participation, selected practices and outputs, and disciplines, for program improvement. In this talk we will present the program and share lessons learned during its development and implementation.<br />
 
-bio: ""
+<br />
+<strong> About </strong><br />
+Inês A. T. Almeida is a researcher at the University of Coimbra with a background in psychology and neurosciences, now focusing on meta-research. She completed a PhD in Health Sciences – Biomedical Sciences at the Faculty of Medicine, University of Coimbra, following a licentiate degree in psychology with specialization in psychological assessment, counselling, and rehabilitation. In 2024, Inês joined the ERA Chair project EXCELScIOR at the Center for Neuroscience and Cell Biology (CNC) to establish meta-research in Coimbra, promoting more transparent, reliable, and socially responsive science. Alongside, she has been active in Open Science, co-founding the Open Science Community Coimbra, contributing to Eurodoc’s input to the UNESCO Recommendation on Open Science, and participating in international training and networks."
+
+
 
 ---
 ---
