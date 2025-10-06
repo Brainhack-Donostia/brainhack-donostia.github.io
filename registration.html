@@ -6,7 +6,13 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
     <title> BHD 2025 - Brainhack Donostia 2025</title>
-   
+    <style>
+      /* sadece tablodaki başlık yazılarını beyaz yap */
+      thead th {
+        color: white !important;
+        opacity: 1 !important;
+      }
+    </style>
   </head>
   <body>
       <!-- Hero: logo backgorund -->
@@ -27,12 +33,38 @@
             It will help us to better understand your profile and make suggestions about activities that are best suited to your interests and skills. <br>
              Your data will be treated confidentially.
           </p>
+          <br>  <br>
+
+    <!-- Expected participants table -->
+        <div class="table-container" style="display:inline-block; text-align:left; font-size:1.15rem;">
+          <table class="table is-bordered is-striped is-hoverable" style="background-color:white; min-width:600px;">
+            <thead style="background-color:black; color:white;">
+              <tr>
+                <th>Expected participants</th>
+                <th><u>BCBL/EHU</u></th>
+                <th>Externals</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Early bird fee valid until 15.10.2025</strong></td>
+                <td>10 €</td>
+                <td>20 €</td>
+              </tr>
+              <tr>
+                <td><strong>Late fee valid until 15.11.2025</strong></td>
+                <td>20 €</td>
+                <td>30 €</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </section>
+      </div>
+    </section>
 
+    <br>
 
-     <br>
-
+    <form id="form" class="container m-4 pl-4">
 
 
     <form id="form" class="container m-4 pl-4">
@@ -537,6 +569,10 @@
   <div class="field">
     <label class="label">Would you like to apply for a travel grant? <span class="has-text-danger">*</span></label>
     <div class="control">
+      <p class="help">
+     Please note that travel grants are available for young researchers up to 30 years old and can reimburse up to 200 euros for travel and accommodation expenses. The application deadline is October 15th, and successful applicants will be contacted shortly after this date.
+      </p>
+
       <label class="radio"><input type="radio" name="apply_travel_grant" value="Yes" onclick="document.getElementById('travel_grant_statement').style.display='block'"> Yes</label>
       <label class="radio"><input type="radio" name="apply_travel_grant" value="No" onclick="document.getElementById('travel_grant_statement').style.display='none'"> No</label>
     </div>
