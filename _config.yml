@@ -103,10 +103,14 @@ people:
       url: https://www.bcbl.eu/en/seyma-takir
 
 social:
-  - title: twitter
-    url: http://twitter.com/BHDonostia
   - title: github
     url: http://github.com/Brainhack-Donostia
+  - title: bluesky
+    url: https://bsky.app/profile/bhdonostia.bsky.social
+  - title: linkedin
+    url: https://es.linkedin.com/in/brainhack-donostia-8b0a12227
+  - title: instagram
+    url: https://www.instagram.com/bhdonostia/
 
 # Postal address (add as many lines as necessary)
 address:

@@ -926,3 +926,13 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
+
+
+.social-icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    display: inline-block;
+    fill: currentColor; /* lets it inherit color like the other icons */
+  }
+  
