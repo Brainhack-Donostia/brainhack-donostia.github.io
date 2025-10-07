@@ -1,17 +1,24 @@
-  <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; {{ site.title }} </span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        {% for network in site.social %}
-                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="copyright">Copyright &copy; {{ site.title }} </span>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    {% for network in site.social %}
+                    <li>
+                        {% if network.title == "bluesky" %}
+                          <a href="{{ network.url }}">
+                            <img src="{{ 'img/logos/bluesky.svg' | relative_url }}" alt="Bluesky" class="social-icon">
+                          </a>
+                        {% else %}
+                          <a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
+                        {% endif %}
+                      </li>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
