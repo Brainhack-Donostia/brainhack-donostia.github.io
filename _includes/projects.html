@@ -105,6 +105,65 @@
 			<hr>
 
 
+
+
+			<h3 class="section-heading text-center">Open Data BIDSifier: LLM-based BIDSifier and metadata harmonization for non-BIDS datasets <br/> <a href="https://github.com/stefanches7/AI-assisted-Neuroimaging-harmonization"> (Stefan Dvoretskii)</a> </h3>
+
+			<p class="text-muted"> The goal of this project is to explore if LLM-based workflow machines (sometimes calles "AI agents) can meaningfully assist in metadata 
+				harmonization, data format transformation and data preprocessing tasks that precede AI model inference or training. These tasks are time-consuming yet essential 
+				to reproducible, large-scale neuroimaging research.<br />
+				While the BIDS standard ensures interoperability, there are some datasets for which no BIDS annotation is available. This is a "dead data" which can not 
+				be used on-par with BIDS datasets.<br />
+				In this proof-of-concept, we aim to determine whether a coordinated system of AI agents can reliably execute these operations and produce AI-ready dataset 
+				collections, similar to those hosted on platforms like HuggingFace Datasets: OpenMind, with minimal human intervention.<br /></p>
+			<h3 class="section-subsubheading text-muted">
+				Goals</h3>
+			<p class="text-muted"> If successful, Open Data BIDSifier will serve as a foundation for an AI agent that can identify and harmonize different datasets 
+				from open data, making sure these are immediately usable for machine learning and statistical analysis. <br/>
+				If successful, the developed data harmonizer tool will be published as a Python executable, as well as a HuggingFace space.<br/></p>
+
+			<hr>
+
+
+
+
+
+
+
+			<h3 class="section-heading text-center">Fast Voxel-wise fMRI Correlation Mapping Using Phase Derivatives in LayNii IDA <br/> <a href="https://github.com/Brainhack-Donostia/brainhack-donostia.github.io/issues/180"> (Omer Faruk Gulban)</a> </h3>
+
+			<p class="text-muted"> Functional MRI analysis increasingly demands both higher spatial and higher temporal resolution: mesoscopic fMRI (submillimeter) reveals 
+				cortical microstructure and layer-dependent signals, while ultrafast sampling (tens of Hz) captures rapid hemodynamic and physiological dynamics. Extracting 
+				meaningful functional relationships at these scales requires voxel-wise correlation and connectivity computations across very large spatiotemporal arrays, 
+				an operation that is computationally intensive and often prohibitive with standard toolboxes.<br/>
+				Here we introduce LayNii IDA, a purpose-built, highly optimized implementation for voxel-wise correlation and related voxel-wise operations that (i) scales 
+				to submillimeter whole-brain or slab fMRI volumes, (ii) handles ultrafast single-slice and multi-slice acquisitions sampled at tens of Hz, and (iii) integrates 
+				preprocessing and on-the-fly statistical transforms to minimize I/O and memory overhead. We demonstrate that LayNii IDA enables exploratory, data-driven 
+				investigation of mesoscopic functional structure (layer- and column-scale), vascular structure, dynamic functional connectivity, and rapid quality control 
+				workflows that previously required ROI strategies. For this Brainhack, we specifically aim to extend IDA with phase-based fMRI time-series analysis using 
+				spatial phase derivatives. This implementation will allow voxel-wise correlation analyses in the phase domain, offering an alternative to the conventional 
+				magnitude domain fMRI time series.<br/></p>
+			<h3 class="section-subsubheading text-muted">
+				Goals</h3>
+			<p class="text-muted"> 1. Load and interact with phase fMRI time series data<br />
+				2. Implement circular grayscale and/or variants to visualize phase timeseries within the GUI <br />
+				3. Implement phase spatial derivatives (first and second order)<br />
+				4. Explore various phase fMRI datasets using voxel-wise correlations<br />
+				5. Report interesting findings.<br /></p>
+
+			<hr>
+
+
+
+
+
+
+
+
+
+
+
+
 			<div style="height: 60px;"></div> <!--blank space-->
 
 		
