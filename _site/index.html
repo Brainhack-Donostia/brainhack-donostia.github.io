@@ -233,7 +233,7 @@
     </tr>
     <tr>
         <th>9:30-10:00</th>
-        <td rowspan="3">1st Speaker</td>
+        <td rowspan="3">Keynote 1: Iñigo Urrestarazu</td>
     </tr>
     <tr>
         <th>10:00-10:30</th>
@@ -248,8 +248,8 @@
     <tr>
         <th>11.30 - 12:00</th>
         <td>Project Pitch</td>
-        <td rowspan="3">3rd Speaker</td>
-        <td rowspan="3">Online Speaker</td>
+        <td rowspan="3">Keynote 3: Nicholas Souter</td>
+        <td rowspan="3">Keynote 4: Jean Remi-King (online)</td>
     </tr>
     <tr>
         <th>12:00-12:30</th>
@@ -267,7 +267,7 @@
     </tr>
     <tr>
         <th>14:00 - 14:30</th>
-        <td rowspan="3">2nd Speaker</td>
+        <td rowspan="3">Keynote 2: Inês Almeida</td>
         <td>Unconference</td>
         <td>Unconference</td>
     </tr>
@@ -407,48 +407,120 @@
 <!-- Services Section -->
     <section id="projects">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                            <a href="https://github.com/brainhackorg/global2024/issues" class="page-scroll btn btn-xl">See all Brainhack Git project page </a> 
-                    <h1 class="section-heading">BHD 2024 | Projects</h1>
-			<p class="text-muted"> Take a look at BHD2024's projects! </p>
-                    <hr>
-                    
-		    <!-- divition for project-->
-		    <h3 class="section-heading">ME-mppca: Building a tensor-based thermal denoising method <br/> <a href="https://github.com/marco7877/"> (@marco7877)</a> </h3>
 
-		    <p class="text-muted"> This project aims to build a tensor-based thermal denoising method with Marchenko-Pastur PCA. This denoising implementation will work with Single-Echo and Multi-Echo aquisition. In the later, it exploits the spatial redundancy between echoes</p>
-		    <h3 class="section-subsubheading text-muted">
-			    Goals</h3>
-		    <p class="text-muted"> Implement modularized functions for singular value decomposition (SVD), and SVD denoising<br />
-		    Test algorithm with OpenNeuro dataset <a href= "https://openneuro.org/datasets/ds004662/versions/1.1.0"> (dataset) </a><br />
-Write documentation<br /> </p>
-		    <hr>
+			<div class="row">
+				<h1 class="section-heading text-center">BHD2025  Projects</h1>
+					
+			<p class="text-muted"> Take a look at BHD2025's projects! </p>
+					<hr>
+					
+			<!-- division for project-->
+			<h3 class="section-heading text-center">Helmholz never published in Nature Neuroscience <br/> <a href="https://github.com/qtabs/surprisalingFactor/"> (@qtabs)</a> </h3>
 
-		    <h3 class="section-heading">Bayes and Bach: An RNN-powered affair <br/> <a href="https://github.com/qtabs/BayesPlusBach/"> (@qtabs)</a> </h3>
+			<p class="text-muted"> Surprisal theory in psycholinguistics proposes that the harder a word is to predict from context, the more cognitive effort it takes to process. This project applies surprisal measures to characterize major journals in cognitive neuroscience and experimental psychology, testing whether surprisal distributions align with journal-level metrics (impact factor) or article-level metrics (citations).
+				We will automate pipelines to extract articles, compute surprisal using open-source LLMs, run exploratory analyses, and write a report exploring whether highly cited papers in neuroscience embrace more or less linguistic surprise.</p>
+			<h3 class="section-subsubheading text-muted">
+				Goals</h3>
+			<p class="text-muted"> 1. Set up an automated pipeline to scrape full-text neuroscience articles from 20-100 major journals in the field<br />
+			2. Compute surprisal scores using an open-source LLM to calculate average word-level surprisal for a minimum of 50 articles per journal<br />
+			3. Define exploratory analyses and collect appropriate journal/article metrics (e.g., impact factor, year, citations, sub-field)<br /> 
+			4. Produce visualizations comparing surprisal distributions with the collected metrics<br /> 
+			5. Generate collaborative interpretation of the results<br /> 
+			6. Draft a short report summarizing context, methods, results, and limitations<br /> </p>
+			<hr>
 
-		    <p class="text-muted"> In this project will train RNNs to perceive sequences of tones or chords from noisy versions of Bach's compositions and study whether the networks learn to predict the next tone. </p>
-		    <h3 class="section-subsubheading text-muted">
-			    Goals</h3>
-		    <p class="text-muted"> Train RNNs to perceive sequences of tones or chords from noisy versions of Bach's compositions <br />
-Study whether the networks learn to predict the next tone <br />
-Learn how to curate and retrieve data Learn how to train state-of-the-art neural network models<br /> 
-Learn how to curate and retrieve data Learn how to train state-of-the-art neural network models<br /> </p>
-		    <hr>
 
-		   <h3 class="section-heading"> EEL-Hack: Learning to develop an mTRF pipeline with eelbrain <br/> <a href="https://github.com/brainhackorg/global2024/issues/19"> (Project)</a> </h3>
+			<h3 class="section-heading text-center">Implementing denoising within phys2cvr software <br/> <a href="https://github.com/Brainhack-Donostia/brainhack-donostia.github.io/issues/172"> (César Caballero Gaudes)</a> </h3>
 
-		    <p class="text-muted"> In this project we will learn how to use the Python toolbox ‘Eelbrain’, addressing all the necessary steps to compute mTRF (data organization, predictor setting, etc.) on a publicly available EEG dataset. </p>
-		    <h3 class="section-subsubheading text-muted">
-			     Goals</h3>
-		    <p class="text-muted">Understand how mTRF method works <br />
-Understand how Eeelbrain works<br /> 
-Writing and editing scripts to prepare the data and fit an mTRF<br /> </p>
-		    <hr>
+			<p class="text-muted"> This project will aim to implement a denoising module within the phys2cvr software for cerebrovascular reactivity mapping. Briefly, we will create a module that 
+				implements the removal of the nuisance regressors (i.e. denoising) based on the lagged-GLM approach of phys2cvr. 
+				This will involve understanding the phys2cvr pipeline and developing an efficient approach of the denoising step. </p>
+			<h3 class="section-subsubheading text-muted">
+				Goals</h3>
+
+			<p class="text-muted"> The deliverable will be to implement this step and make it work.<br /> </p>
+			<hr>
+
+
+
+			<h3 class="section-heading text-center">FAIR-PsyFlow: making psychological assessment methods and data FAIR by design <br/> <a href="https://github.com/Brainhack-Donostia/brainhack-donostia.github.io/issues/173"> (Inês Almeida)</a> </h3>
+
+			<p class="text-muted"> This workshop aims to discuss barriers, opportunities and best practices in psychological assessment (with extensions, input from and output to 
+				behavioural research) using the lens of responsible and open science, reproducibility and FAIR principles. The end goal is to provide an opportunity for critically 
+				thinking about these topics, hands-on training, and to create a workflow to guide researchers in best practices from the project starting point.</p>
+			<h3 class="section-subsubheading text-muted">
+				Goals</h3>
+			<p class="text-muted"> The workshop aims to build insight and develop a best-practices workflow (in line with responsible and open research, and FAIR principles) 
+				for psychology that can be used, collaboratively worked and reused by others - with particular focus in the field of psychological assessment methods and data. 
+				The goal it to make methods selection, application & reporting, and data management & sharing more transparent, easy and best practices compliant, motivating 
+				all to prepare responsibly and share transparently their research practices and outputs – which are more diverse than a final thesis, research article or publication!<br />
+
+				By the end of the workshop, a workflow (draft version) to implement in GitHub or in another collaborative platform should be created. This should contain key steps, 
+				best practices and useful resources to think critically when designing a study or project in Psychology research (in particular when using psychological assessment methods and data).<br /> </p>
+			<hr>
+
+
+
+
+			<h3 class="section-heading text-center">"I know that I know nothing", or do I? A workshop on priors for Bayesian Modeling <br/> <a href="https://gitlab.com/urrestarazu/brainhack-priors"> (Iñigo Urrestarazu-Porta)</a> </h3>
+
+			<p class="text-muted"> Bayesian Data Analysis (BDA) offers a powerful toolkit to study human
+				cognition and, overall, behaviour, where data collection tends to be
+				very demanding, limited, and time consuming. Yet, BDA often becomes a
+				daunting experience as it requires that the analyst specifies prior
+				distributions for all model parameters, and newcomers to BDA often feel
+				that they do not know at all how to define sensible priors for their
+				analysis. In consequence, they rely on the default priors used by the
+				software implementation used, e.g. brms (Bürkner 2017). <br/>
+				In the workshop, we will work on how to define (sensible) priors for a
+				range of data sets. First, we shall see that, upon reflection, reasoning
+				and the most simple knowledge of the world allows to constrain the
+				parameter space of priors. Second, researchers are experts in their own
+				fields, and we will discuss how we can leverage our expertise to find
+				(more) suitable priors. Finally, we will approach prior definition
+				through data simulation, as an empirical workflow to reassure our choice
+				of prior distributions. Thus, the workshop aims to empower analysts to
+				take full advantage of the possibilities offered by BDA.<br/></p>
+			<h3 class="section-subsubheading text-muted">
+				Goals</h3>
+			<p class="text-muted"> The goal is pretty simple: learn how to think about priors, and apply that knowledge to your own research.<br/> </p>
+			<hr>
+
+
+
+
+
+			<h3 class="section-heading text-center">Developing a tool to estimate and report the carbon footprint of neuroimaging research <br/> <a href="https://github.com/Brainhack-Donostia/brainhack-donostia.github.io/issues/174"> (Nick Souter)</a> </h3>
+
+			<p class="text-muted"> This project will focus on workshopping, building, and disseminating a single tool which will allow neuroimaging researchers to estimate the 
+				environmental impact of their research, based on factors including imaging modality, duration of data collection, and analysis software choice. Such a tool could 
+				be used prospectively during grant writing, or retrospectively during manuscript writing.</p>
+			<h3 class="section-subsubheading text-muted">
+				Goals</h3>
+			<p class="text-muted"> 1. Establish the scope of this tool including imaging modality (MRI only, or more diverse?), and aspect of the research process to be estimated 
+				(e.g., data collection, analysis, and dissemination)<br />
+				2. Collate appropriate benchmark statistics relating to the carbon footprint of various aspects of the research process <br />
+				3. Establish and the most appropriate format for this tool (e.g., Python package, dedicated webpage)<br />
+				4. Start work on a digital tool to allow neuroimaging researchers to estimate the environmental impact of their work<br />
+				5. Produce clear documentation to facilitate easy tool use and explain methodology<br />
+				6. Produce branding for the tool, including a clear and effective name and appealing visuals<br /></p>
+
+			<hr>
+
+
+			<div style="height: 60px;"></div> <!--blank space-->
+
+		
+
+
+
+			<div class="row">
+
+        
 			
 		    <!-- division for button -->
 		    <div class="container">
-                        <div class="intro-text">
+                        <div class="intro-text text-center">
                             <div class="intro-lead-in"></div>
                             <div class="intro-heading"> </div>
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6BuAsr4r3ypd_dst_Idsdkq3pkskMwDjjTQED9z_7GpcJ5w/viewform?usp=dialog" class="page-scroll btn btn-xl">Propose a BHD 2025 project! </a> 
@@ -526,7 +598,7 @@ Writing and editing scripts to prepare the data and fit an mTRF<br /> </p>
 				<ul class="timeline">
 					<li class="timeline-inverted">
 						<div class="timeline-image">
-							<img class="img-circle img-responsive" src="img/about/2025.png" alt="">
+							<img class="img-circle img-responsive" src="img/about/2025_new.jpg" alt="">
 						</div>
 						<div class="timeline-panel">
 							<div class="timeline-heading">
@@ -1051,27 +1123,46 @@ Writing and editing scripts to prepare the data and fit an mTRF<br /> </p>
 </aside>
 
 
-      <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; BrainHack Donostia 2025 </span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="copyright">Copyright &copy; BrainHack Donostia 2025 </span>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    
+                    <li>
                         
-                        <li><a href="http://twitter.com/BHDonostia"><i class="fa fa-twitter"></i></a>
-                        </li>
+                          <a href="http://github.com/Brainhack-Donostia"><i class="fa fa-github"></i></a>
                         
-                        <li><a href="http://github.com/Brainhack-Donostia"><i class="fa fa-github"></i></a>
-                        </li>
+                      </li>
+                    
+                    <li>
                         
-                    </ul>
-                </div>
+                          <a href="https://bsky.app/profile/bhdonostia.bsky.social">
+                            <img src="/img/logos/bluesky.svg" alt="Bluesky" class="social-icon">
+                          </a>
+                        
+                      </li>
+                    
+                    <li>
+                        
+                          <a href="https://es.linkedin.com/in/brainhack-donostia-8b0a12227"><i class="fa fa-linkedin"></i></a>
+                        
+                      </li>
+                    
+                    <li>
+                        
+                          <a href="https://www.instagram.com/bhdonostia/"><i class="fa fa-instagram"></i></a>
+                        
+                      </li>
+                    
+                </ul>
             </div>
         </div>
-    </footer>
-
+    </div>
+</footer>
      <!-- Portfolio Modals -->
  
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
