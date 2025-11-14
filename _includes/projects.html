@@ -12,18 +12,26 @@
 					<hr>
 					
 			<!-- division for project-->
-			<h3 class="section-heading text-center">Helmholz never published in Nature Neuroscience <br/> <a href="https://github.com/qtabs/surprisalingFactor/"> (@qtabs)</a> </h3>
+			<h3 class="section-heading text-center">A Brainphack Project: Assessing false discovery rates in cog neuro <br/> <a href="https://github.com/qtabs/abrainphackproject"> (Alejandro Tabas)</a> </h3>
 
-			<p class="text-muted"> Surprisal theory in psycholinguistics proposes that the harder a word is to predict from context, the more cognitive effort it takes to process. This project applies surprisal measures to characterize major journals in cognitive neuroscience and experimental psychology, testing whether surprisal distributions align with journal-level metrics (impact factor) or article-level metrics (citations).
-				We will automate pipelines to extract articles, compute surprisal using open-source LLMs, run exploratory analyses, and write a report exploring whether highly cited papers in neuroscience embrace more or less linguistic surprise.</p>
+			<p class="text-muted"> P-hacking is the practice of selectively reporting or analysing data until statistical significance is achieved, often inflating false positives. 
+				Despite its prevalence, quantifying how difficult specific results are to obtain via p-hacking is a cumbersome task. This project introduces a novel metric, the 
+				estimated P-Hacking Attempt-Insistence-Length (phail), defined as the expected number of times researchers would need to rerun their analyses to obtain the number 
+				of significant results reported in a paper. We will apply this measure to a sample of highly cited behavioural and cognitive neuroscience studies. The project will 
+				produce a library that computes the phail, providing an accessible resource for researchers and meta-scientists. If time allows, we will begin automating the full 
+				workflow from paper to index computation. Ultimately, this project aims to deliver a practical tool for assessing the reliability of specific methodological pipelines 
+				and tools, and support the assessment of authors, reviewers, and editors.</p>
 			<h3 class="section-subsubheading text-muted">
 				Goals</h3>
-			<p class="text-muted"> 1. Set up an automated pipeline to scrape full-text neuroscience articles from 20-100 major journals in the field<br />
-			2. Compute surprisal scores using an open-source LLM to calculate average word-level surprisal for a minimum of 50 articles per journal<br />
-			3. Define exploratory analyses and collect appropriate journal/article metrics (e.g., impact factor, year, citations, sub-field)<br /> 
-			4. Produce visualizations comparing surprisal distributions with the collected metrics<br /> 
-			5. Generate collaborative interpretation of the results<br /> 
-			6. Draft a short report summarizing context, methods, results, and limitations<br /> </p>
+			<p class="text-muted"> 1. Define and formalise the P-Hacking Attempt-Insistence-Length (phail)<br />
+			2. Think of a better name/acronym (BNA) for the phail<br />
+			3. Select a set of behavioural-experiment papers in cognitive neuroscience for testing<br /> 
+			4. Code the analysis pipelines of the selected papers and use simulations to estimate BNA<br /> 
+			5. Create visualisations summarising the BNA distribution across studies (hopefully N > 20)<br /> 
+			6. Scale up the code to an open-source library for the general computation of BNA<br />
+			7. Devise a very cool name and acronym for the library<br /> 
+			8. Explore automation of the end-to-end paper → BNA computation pipeline<br /> 
+			9. Draft a short report detailing motivation, methods, findings, and next steps<br /> </p>
 			<hr>
 
 
