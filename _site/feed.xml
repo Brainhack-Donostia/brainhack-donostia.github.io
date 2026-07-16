@@ -1,55 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>BrainHack Donostia 2025</title>
-    <description>Site for Brainhack Donostia 2025</description>
+    <title>BrainHack Donostia 2026</title>
+    <description>Site for Brainhack Donostia 2026</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 06 Oct 2025 15:54:38 +0200</pubDate>
-    <lastBuildDate>Mon, 06 Oct 2025 15:54:38 +0200</lastBuildDate>
+    <pubDate>Thu, 16 Jul 2026 16:05:41 +0200</pubDate>
+    <lastBuildDate>Thu, 16 Jul 2026 16:05:41 +0200</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
-        <title>Emergence of Language in the Human Brain</title>
+        <title>Brain Age the Brainhack Way</title>
         <description>
 </description>
-        <pubDate>Tue, 19 Nov 2024 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2024/11/19/project-4/</link>
-        <guid isPermaLink="true">http://localhost:4000/2024/11/19/project-4/</guid>
+        <pubDate>Fri, 06 Nov 2026 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/keynote%20talk/2026/11/06/talk-4-asier-erramuzpe-aliaga/</link>
+        <guid isPermaLink="true">http://localhost:4000/keynote%20talk/2026/11/06/talk-4-asier-erramuzpe-aliaga/</guid>
         
+        
+        <category>Keynote Talk</category>
         
       </item>
     
       <item>
-        <title>How to reduce the carbon footprint of your research computing</title>
+        <title>Replacing academic journals by repositories and peer communities</title>
         <description>
 </description>
-        <pubDate>Tue, 19 Nov 2024 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2024/11/19/project-3/</link>
-        <guid isPermaLink="true">http://localhost:4000/2024/11/19/project-3/</guid>
+        <pubDate>Thu, 05 Nov 2026 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/keynote%20talk/2026/11/05/talk-3-pandelis-perakakis/</link>
+        <guid isPermaLink="true">http://localhost:4000/keynote%20talk/2026/11/05/talk-3-pandelis-perakakis/</guid>
         
+        
+        <category>Keynote Talk</category>
         
       </item>
     
       <item>
-        <title>When defaults return gibberish. Exploring different approaches to fitting models with categorical predictors (in R)</title>
+        <title>From Brain Maps to Molecular Mechanisms: Unveiling the Neuroimaging-Genetic Intersections in the Human Brain</title>
         <description>
 </description>
-        <pubDate>Tue, 19 Nov 2024 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2024/11/19/project-2/</link>
-        <guid isPermaLink="true">http://localhost:4000/2024/11/19/project-2/</guid>
+        <pubDate>Wed, 04 Nov 2026 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/keynote%20talk/2026/11/04/talk-2-ibai-diez-palacio/</link>
+        <guid isPermaLink="true">http://localhost:4000/keynote%20talk/2026/11/04/talk-2-ibai-diez-palacio/</guid>
         
+        
+        <category>Keynote Talk</category>
         
       </item>
     
       <item>
-        <title>Rewarding early stage researchers for reproducible, reusable, and open research practices and outputs</title>
-        <description>&lt;hr /&gt;
+        <title>Investigating Human Cognition Through Dynamic Brain Activity and Individual Variability</title>
+        <description>
 </description>
-        <pubDate>Tue, 19 Nov 2024 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2024/11/19/project-1/</link>
-        <guid isPermaLink="true">http://localhost:4000/2024/11/19/project-1/</guid>
+        <pubDate>Tue, 03 Nov 2026 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/keynote%20talk/2026/11/03/talk-1-mireia-torralba-cuello/</link>
+        <guid isPermaLink="true">http://localhost:4000/keynote%20talk/2026/11/03/talk-1-mireia-torralba-cuello/</guid>
         
+        
+        <category>Keynote Talk</category>
         
       </item>
     

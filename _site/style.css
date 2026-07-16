@@ -23,7 +23,6 @@ body {
 .text-muted {
     color: #777;
     text-align: justify;
-    text-align:last: center;
 }
 .text-yellow {
     color:#ffe95e ;
@@ -45,7 +44,16 @@ p {
 }
 
 p.large {
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+@media(max-width:600px) {
+    p.large {
+        font-size: 19px;
+    }
 }
 
 a,
@@ -362,9 +370,17 @@ section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
     font-family: Helvetica, "Helvetica Neue", Helvetica,Helvetica,Helvetica;
-    font-size: 16px;
+    font-size: 24px;
     font-style: helvetica;
-    font-weight: 400;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+@media(max-width:600px) {
+    section h3.section-subheading {
+        font-size: 19px;
+    }
 }
 
 @media(min-width:768px) {
@@ -683,6 +699,7 @@ section h3.section-subheading {
 
 .team-member p {
     margin-top: 0;
+    text-align: center;
 }
 
 /*-------------------------------------PROGRAM-----------------------------------------*/
@@ -789,6 +806,9 @@ section#contact .text-danger {
 
 aside.clients img {
     margin: 50px auto;
+    height: 90px;
+    width: auto;
+    max-width: 100%;
 }
 footer {
     padding: 25px 0;
@@ -935,4 +955,13 @@ body {
     webkit-tap-highlight-color: #00adef;
 }
 
+
+.social-icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    display: inline-block;
+    fill: currentColor; /* lets it inherit color like the other icons */
+  }
+  
 
