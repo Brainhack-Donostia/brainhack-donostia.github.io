@@ -2,6 +2,7 @@
 title: "Emergence of Language in the Human Brain"
 subtitle: "Jean Remi-King - Researcher \ <br /> @ Ecole Normale Superieure, MetaAI "
 layout: default
+published: false
 modal-id: 4
 date: 2024-11-19
 img: Jean_Remi-King.png

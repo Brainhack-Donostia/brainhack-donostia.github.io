@@ -3,6 +3,7 @@ title: "When defaults return gibberish. Exploring different approaches to fittin
 with categorical predictors (in R)"
 subtitle: "Inigo Urrestarazu - PreDoctoral Researcher \ <br /> @ Universidad del Pais Vasco "
 layout: default
+published: false
 modal-id: 2
 date: 2024-11-19
 img: inigo_aziti.png

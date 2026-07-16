@@ -4,12 +4,13 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-yellow">BHD2025 Keynote Speakers</h2>
+        <h2 class="section-heading text-yellow">BHD2026 Keynote Speakers</h2>
         <h2 class="white mb-3">Take a look to the amazing speakers we will host!</h2>
       </div>
     </div>
              <div class="row">
-            {% for post in site.posts %}
+            {% assign talks = site.posts | where_exp: "post", "post.title != ''" | sort: 'modal-id' %}
+            {% for post in talks %}
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -17,7 +18,14 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
+                        {% if post.thumbnail and post.thumbnail != "" %}
                         <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
+                        {% else %}
+                        <div class="portfolio-photo-pending">
+                            <i class="fa fa-user"></i>
+                            <span>Photo coming soon</span>
+                        </div>
+                        {% endif %}
                     </a>
                     <div class="portfolio-caption">
                         <h4>{{ post.title }}</h4>
@@ -28,3 +36,25 @@
             </div>
         </div>
     </section>
+
+    <style>
+      .portfolio-photo-pending {
+        width: 100%;
+        aspect-ratio: 400 / 289;
+        background-color: #e2e2e2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #8a8a8a;
+      }
+      .portfolio-photo-pending .fa {
+        font-size: 42px;
+        margin-bottom: 8px;
+      }
+      .portfolio-photo-pending span {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+    </style>

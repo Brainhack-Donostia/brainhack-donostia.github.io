@@ -2,105 +2,37 @@ url: https://brainhack-donostia.github.io
 baseurl: 
 
 # Site settings
-title: BrainHack Donostia 2025
+title: BrainHack Donostia 2026
 email: info.bhg-donostia@bcbl.eu
-description: "Site for Brainhack Donostia 2025"
+description: "Site for Brainhack Donostia 2026"
 
 
 # Team names, titles and social links
 people:
-- name: Clementine Levy-Fidel
-  pic: clementineL
-  position: Chair 
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/clementine-levy-fidel
-- name: Monika Utrosa Skerjanec
-  pic: monikaU
-  position: Chair
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/monika-utrosa-skerjanec
-- name: Noemi Bonfiglio
-  pic: noemiB
-  position: Treasury
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/conocenos/equipo/noemi-bonfiglio
-- name: Joaquin  Ordonez
-  pic: joaquinO
-  position: Treasury
-  social:
-     - title: firefox
-       url: https://www.bcbl.eu/en/joaquin-ordonez
-- name: Jose Antonio Gonzalo Gimeno
-  pic: joseA
-  position: Treasury
-  social:
-     - title: firefox
-       url: https://www.bcbl.eu/en/jose-antonio-gonzalo
-- name: Melissa Donati 
-  pic: melissaD
-  position: Website/Design
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/melissa-donati
-- name: Marco Flores-Coronado
-  pic: marcoF
-  position: Website
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/marco-a-flores-coronado
-- name: Daniel Nieto Carrero
-  pic: danielN
+- name: Cristina Rius
+  pic: cristinarius
+  position: Co-chair
+- name: François Steffann
+  pic: francoissteffann
+  position: Co-chair
+- name: Vilani Rajapkse
+  pic: vilani
+  position: Treasury & Event Planning
+- name: Anam Qureshi
+  pic: anaamqureshi
+  position: Treasury & Event Planning
+- name: Yixuan Zhu
+  pic: yixuanzhu
+  position: Treasury & Event Planning
+- name: Iria Nieto
+  pic: irianieto
+  position: PR & Design
+- name: Nursena Arslan
+  pic: nursenaarslan
+  position: PR & Design
+- name: Iñigo García
+  pic: inigogarcia
   position: IT
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/node/7816
-- name: Francisca Campos Matias
-  pic: franciscaC
-  position: Program
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/francisca-campos-matias
-- name: Irtisha Chakraborty 
-  pic: irtishaC
-  position: Program
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/irtisha-chakraborty
-- name: Cristina Comella Luengo
-  pic: cristinaC
-  position: Program/Design
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/conocenos/equipo/cristina-comella
-- name: Chiara Bernini
-  pic: chiaraB
-  position: Design/Public relations
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/chiara-bernini
-- name: Nirmitee Mulay
-  pic: nirmiteeM
-  position: Design/Public relations
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/conocenos/equipo/nirmitee-mulay
-- name: Antje Walter
-  pic: antjeW
-  position: Public relations
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/antje-walter
-        # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-
-- name: Seyma Takir 
-  pic: seymaT
-  position: Website
-  social:
-    - title: firefox
-      url: https://www.bcbl.eu/en/seyma-takir
 
 social:
   - title: github
@@ -121,3 +53,4 @@ address:
 # Build settings
 markdown: kramdown
 permalink: pretty
+future: true
