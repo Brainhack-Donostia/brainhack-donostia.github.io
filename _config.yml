@@ -54,3 +54,6 @@ address:
 markdown: kramdown
 permalink: pretty
 future: true
+
+exclude:
+  - CLAUDE.md
