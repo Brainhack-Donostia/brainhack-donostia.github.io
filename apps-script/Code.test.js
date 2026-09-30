@@ -37,15 +37,15 @@ function parameters(values) {
 const registration = api.collectAndValidate_(parameters({
   full_name: 'Test Person',
   email: 'test@example.org',
-  attendance: ['November 3 / 3 de noviembre', 'November 4 / 4 de noviembre'],
+  interests: ['Neuroscience / Neurociencias', 'Open science / Ciencia abierta'],
   privacy_consent: 'accepted'
 }), api.registration);
-assert.equal(registration.attendance, 'November 3 / 3 de noviembre | November 4 / 4 de noviembre');
+assert.equal(registration.interests, 'Neuroscience / Neurociencias | Open science / Ciencia abierta');
 
 assert.throws(() => api.collectAndValidate_(parameters({
   full_name: 'Test Person',
   email: 'test@example.org',
-  attendance: 'Invalid day',
+  interests: 'Invalid interest',
   privacy_consent: 'accepted'
 }), api.registration), /invalid option/i);
 
@@ -56,6 +56,31 @@ assert.throws(() => api.collectAndValidate_(parameters({
   description: 'Description',
   resources: 'Open data',
   privacy_consent: 'accepted'
+}), api.project), /required field/i);
+
+const project = api.collectAndValidate_(parameters({
+  full_name: 'Project Owner',
+  email: 'owner@example.org',
+  institution: 'Test Institute',
+  title: 'Project',
+  description: 'Description',
+  resources: 'Open data',
+  privacy_consent: 'accepted',
+  template_read: 'accepted',
+  forms_read: 'accepted'
+}), api.project);
+assert.equal(project.template_read, 'accepted');
+assert.equal(project.forms_read, 'accepted');
+
+assert.throws(() => api.collectAndValidate_(parameters({
+  full_name: 'Project Owner',
+  email: 'owner@example.org',
+  institution: 'Test Institute',
+  title: 'Project',
+  description: 'Description',
+  resources: 'Open data',
+  privacy_consent: 'accepted',
+  forms_read: 'accepted'
 }), api.project), /required field/i);
 
 assert.equal(api.validateSubmissionId_('12345678-1234-1234-1234-123456789abc'), '12345678-1234-1234-1234-123456789abc');

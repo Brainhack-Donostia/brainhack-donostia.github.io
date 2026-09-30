@@ -50,8 +50,6 @@
     event.preventDefault();
     if (submitting || !recaptchaReady || !form.reportValidity()) return;
 
-    if (formType === 'registration' && !validateAttendance()) return;
-
     submitting = true;
     submitButton.disabled = true;
     setStatus('Sending… / Enviando…');
@@ -69,22 +67,6 @@
       resetAfterError();
     }
   });
-
-  form.querySelectorAll('input[name="attendance"]').forEach(function (day) {
-    day.addEventListener('change', function () {
-      const firstDay = form.querySelector('input[name="attendance"]');
-      if (firstDay) firstDay.setCustomValidity('');
-    });
-  });
-
-  function validateAttendance() {
-    const days = Array.from(form.querySelectorAll('input[name="attendance"]'));
-    if (!days.length || days.some(function (day) { return day.checked; })) return true;
-
-    days[0].setCustomValidity('Choose at least one day / Selecciona al menos un día');
-    days[0].reportValidity();
-    return false;
-  }
 
   function refreshSubmitState() {
     submitButton.disabled = !(recaptchaReady && templateDownloaded);

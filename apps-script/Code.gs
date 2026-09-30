@@ -4,12 +4,12 @@ const FORM_DEFINITIONS = Object.freeze({
     page: 'registration.html',
     subject: 'BrainHack Donostia 2026 registration',
     fields: [
-      'full_name', 'email', 'institution', 'position', 'attendance', 'interests',
+      'full_name', 'email', 'institution', 'position', 'interests',
       'previous_brainhack', 'programming', 'expectations', 'propose_project',
       'support', 'comments', 'privacy_consent'
     ],
-    multipleFields: ['attendance', 'interests'],
-    requiredFields: ['full_name', 'email', 'attendance', 'privacy_consent'],
+    multipleFields: ['interests'],
+    requiredFields: ['full_name', 'email', 'privacy_consent'],
     allowedValues: {
       position: [
         'Undergraduate student / Estudiante de grado',
@@ -19,10 +19,6 @@ const FORM_DEFINITIONS = Object.freeze({
         'Researcher or lecturer / Investigador/a o docente',
         'Research engineer or technical staff / Ingeniero/a o personal técnico',
         'Other / Otra'
-      ],
-      attendance: [
-        'November 3 / 3 de noviembre', 'November 4 / 4 de noviembre',
-        'November 5 / 5 de noviembre', 'November 6 / 6 de noviembre'
       ],
       interests: [
         'Neuroscience / Neurociencias',
@@ -54,14 +50,19 @@ const FORM_DEFINITIONS = Object.freeze({
     subject: 'BrainHack Donostia 2026 project submission',
     fields: [
       'full_name', 'email', 'institution', 'contributors', 'title', 'description',
-      'resources', 'skills', 'equipment', 'links', 'comments', 'privacy_consent'
+      'resources', 'skills', 'equipment', 'links', 'comments', 'privacy_consent',
+      'template_read', 'forms_read'
     ],
     multipleFields: [],
     requiredFields: [
       'full_name', 'email', 'institution', 'title', 'description', 'resources',
-      'privacy_consent'
+      'privacy_consent', 'template_read', 'forms_read'
     ],
-    allowedValues: { privacy_consent: ['accepted'] }
+    allowedValues: {
+      privacy_consent: ['accepted'],
+      template_read: ['accepted'],
+      forms_read: ['accepted']
+    }
   }
 });
 
@@ -113,7 +114,7 @@ function doPost(event) {
     return successPage_(formType);
   } catch (error) {
     console.error(error && error.stack ? error.stack : error);
-    return errorPage_(formType);
+    return errorPage_(formType, publicErrorCode_(error));
   }
 }
 
@@ -238,8 +239,16 @@ function validateRecaptcha_(token, expectedAction) {
     .map(function (hostname) { return hostname.trim().toLowerCase(); })
     .filter(Boolean);
 
-  if (!result.success || result.action !== expectedAction || Number(result.score) < minimumScore) {
-    throw new Error('reCAPTCHA verification failed.');
+  if (!result.success) {
+    throw new Error('reCAPTCHA service rejected the token.');
+  }
+
+  if (result.action !== expectedAction) {
+    throw new Error('Unexpected reCAPTCHA action.');
+  }
+
+  if (Number(result.score) < minimumScore) {
+    throw new Error('reCAPTCHA score is too low.');
   }
 
   if (!allowedHostnames.length || allowedHostnames.indexOf(String(result.hostname).toLowerCase()) < 0) {
@@ -358,7 +367,7 @@ function successPage_(formType) {
   return redirectPage_(destination, 'Submission received / Envío recibido');
 }
 
-function errorPage_(formType) {
+function errorPage_(formType, errorCode) {
   const properties = PropertiesService.getScriptProperties();
   const siteUrl = (properties.getProperty('SITE_URL') || 'https://brainhack-donostia.github.io')
     .replace(/\/$/, '');
@@ -368,12 +377,35 @@ function errorPage_(formType) {
   return HtmlService.createHtmlOutput(
     '<!doctype html><html lang="en"><head><meta charset="utf-8">' +
     '<meta name="viewport" content="width=device-width,initial-scale=1">' +
+    '<base target="_top">' +
     '<title>Submission error</title></head><body>' +
     '<main><h1>We could not process the submission</h1>' +
     '<p>No hemos podido procesar el envío.</p>' +
+    '<p>Reference / Referencia: <strong>' + escapeHtml_(errorCode) + '</strong></p>' +
     '<p><a href="' + escapeHtml_(retryUrl) + '">Try again / Volver a intentarlo</a></p>' +
     '</main></body></html>'
   );
+}
+
+function publicErrorCode_(error) {
+  const message = cleanText_(error && error.message ? error.message : error);
+  const mappings = [
+    [/Missing Script Property/, 'CONFIGURATION'],
+    [/Missing reCAPTCHA token/, 'RECAPTCHA_TOKEN'],
+    [/service rejected/, 'RECAPTCHA_SERVICE'],
+    [/Unexpected reCAPTCHA action/, 'RECAPTCHA_ACTION'],
+    [/score is too low/, 'RECAPTCHA_SCORE'],
+    [/Unexpected reCAPTCHA hostname/, 'RECAPTCHA_HOST'],
+    [/Invalid form age/, 'FORM_AGE'],
+    [/Invalid submission ID/, 'SUBMISSION_ID'],
+    [/required field/, 'REQUIRED_FIELD'],
+    [/invalid option/, 'INVALID_OPTION'],
+    [/email address is invalid/, 'EMAIL'],
+    [/Privacy consent/, 'PRIVACY'],
+    [/Unknown form type/, 'FORM_TYPE']
+  ];
+  const match = mappings.find(function (mapping) { return mapping[0].test(message); });
+  return match ? match[1] : 'SERVER_ERROR';
 }
 
 function redirectPage_(destination, title) {
@@ -381,8 +413,10 @@ function redirectPage_(destination, title) {
   return HtmlService.createHtmlOutput(
     '<!doctype html><html lang="en"><head><meta charset="utf-8">' +
     '<meta name="viewport" content="width=device-width,initial-scale=1">' +
+    '<base target="_top">' +
     '<meta http-equiv="refresh" content="0;url=' + safeDestination + '">' +
     '<title>' + escapeHtml_(title) + '</title></head><body>' +
+    '<script>window.top.location.replace(' + JSON.stringify(destination) + ');</script>' +
     '<p><a href="' + safeDestination + '">Continue / Continuar</a></p>' +
     '</body></html>'
   );

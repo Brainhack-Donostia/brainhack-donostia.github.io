@@ -25,9 +25,10 @@ Site statique public de l'événement annuel **Brainhack Donostia** (neuroscienc
 - `_includes/css/` : CSS du thème (`agency.css` + `light-theme.css` pour les personnalisations).
 - `_plugins/hex_to_rgb.rb` : filtre Liquid `hex_to_rgb` utilisé par le thème.
 - `img/` : assets images, avec des conventions de taille (voir section « Conventions »).
-- `_site/` : sortie de build Jekyll. **Ce dossier est versionné dans git** et peut être obsolète : il faut le régénérer (`jekyll build`) après les modifications d'includes/CSS.
+- `_site/` : sortie de build Jekyll, ignorée pour les nouveaux fichiers mais contenant encore quelques fichiers historiques suivis par git. Ne jamais l'éditer directement ; exécuter `jekyll build` pour vérifier les sources et examiner séparément les éventuels changements de fichiers historiques.
 - `registration.html` et `project-submission.html` : pages autonomes (formulaires d'inscription et de soumission de projet). Collecte des données : voir « Formulaires — collecte des données » ci-dessous et `docs/plan-formulaires.md`.
 - `tools/make_bhd_template.py` : script générateur du template Word de projet (voir « Template Word de projet »). Dépendance de build `python-docx`, **hors** dépendances du site.
+- `assets/` : fichiers statiques publiés tels quels par Jekyll (téléchargeables). Contient le template Word de projet.
 
 ## Points d'entrée et flux de données
 
@@ -46,15 +47,17 @@ Site statique public de l'événement annuel **Brainhack Donostia** (neuroscienc
   - `url: https://brainhack-donostia.github.io`
   - `baseurl:` est **vide** → `{{ site.baseurl }}/x.html` produit `/x.html` (chemins absolus depuis la racine).
 
-## Formulaires — collecte des données (décision, non implémentée)
+## Formulaires — collecte des données (backend déployé, recette production en attente)
 
-- Les deux formulaires (`registration.html`, `project-submission.html`) sont **statiques** : `action` vide, `data-endpoint="unconfigured"`, boutons `disabled`, encart « not open yet », garde JS bloquant la soumission tant que `action` est vide.
+- `js/form-config.js` contient l'URL `/exec` Apps Script et la site key publique reCAPTCHA. `js/forms.js` charge reCAPTCHA v3 et active chaque formulaire seulement si sa clé `*Open` vaut `true`. Les deux formulaires restent fermés publiquement pendant la recette ; le test production active l'inscription uniquement dans le navigateur de test.
 - Décision retenue : réception via **Google Sheets + Apps Script** (Web App `doPost`), **1 projet Apps Script partagé** routant par champ caché `form_type` (`registration` / `project`) ; **2 classeurs séparés**.
-- Compte : **Gmail gratuit dédié**. Anti-spam : **honeypot + reCAPTCHA v3**. RGPD : **case de consentement obligatoire + page `privacy.html` à créer**.
-- Emission : notification aux organisateurs + accusé de réception bilingue EN/ES + redirection vers `thankyou.html` (à refondre, actuellement obsolète : message « volunteer », Bulma).
-- Intégration pressentie : **POST classique + redirection serveur** (évite les problèmes CORS).
+- Compte : **Gmail gratuit dédié**. Anti-spam : **honeypot + reCAPTCHA v3 + âge minimal du formulaire**. Les valeurs à choix sont vérifiées côté serveur, un `submission_id` empêche les doublons et `retryPendingEmails` permet la reprise séparée des e-mails échoués. RGPD : **case de consentement obligatoire + `privacy.html` bilingue** ; conservation proposée : 12 mois après l'événement, à faire valider avant ouverture.
+- Emission : notification aux organisateurs + accusé de réception bilingue EN/ES + redirection vers `thankyou.html?type=registration|project`.
+- Intégration adoptée : **POST classique + redirection serveur** (évite les problèmes CORS). Source et procédure de déploiement : `apps-script/`.
 - Détail complet, phases, risques et critères d'acceptation : **`docs/plan-formulaires.md`**.
-- Contraire : le plan est validé dans ses options, mais **aucune implémentation n'est commencée**.
+- Le projet Apps Script, les propriétés privées, les deux classeurs, leurs en-têtes et le déclencheur horaire sont configurés. La recette locale a révélé un rejet `RECAPTCHA_SERVICE`; la recette sur le domaine de production reste à effectuer avant ouverture durable.
+- **Gate de téléchargement** (`project-submission.html`) : le bouton `Download: Project Template / Descargar Template del Proyecto` (`<a data-template-download>` → `assets/brainhack_project_template.docx`) doit être cliqué pour que Submit (`#project-form button[type=submit]`) s'active. `js/forms.js` suit `templateDownloaded` dans `refreshSubmitState()` (cumulé avec `projectOpen` et le chargement reCAPTCHA). L'aide `#template-hint` (`.form-hint`) explique le bouton grisé : elle n'est **pas** dans le HTML par défaut, n'apparaît que si le formulaire est ouvert et est masquée dès le téléchargement.
+- Les deux cases obligatoires « I read this! / ¡Leído! » (consigne du template, puis rappel « Submitting a project… ») vivent **hors** du `<form>`, dans l'encadré `.notice` : elles sont rattachées au formulaire par l'attribut `form="project-form"`, sans quoi `required` et l'envoi les ignoreraient.
 
 ## Commandes d'installation, exécution, test et build
 
@@ -160,21 +163,23 @@ Tailles attendues (README) :
 | Page d'inscription | `registration.html` |
 | Page de soumission de projet | `project-submission.html` |
 | Plan de collecte des formulaires | `docs/plan-formulaires.md` |
-| Template Word de projet | `brainhack_project_template.docx`, `tools/make_bhd_template.py` |
+| Template Word de projet | `assets/brainhack_project_template.docx`, `tools/make_bhd_template.py` |
 | Build/output | `_site/` (régénéré via `jekyll build`) |
 
 ## Template Word de projet
 
-- Livrable : `brainhack_project_template.docx` (racine du dépôt), en **anglais**, 4 pages, destiné aux participants pour rédiger leur projet.
+- Livrable : `assets/brainhack_project_template.docx`, en **anglais**, 4 pages, destiné aux participants pour rédiger leur projet. Copié tel quel dans `_site/assets/` par Jekyll (téléchargeable à l'URL `/assets/brainhack_project_template.docx`).
 - Source du contenu : [Project guide](https://school-brainhack.github.io/project_guide/) du BrainHack School + [project_template](https://github.com/school-brainhack/project_template).
 - Sections : couverture/consignes, tableau de métadonnées (titre, auteurs, affiliation, email, date, repo GitHub, site, tags, summary), 1. Project definition (Background, Objectives, Tools, Data, Deliverables), 2. Results (Progress overview, Tools/skills learned, Results + emplacements de figures), 3. Conclusion & acknowledgements, 4. References, annexe « Self-assessment checklist » reprenant les critères d'évaluation 1-3 + bonus.
 - Chaque section porte un texte-guide gris (italique) à remplacer par le participant.
-- Régénération : `python tools/make_bhd_template.py` — nécessite `python-docx` (`python -m pip install python-docx`), installé localement dans Python 3.13, **pas** dans le `Gemfile`. Le script écrit par défaut à la racine du dépôt ; il accepte un chemin de sortie en argument.
+- Régénération : `python tools/make_bhd_template.py` — nécessite `python-docx` (`python -m pip install python-docx`), installé localement dans Python 3.13, **pas** dans le `Gemfile`. Le script écrit par défaut dans `assets/` ; il accepte un chemin de sortie en argument.
 - Vérification : relecture via `python-docx` et rendu PDF via `C:\Program Files\LibreOffice\program\soffice.exe --headless --convert-to pdf`. Pas de contrôle dans Microsoft Word.
+- `.gitignore` ignore `__pycache__/` et `*.pyc`, car `tools/` contient du Python.
 
 ## Limites, dette technique et zones sensibles
 
-- `_site/` versionné : risque de divergence entre sources et sortie de build. Toujours rebuild après modification significative.
+- `_site/` partiellement suivi historiquement : risque de divergence entre sources et anciens fichiers suivis. Toujours vérifier le build, sans ajouter les nouveaux artefacts ignorés.
+- **Piège `jekyll serve`** : le build lancé au démarrage du serveur réécrit l'URL des fichiers `_site/` **suivis** en `http://0.0.0.0:4000/` (`_site/index.html` → `<link rel="canonical">` ; `_site/feed.xml` → `<link>` et `<guid>` de chaque post). Ne jamais committer ces modifications : restaurer (`git checkout -- _site/index.html _site/feed.xml`) ou régénérer avec `jekyll build`, qui conserve l'`url:` de `_config.yml`.
 - Absence de tests automatisés : tout changement doit être vérifié visuellement en local.
 - Sections programme/projets codées en dur : maintenance manuelle à chaque édition.
 - `modal-id` doit rester unique ; une duplication casse les modals des intervenants.
@@ -182,5 +187,5 @@ Tailles attendues (README) :
 
 ## Informations manquantes ou incertaines
 
-- Collecte des formulaires : approche **décidée** (Google Sheets + Apps Script, cf. `docs/plan-formulaires.md`) mais **pas encore implémentée** ; restent à trancher : mode d'intégration exact, durée de conservation des données, texte du consentement.
-- Stratégie de gestion de `_site/` versionné : rebuild systématique recommandée, mais pas de hook automatisé confirmé.
+- Collecte des formulaires : backend Google déployé et frontend configuré ; recette en production encore requise. La politique de confidentialité et la conservation proposée de 12 mois doivent être validées avant ouverture durable.
+- Stratégie de gestion de `_site/` partiellement suivi : build systématique recommandé, mais pas de hook automatisé confirmé.

@@ -1,7 +1,7 @@
 # Plan — Collecte des données des formulaires (Registration & Project submission)
 
-> Statut : **implémentation locale réalisée et testée avec un endpoint simulé**.
-> Déploiement Google, configuration des identifiants et tests réels restent à effectuer.
+> Statut : **backend Google déployé et frontend configuré**.
+> La recette réelle sur le domaine de production et la validation RGPD restent à effectuer.
 
 ## 1. Définition du projet
 
@@ -20,7 +20,7 @@ Rendre opérationnels les deux formulaires statiques du site pour que chaque sou
 - **F5** — Google Sheets consultable/filtrable (dashboard de fait).
 - **F6** — Honeypot + reCAPTCHA v3 + ancienneté du formulaire rejettent les robots.
 - **F7** — Case de consentement RGPD obligatoire + lien politique de confidentialité bilingue.
-- **F8** — Validation client : champs requis, ≥ 1 jour (Registration), email valide.
+- **F8** — Validation client : champs requis, email valide.
 
 ### Non fonctionnelles
 - **N1** — 100 % gratuit (GitHub Pages inchangé, offres gratuites Google).
@@ -97,8 +97,8 @@ sequenceDiagram
 ```
 
 ### Parcours utilisateur
-1. Ouvre le formulaire → coche jours/consentement → remplit → clic.
-2. Validation client (requis, consentement, ≥ 1 jour).
+1. Ouvre le formulaire → coche le consentement → remplit → clic.
+2. Validation client (requis, consentement).
 3. reCAPTCHA v3 s'exécute en arrière-plan, jeton inséré.
 4. POST → traitement serveur → écriture + e-mails → redirection page de confirmation.
 
