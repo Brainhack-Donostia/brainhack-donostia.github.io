@@ -10,7 +10,8 @@ dependency of the Jekyll site)::
 
     python -m pip install python-docx
 
-Usage (default output is ``<repo root>/brainhack_project_template.docx``)::
+Usage (default output is ``<repo root>/assets/brainhack_project_template.docx``,
+which Jekyll publishes as a downloadable static file)::
 
     python tools/make_bhd_template.py [output.docx]
 """
@@ -28,7 +29,7 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = (
     sys.argv[1]
     if len(sys.argv) > 1
-    else os.path.join(REPO_ROOT, "brainhack_project_template.docx")
+    else os.path.join(REPO_ROOT, "assets", "brainhack_project_template.docx")
 )
 
 ACCENT = RGBColor(0x2E, 0x54, 0x96)
@@ -40,6 +41,8 @@ doc = Document()
 
 # ---------------------------------------------------------------- page setup
 sec = doc.sections[0]
+sec.page_width = Cm(21.0)
+sec.page_height = Cm(29.7)
 sec.top_margin = Cm(2.2)
 sec.bottom_margin = Cm(2.2)
 sec.left_margin = Cm(2.5)
