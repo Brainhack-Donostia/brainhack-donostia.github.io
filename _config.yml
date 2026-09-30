@@ -57,3 +57,6 @@ future: true
 
 exclude:
   - CLAUDE.md
+  - apps-script
+  - docs
+  - tools
