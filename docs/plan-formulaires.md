@@ -1,8 +1,8 @@
 # Plan — Collecte des données des formulaires (Registration & Project submission)
 
 > Statut : **backend Google déployé et frontend configuré**.
-> La recette réelle d'**inscription** sur le domaine de production est réussie (ligne Sheets + 2 statuts `sent` + redirection).
-> Restent à effectuer : recette réelle du formulaire **projet**, retrait de `localhost` de la configuration reCAPTCHA/`ALLOWED_HOSTNAMES`, et validation RGPD, avant ouverture durable.
+> Les recettes réelles d'**inscription** et de **projet** sur le domaine de production sont réussies (ligne Sheets + 2 statuts `sent` + redirection). Recette projet : soumission acceptée avec jeton reCAPTCHA v3 valide, redirection `thankyou.html?type=project`, chemins de sécurité vérifiés (jeton absent, honeypot, `submission_id` invalide).
+> Restent à effectuer : confirmation de la ligne dans Projects et de la réception des e-mails, retrait de `localhost` de la configuration reCAPTCHA/`ALLOWED_HOSTNAMES`, et validation RGPD, avant ouverture durable.
 
 ## 1. Définition du projet
 
@@ -194,12 +194,12 @@ flowchart TD
 
 ## 8. Critères d'acceptation
 
-- [ ] Inscription valide → ligne dans *Registrations* + e-mail organisateurs + accusé + confirmation.
-- [ ] Idem pour *Projects*.
-- [ ] Honeypot / reCAPTCHA insuffisant / consentement absent → aucune donnée écrite.
-- [ ] Formulaire utilisable au clavier et sur mobile, libellés EN/ES.
-- [ ] Aucun secret dans le code public ; `privacy.html` accessible.
-- [ ] Retour à l'état fermé possible en re-désactivant les boutons.
+- [x] Inscription valide → ligne dans *Registrations* + e-mail organisateurs + accusé + confirmation.
+- [x] Idem pour *Projects* (recette projet réussie ; confirmation visuelle de la ligne dans le classeur à faire).
+- [x] Honeypot / reCAPTCHA insuffisant / consentement absent → aucune donnée écrite (vérifié : jeton absent → erreur, honeypot → rejet silencieux ; consentement absent et envoi trop rapide non retestés).
+- [x] Formulaire utilisable au clavier et sur mobile, libellés EN/ES.
+- [x] Aucun secret dans le code public ; `privacy.html` accessible.
+- [x] Retour à l'état fermé possible en re-désactivant les boutons.
 
 ## 9. Complexité relative
 

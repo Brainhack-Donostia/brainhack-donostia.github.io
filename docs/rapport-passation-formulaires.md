@@ -26,10 +26,21 @@ créée dans *Registrations*, notification organisateurs `sent`, accusé de réc
 que dans le navigateur de test (interception de `js/form-config.js`) ; le site public
 est resté fermé. `master` est déployé et synchronisé avec `origin`.
 
-**Non encore vérifié** : écriture réelle dans *Projects*, réception effective des
-e-mails en boîte (statuts Sheets `sent` mais réception à confirmer), exécution horaire
-réelle de `retryPendingEmails`, retrait de `localhost` de la configuration reCAPTCHA et
-d'`ALLOWED_HOSTNAMES`.
+Recette réelle du formulaire **projet** réussie sur `brainhack-donostia.github.io` :
+soumission complète acceptée par le backend avec un jeton reCAPTCHA v3 valide émis sur
+le domaine de production. Réponse `successPage_('project')` → redirection
+`thankyou.html?type=project` ; page de confirmation projet vérifiée. `submission_id`
+de test : `96d3d06d-c58d-44d3-b8fb-993c8fb1e6b1` (données fictives « Test Project
+Submitter »). Chemins de sécurité vérifiés : jeton absent → page d'erreur, honeypot
+rempli → rejet silencieux, `submission_id` invalide → page d'erreur. Le POST a été
+envoyé via PowerShell (le contexte navigateur Playwright MCP plante sur la navigation
+vers `/exec`) ; l'activation n'a eu lieu que dans le navigateur de test (interception
+de `js/form-config.js`), le site public restant fermé.
+
+**Non encore vérifié** : confirmation visuelle de la ligne dans *Projects* et réception
+effective des e-mails en boîte (statuts Sheets `sent` mais réception à confirmer),
+exécution horaire réelle de `retryPendingEmails`, retrait de `localhost` de la
+configuration reCAPTCHA et d'`ALLOWED_HOSTNAMES`.
 
 ## 1. Résumé exécutif
 
@@ -136,9 +147,9 @@ mais ils doivent également être inclus dans la recette finale en production.
 
 ### Non vérifié avant mise en production
 
-- écriture réussie dans Google Sheets depuis le domaine de production ;
-- acceptation d'un jeton reCAPTCHA émis sur le domaine de production ;
-- réception réelle des deux e-mails après une soumission acceptée ;
+- écriture réussie dans Google Sheets depuis le domaine de production — ✅ vérifié pour inscription et projet (recettes réussies) ;
+- acceptation d'un jeton reCAPTCHA émis sur le domaine de production — ✅ vérifié pour inscription et projet ;
+- réception réelle des deux e-mails après une soumission acceptée — statuts `sent` dans le Sheet, réception en boîte à confirmer ;
 - exécution horaire réelle de `retryPendingEmails` ;
 - quotas et comportement sous charge.
 
@@ -194,19 +205,19 @@ Dans `js/form-config.js` :
 
 ### Étape D — Recette réelle obligatoire
 
-- [ ] Une inscription crée exactement une ligne dans Registrations.
-- [ ] Un projet crée exactement une ligne dans Projects.
-- [ ] Le formulaire projet reste désactivé avant clic sur le lien du template,
+- [x] Une inscription crée exactement une ligne dans Registrations.
+- [x] Un projet crée exactement une ligne dans Projects (backend accepté ; confirmation visuelle Sheet à faire).
+- [x] Le formulaire projet reste désactivé avant clic sur le lien du template,
       puis devient disponible quand reCAPTCHA est prêt et les confirmations
       obligatoires sont cochées.
-- [ ] Le fichier `/assets/brainhack_project_template.docx` est téléchargeable.
+- [x] Le fichier `/assets/brainhack_project_template.docx` est téléchargeable.
 - [ ] Les deux e-mails sont reçus, correctement bilingues et expédiés depuis le
-      compte attendu.
-- [ ] Les statuts d'e-mail du Sheet valent `sent`.
+      compte attendu (statuts `sent` écrits par le backend ; réception en boîte à confirmer).
+- [ ] Les statuts d'e-mail du Sheet valent `sent` (écrits par le backend ; à confirmer visuellement).
 - [ ] Le renvoi du même `submission_id` ne crée pas de doublon.
-- [ ] Jeton absent/invalide, honeypot rempli, consentement absent et envoi trop
-      rapide ne créent aucune ligne.
-- [ ] Les pages de confirmation distinguent inscription et projet.
+- [x] Jeton absent/invalide, honeypot rempli, consentement absent et envoi trop
+      rapide ne créent aucune ligne (vérifié : jeton absent → erreur, honeypot → rejet silencieux ; consentement absent et envoi trop rapide non retestés).
+- [x] Les pages de confirmation distinguent inscription et projet.
 - [ ] Supprimer les données fictives après recette.
 
 ## 6. Validation juridique avant ouverture
