@@ -18,6 +18,17 @@
                     <li class="hidden">
                         <a href="#page-top">November 3-6, 2026</a>
                     </li>
+                    <li class="registration-nav-item">
+                        <a href="{{ site.baseurl }}/registration.html">Registration</a>
+                    </li>
+                    <li class="project-submission-nav-item">
+                        <a href="{{ site.baseurl }}/project-submission.html">Project submission</a>
+                    </li>
+                    <!-- Projects nav entry disabled for now; keep for later.
+                    <li>
+                        <a class="page-scroll" href="#projects">Projects</a>
+                    </li>
+                    -->
                     <li>
                         <a class="page-scroll" href="#services">About BHD</a>
                     </li>
@@ -26,9 +37,6 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">Talks</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#projects">Projects</a>
                     </li>
                    <!-- <li>
                         <a class="page-scroll" href="#social">Social</a>
@@ -62,14 +70,21 @@
     </nav>
 
     <!-- Header -->
-    <header>
+    <header class="site-hero">
+        <picture class="site-hero__media">
+            <source media="(max-width: 479px)" srcset="{{ site.baseurl }}/img/logos/logo_title.png">
+            <source media="(max-width: 899px)" srcset="{{ site.baseurl }}/img/logos/donostia4title.png">
+            <source media="(max-width: 1299px)" srcset="{{ site.baseurl }}/img/logos/donostia3title.png">
+            <img src="{{ site.baseurl }}/img/logos/donostia2title.png"
+                 alt="BrainHack Donostia — neuroscience, open science and technology in San Sebastián">
+        </picture>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in"></div>
-                <div class="intro-heading"> </div>
-               <!-- <a href="https://forms.gle/2TNdvvh9zHKcMMYJ8" class="page-scroll btn btn-xl"disabled>November 19-21, 2025</a> -->
-                <!-- Registration button hidden: no registration open yet for BHD2026 -->
-                <!-- <a href="registration.html" class="page-scroll btn btn-xl">Registration</a> -->
+                <div class="hero-cta-group">
+                    <p class="hero-date">November 3–6, 2026</p>
+                    <a href="{{ site.baseurl }}/registration.html" class="btn btn-xl registration-cta">Registration</a>
+                    <a href="{{ site.baseurl }}/project-submission.html" class="btn btn-xl project-submission-cta">Project submission</a>
+                </div>
             </div>
         </div>
     </header>
