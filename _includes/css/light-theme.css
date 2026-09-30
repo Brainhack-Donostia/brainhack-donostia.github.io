@@ -114,7 +114,7 @@ body {
     border-radius: 999px;
     color: #FFF;
     background: var(--bhd-gradient);
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
     line-height: 20px;
 }
@@ -132,7 +132,7 @@ body {
     border-radius: 999px;
     color: #FFF;
     background: linear-gradient(135deg, #F04CCB 0%, #B51DF2 60%, #7A16F7 100%);
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
     line-height: 20px;
 }
@@ -270,7 +270,7 @@ section:nth-of-type(even) {
 
     .navbar-default .nav li a {
         padding: 20px 4px;
-        font-size: 20px;
+        font-size: 15px;
         letter-spacing: 0;
     }
 
@@ -315,6 +315,24 @@ section:nth-of-type(even) {
     border-color: #EAF1FF;
     background-color: #FFF;
     box-shadow: 0 10px 26px rgba(22, 33, 59, .10);
+}
+
+section#services h1.section-heading {
+    font-size: 37px;
+}
+
+section#services h3.section-heading {
+    font-size: 24px;
+}
+
+section#services h3.section-subheading {
+    font-size: 22px;
+}
+
+@media (max-width: 600px) {
+    section#services h3.section-subheading {
+        font-size: 17px;
+    }
 }
 
 section#program,
