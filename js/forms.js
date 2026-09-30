@@ -8,6 +8,7 @@
   const formType = form.dataset.formType;
   const submitButton = form.querySelector('button[type="submit"]');
   const templateDownload = form.querySelector('[data-template-download]');
+  const templateHint = document.getElementById('template-hint');
   const availabilityNotice = document.getElementById('form-availability');
   const status = document.getElementById('form-status');
   const startedAt = form.querySelector('input[name="form_started_at"]');
@@ -87,6 +88,7 @@
 
   function refreshSubmitState() {
     submitButton.disabled = !(recaptchaReady && templateDownloaded);
+    if (templateHint) templateHint.hidden = templateDownloaded;
   }
 
   function resetAfterError() {
