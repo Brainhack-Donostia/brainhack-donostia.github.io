@@ -25,7 +25,7 @@ Site statique public de l'événement annuel **Brainhack Donostia** (neuroscienc
 - `_includes/css/` : CSS du thème (`agency.css` + `light-theme.css` pour les personnalisations).
 - `_plugins/hex_to_rgb.rb` : filtre Liquid `hex_to_rgb` utilisé par le thème.
 - `img/` : assets images, avec des conventions de taille (voir section « Conventions »).
-- `_site/` : sortie de build Jekyll, ignorée pour les nouveaux fichiers mais contenant encore quelques fichiers historiques suivis par git. Ne jamais l'éditer directement ; exécuter `jekyll build` pour vérifier les sources et examiner séparément les éventuels changements de fichiers historiques.
+- `_site/` : sortie de build Jekyll, **entièrement retirée du suivi git** (commit `be1bfa5a`, `_site/*` dans `.gitignore`). Ne jamais l'éditer ni le committer ; le régénérer via `bundle exec jekyll build`.
 - `registration.html` et `project-submission.html` : pages autonomes (formulaires d'inscription et de soumission de projet). Collecte des données : voir « Formulaires — collecte des données » ci-dessous et `docs/plan-formulaires.md`.
 - `tools/make_bhd_template.py` : script générateur du template Word de projet (voir « Template Word de projet »). Dépendance de build `python-docx`, **hors** dépendances du site.
 - `assets/` : fichiers statiques publiés tels quels par Jekyll (téléchargeables). Contient le template Word de projet.
@@ -46,16 +46,20 @@ Site statique public de l'événement annuel **Brainhack Donostia** (neuroscienc
 - `_config.yml` :
   - `url: https://brainhack-donostia.github.io`
   - `baseurl:` est **vide** → `{{ site.baseurl }}/x.html` produit `/x.html` (chemins absolus depuis la racine).
+  - `exclude:` retire `CLAUDE.md`, `apps-script`, `docs` et `tools` du build. **Indispensable** : le builder GitHub Pages (`build_type: legacy`) rend les `.md` en Liquid et échouait sur les exemples `{% ... %}` de `docs/` (erreur « Invalid syntax for include tag »). Ne pas retirer ces exclusions.
 
-## Formulaires — collecte des données (backend déployé, recette production en attente)
+## Formulaires — collecte des données (backend déployé, recette inscription réussie en production)
 
-- `js/form-config.js` contient l'URL `/exec` Apps Script et la site key publique reCAPTCHA. `js/forms.js` charge reCAPTCHA v3 et active chaque formulaire seulement si sa clé `*Open` vaut `true`. Les deux formulaires restent fermés publiquement pendant la recette ; le test production active l'inscription uniquement dans le navigateur de test.
+- `js/form-config.js` contient l'URL `/exec` Apps Script et la site key publique reCAPTCHA. `js/forms.js` charge reCAPTCHA v3 et active chaque formulaire seulement si sa clé `*Open` vaut `true`. Les deux formulaires restent **fermés publiquement** (`registrationOpen: false`, `projectOpen: false`) ; l'ouverture se fait uniquement en passant le flag concerné à `true` dans `js/form-config.js` puis en déployant.
 - Décision retenue : réception via **Google Sheets + Apps Script** (Web App `doPost`), **1 projet Apps Script partagé** routant par champ caché `form_type` (`registration` / `project`) ; **2 classeurs séparés**.
 - Compte : **Gmail gratuit dédié**. Anti-spam : **honeypot + reCAPTCHA v3 + âge minimal du formulaire**. Les valeurs à choix sont vérifiées côté serveur, un `submission_id` empêche les doublons et `retryPendingEmails` permet la reprise séparée des e-mails échoués. RGPD : **case de consentement obligatoire + `privacy.html` bilingue** ; conservation proposée : 12 mois après l'événement, à faire valider avant ouverture.
 - Emission : notification aux organisateurs + accusé de réception bilingue EN/ES + redirection vers `thankyou.html?type=registration|project`.
 - Intégration adoptée : **POST classique + redirection serveur** (évite les problèmes CORS). Source et procédure de déploiement : `apps-script/`.
 - Détail complet, phases, risques et critères d'acceptation : **`docs/plan-formulaires.md`**.
-- Le projet Apps Script, les propriétés privées, les deux classeurs, leurs en-têtes et le déclencheur horaire sont configurés. La recette locale a révélé un rejet `RECAPTCHA_SERVICE`; la recette sur le domaine de production reste à effectuer avant ouverture durable.
+- Le projet Apps Script, les propriétés privées, les deux classeurs, leurs en-têtes et le déclencheur horaire sont configurés.
+- **Recette inscription réussie sur le domaine de production** (`brainhack-donostia.github.io`) : une ligne créée dans Registrations, notification organisateurs `sent`, accusé de réception `sent`, redirection vers `thankyou.html?type=registration`. Le test n'a activé l'inscription que dans le navigateur (interception de `js/form-config.js`), le site public restant fermé.
+- **Ne pas tester les formulaires via `localhost`** : reCAPTCHA v3 rejette le domaine local (`RECAPTCHA_SERVICE`). Utiliser le domaine public.
+- **Restant avant ouverture durable** : retirer `localhost` de la configuration reCAPTCHA et de `ALLOWED_HOSTNAMES` ; valider juridiquement `privacy.html` ; tester réellement le formulaire projet ; supprimer les données de test ; puis activer le flag `*Open` concerné.
 - **Gate de téléchargement** (`project-submission.html`) : le bouton `Download: Project Template / Descargar Template del Proyecto` (`<a data-template-download>` → `assets/brainhack_project_template.docx`) doit être cliqué pour que Submit (`#project-form button[type=submit]`) s'active. `js/forms.js` suit `templateDownloaded` dans `refreshSubmitState()` (cumulé avec `projectOpen` et le chargement reCAPTCHA). L'aide `#template-hint` (`.form-hint`) explique le bouton grisé : elle n'est **pas** dans le HTML par défaut, n'apparaît que si le formulaire est ouvert et est masquée dès le téléchargement.
 - Les deux cases obligatoires « I read this! / ¡Leído! » (consigne du template, puis rappel « Submitting a project… ») vivent **hors** du `<form>`, dans l'encadré `.notice` : elles sont rattachées au formulaire par l'attribut `form="project-form"`, sans quoi `required` et l'envoi les ignoreraient.
 
@@ -103,7 +107,7 @@ Log : `/root/jekyll.log`.
 bundle exec jekyll build
 ```
 
-À exécuter après modification d'includes ou de CSS pour mettre à jour `_site/` (qui est versionné).
+À exécuter après modification d'includes ou de CSS pour régénérer `_site/` localement. `_site/` n'est **plus** versionné.
 
 ### Vérification
 
@@ -178,8 +182,9 @@ Tailles attendues (README) :
 
 ## Limites, dette technique et zones sensibles
 
-- `_site/` partiellement suivi historiquement : risque de divergence entre sources et anciens fichiers suivis. Toujours vérifier le build, sans ajouter les nouveaux artefacts ignorés.
-- **Piège `jekyll serve`** : le build lancé au démarrage du serveur réécrit l'URL des fichiers `_site/` **suivis** en `http://0.0.0.0:4000/` (`_site/index.html` → `<link rel="canonical">` ; `_site/feed.xml` → `<link>` et `<guid>` de chaque post). Ne jamais committer ces modifications : restaurer (`git checkout -- _site/index.html _site/feed.xml`) ou régénérer avec `jekyll build`, qui conserve l'`url:` de `_config.yml`.
+- `_site/` entièrement retiré du suivi git : plus de risque de committer un build local, mais le contenu sur disque peut être obsolète. Régénérer via `bundle exec jekyll build` avant toute inspection.
+- **Piège `jekyll serve`** : le build lancé au démarrage du serveur réécrit l'URL des fichiers `_site/` en `http://0.0.0.0:4000/` (`_site/index.html` → `<link rel="canonical">` ; `_site/feed.xml` → `<link>` et `<guid>`). Sans conséquence sur le dépôt désormais (`_site/` ignoré) ; régénérer avec `jekyll build` pour restaurer les URLs de `_config.yml` si besoin.
+- **Build GitHub Pages** : `build_type: legacy` rend les `.md` du dépôt en Liquid. Tout nouveau dossier documentaire doit être ajouté à `exclude:` de `_config.yml`, sinon le déploiement échoue (cf. erreur `docs/` corrigée par `5cecc0a9`).
 - Absence de tests automatisés : tout changement doit être vérifié visuellement en local.
 - Sections programme/projets codées en dur : maintenance manuelle à chaque édition.
 - `modal-id` doit rester unique ; une duplication casse les modals des intervenants.
@@ -187,5 +192,5 @@ Tailles attendues (README) :
 
 ## Informations manquantes ou incertaines
 
-- Collecte des formulaires : backend Google déployé et frontend configuré ; recette en production encore requise. La politique de confidentialité et la conservation proposée de 12 mois doivent être validées avant ouverture durable.
-- Stratégie de gestion de `_site/` partiellement suivi : build systématique recommandé, mais pas de hook automatisé confirmé.
+- Collecte des formulaires : backend Google déployé ; recette **inscription** réussie en production. Restent à faire avant ouverture durable : recette **projet**, retrait de `localhost` (reCAPTCHA + `ALLOWED_HOSTNAMES`), validation juridique de `privacy.html` et de la conservation de 12 mois, suppression des données de test.
+- `_site/` : plus suivi ni versionné ; build manuel documenté, pas de hook automatisé.

@@ -1,7 +1,8 @@
 # Plan — Collecte des données des formulaires (Registration & Project submission)
 
 > Statut : **backend Google déployé et frontend configuré**.
-> La recette réelle sur le domaine de production et la validation RGPD restent à effectuer.
+> La recette réelle d'**inscription** sur le domaine de production est réussie (ligne Sheets + 2 statuts `sent` + redirection).
+> Restent à effectuer : recette réelle du formulaire **projet**, retrait de `localhost` de la configuration reCAPTCHA/`ALLOWED_HOSTNAMES`, et validation RGPD, avant ouverture durable.
 
 ## 1. Définition du projet
 

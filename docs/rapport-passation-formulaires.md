@@ -9,6 +9,28 @@
 **HEAD à la passation :** `1114678b` — `Ignore Python build artifacts`
 **État :** backend Google déployé, formulaires publics fermés, recette production en attente
 
+## 0. Mise à jour post-passation (30 septembre 2026)
+
+Évolutions intégrées depuis la rédaction initiale (HEAD `1114678b`) :
+
+| Commit | Objet |
+|---|---|
+| `abdc0bcf` | Configuration des formulaires pour les tests de production |
+| `be1bfa5a` | Arrêt du suivi de `_site/` (`git rm -r --cached _site/`), désormais ignoré |
+| `835678c8` | Fusion « 2026 launch updates » dans `master`, puis push |
+| `5cecc0a9` | Exclusion de `apps-script`, `docs` et `tools` du build Jekyll (corrige l'échec GitHub Pages « Invalid syntax for include tag ») |
+
+Recette réelle d'**inscription** réussie sur `brainhack-donostia.github.io` : une ligne
+créée dans *Registrations*, notification organisateurs `sent`, accusé de réception
+`sent`, redirection vers `thankyou.html?type=registration`. L'activation n'a eu lieu
+que dans le navigateur de test (interception de `js/form-config.js`) ; le site public
+est resté fermé. `master` est déployé et synchronisé avec `origin`.
+
+**Non encore vérifié** : écriture réelle dans *Projects*, réception effective des
+e-mails en boîte (statuts Sheets `sent` mais réception à confirmer), exécution horaire
+réelle de `retryPendingEmails`, retrait de `localhost` de la configuration reCAPTCHA et
+d'`ALLOWED_HOSTNAMES`.
+
 ## 1. Résumé exécutif
 
 Les formulaires d'inscription et de soumission de projet disposent désormais
