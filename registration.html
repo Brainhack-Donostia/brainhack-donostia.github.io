@@ -1,69 +1,126 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Registration - BrainHack Donostia 2026</title>
-    <style>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Registration - BrainHack Donostia 2026</title><style>
       body {
         margin: 0;
         font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
-        background-color: #000;
-        color: #f2f2f2;
+        background: #f7f9ff;
+        color: #16213b;
       }
       .hero {
-        background: url('logo_title.png') center center / cover no-repeat;
-        height: 300px;
+        background:
+          url('img/logos/logo_title.png') center / min(92vw, 1000px) auto no-repeat,
+          radial-gradient(circle at 18% 20%, rgba(2, 171, 254, .16), transparent 34%),
+          radial-gradient(circle at 82% 30%, rgba(112, 14, 251, .12), transparent 36%),
+          linear-gradient(180deg, #fff 0%, #eef4ff 100%);
+        height: 360px;
+        filter: drop-shadow(0 2px 2px rgba(22, 33, 59, .25));
       }
       .content {
         max-width: 700px;
-        margin: 0 auto;
+        margin: -36px auto 40px;
         padding: 60px 20px;
         text-align: center;
+        background: #fff;
+        border: 1px solid #dce6ff;
+        border-radius: 22px;
+        box-shadow: 0 18px 45px rgba(22, 33, 59, .10);
       }
       h1 {
-        color: #ffe95e;
+        color: #16213b;
         font-size: 32px;
         margin-bottom: 20px;
       }
       p {
         font-size: 18px;
         line-height: 1.6;
-        color: #f2f2f2;
+        color: #596780;
       }
       a {
-        color: #ffe95e;
+        color: #0a76fd;
       }
       .back-link {
         display: inline-block;
         margin-top: 30px;
         padding: 12px 28px;
-        border: 2px solid #ffe95e;
-        border-radius: 4px;
-        color: #ffe95e;
+        border: 0;
+        border-radius: 999px;
+        color: #fff;
+        background: linear-gradient(135deg, #02abfe 0%, #0a76fd 50%, #700efb 100%);
+        box-shadow: 0 12px 28px rgba(10, 118, 253, .22);
         text-decoration: none;
       }
       .back-link:hover {
-        background-color: #ffe95e;
-        color: #000;
+        color: #fff;
+        background: linear-gradient(135deg, #0a76fd, #700efb);
       }
-    </style>
-  </head>
-  <body>
-    <section class="hero"></section>
-    <section class="content">
-      <h1>Registration is not open yet</h1>
-      <p>
-        Registration for BrainHack Donostia 2026 (November 3&ndash;6, 2026) has not opened yet.
-        Please check back soon, or follow us on our
-        <a href="https://www.instagram.com/bhdonostia/" target="_blank" rel="noopener">social media</a>
-        for updates on when registration goes live.
-      </p>
-      <p>
-        For any questions in the meantime, feel free to reach out at
-        <a href="mailto:info.bhg-donostia@bcbl.eu">info.bhg-donostia@bcbl.eu</a>.
-      </p>
-      <a class="back-link" href="index.html">Back to home</a>
-    </section>
-  </body>
-</html>
+      @media (max-width: 740px) {
+        .hero {
+          height: 240px;
+        }
+        .content {
+          margin: 0;
+          padding: 44px 22px;
+          border-right: 0;
+          border-left: 0;
+          border-radius: 0;
+        }
+      }
+    
+.content {text-align:left; padding:40px 24px; position:relative;}
+.content h1,.intro,.form-nav {text-align:center;}
+.form-nav {display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin:24px 0;}
+.form-nav .current {padding:12px 18px; border:1px solid #dce6ff; border-radius:12px; font-weight:700; background:#eef4ff; color:#16213b;}
+.form-nav a {padding:12px 18px; border:1px solid #dce6ff; border-radius:12px; text-decoration:none;}
+form {display:grid; gap:20px;}
+fieldset {border:1px solid #dce6ff; border-radius:12px; padding:20px; margin:0; min-width:0;}
+legend {font-weight:700; padding:0 8px;}
+.field {margin:0 0 20px;}.field:last-child {margin-bottom:0;}
+label,.field-title {display:block; font-weight:600; margin-bottom:8px; line-height:1.5;}
+input:not([type=checkbox]),select,textarea {box-sizing:border-box; width:100%; padding:12px; border:1px solid #aab9d2; border-radius:8px; font:inherit; background:#fff; color:#16213b;}
+textarea {resize:vertical;}
+.choice {display:flex; gap:10px; align-items:baseline; font-weight:400;}
+input[type=checkbox] {flex-shrink:0;}
+small {display:block; color:#596780; line-height:1.5; margin:6px 0 10px;}
+.notice {padding:16px; background:#eef4ff; border-radius:12px; font-size:15px;}
+button {padding:14px 24px; border:0; border-radius:999px; color:#fff; font:inherit; background:linear-gradient(135deg,#02abfe,#0a76fd,#700efb); cursor:pointer;}
+button:disabled {background:#dce6ff; color:#596780; cursor:not-allowed;}
+:focus-visible {outline:3px solid #700efb; outline-offset:3px;}
+</style></head><body><section class="hero" aria-label="BrainHack Donostia 2026"></section>
+<main class="content"><h1>BrainHack Donostia 2026</h1>
+<p class="intro">November 3–6, 2026 / <span lang="es">3–6 de noviembre de 2026</span></p>
+<nav class="form-nav" aria-label="Forms"><span class="current">Register / Inscribirse</span><a href="project-submission.html">Submit a project / Proponer un proyecto</a></nav>
+<section id="registration"><h2>Registration / <span lang="es">Inscripción</span></h2>
+<p>Learn, share skills, and collaborate. All backgrounds and experience levels are welcome.<br><span lang="es">Aprende, comparte conocimientos y colabora. Todas las disciplinas y niveles de experiencia son bienvenidos.</span></p>
+<small>* Required fields / Campos obligatorios</small>
+<!-- Set action to your receiving service URL, then remove disabled from the submit button. Configure spam protection and a confirmation page in that service. -->
+<form id="registration-form" method="post" action="" data-endpoint="unconfigured">
+<input type="hidden" name="form_type" value="registration">
+<fieldset><legend>Contact details / Datos de contacto</legend><div class="field"><label for="registration-full_name">Full name / Nombre y apellidos *</label><input id="registration-full_name" name="full_name" type="text" required autocomplete="name"></div><div class="field"><label for="registration-email">Email address / Correo electrónico *</label><input id="registration-email" name="email" type="email" required autocomplete="email"></div><div class="field"><label for="registration-institution">Institution or organisation / Institución u organización</label><input id="registration-institution" name="institution" type="text" autocomplete="organization"></div><div class="field"><label for="registration-position">Current position / Situación actual</label><select id="registration-position" name="position"><option value="">Select / Selecciona</option><option value="Undergraduate student / Estudiante de grado">Undergraduate student / Estudiante de grado</option><option value="Master’s student / Estudiante de máster">Master’s student / Estudiante de máster</option><option value="PhD student / Estudiante de doctorado">PhD student / Estudiante de doctorado</option><option value="Postdoctoral researcher / Investigador/a posdoctoral">Postdoctoral researcher / Investigador/a posdoctoral</option><option value="Researcher or lecturer / Investigador/a o docente">Researcher or lecturer / Investigador/a o docente</option><option value="Research engineer or technical staff / Ingeniero/a o personal técnico">Research engineer or technical staff / Ingeniero/a o personal técnico</option><option value="Other / Otra">Other / Otra</option></select></div></fieldset><fieldset><legend>Which days will you attend? / ¿Qué días asistirás? *</legend><label class="choice" for="registration-attendance-0"><input id="registration-attendance-0" type="checkbox" name="attendance" value="November 3 / 3 de noviembre">November 3 / 3 de noviembre</label><label class="choice" for="registration-attendance-1"><input id="registration-attendance-1" type="checkbox" name="attendance" value="November 4 / 4 de noviembre">November 4 / 4 de noviembre</label><label class="choice" for="registration-attendance-2"><input id="registration-attendance-2" type="checkbox" name="attendance" value="November 5 / 5 de noviembre">November 5 / 5 de noviembre</label><label class="choice" for="registration-attendance-3"><input id="registration-attendance-3" type="checkbox" name="attendance" value="November 6 / 6 de noviembre">November 6 / 6 de noviembre</label></fieldset><fieldset><legend>Interests and skills / Intereses y competencias</legend><label class="choice" for="registration-interests-0"><input id="registration-interests-0" type="checkbox" name="interests" value="Neuroscience / Neurociencias">Neuroscience / Neurociencias</label><label class="choice" for="registration-interests-1"><input id="registration-interests-1" type="checkbox" name="interests" value="Psychology and cognitive science / Psicología y ciencias cognitivas">Psychology and cognitive science / Psicología y ciencias cognitivas</label><label class="choice" for="registration-interests-2"><input id="registration-interests-2" type="checkbox" name="interests" value="Linguistics / Lingüística">Linguistics / Lingüística</label><label class="choice" for="registration-interests-3"><input id="registration-interests-3" type="checkbox" name="interests" value="Data analysis and statistics / Análisis de datos y estadística">Data analysis and statistics / Análisis de datos y estadística</label><label class="choice" for="registration-interests-4"><input id="registration-interests-4" type="checkbox" name="interests" value="Programming / Programación">Programming / Programación</label><label class="choice" for="registration-interests-5"><input id="registration-interests-5" type="checkbox" name="interests" value="Neuroimaging / Neuroimagen">Neuroimaging / Neuroimagen</label><label class="choice" for="registration-interests-6"><input id="registration-interests-6" type="checkbox" name="interests" value="EEG and physiological signals / EEG y señales fisiológicas">EEG and physiological signals / EEG y señales fisiológicas</label><label class="choice" for="registration-interests-7"><input id="registration-interests-7" type="checkbox" name="interests" value="Eye-tracking / Seguimiento ocular">Eye-tracking / Seguimiento ocular</label><label class="choice" for="registration-interests-8"><input id="registration-interests-8" type="checkbox" name="interests" value="Artificial intelligence / Inteligencia artificial">Artificial intelligence / Inteligencia artificial</label><label class="choice" for="registration-interests-9"><input id="registration-interests-9" type="checkbox" name="interests" value="Data visualisation / Visualización de datos">Data visualisation / Visualización de datos</label><label class="choice" for="registration-interests-10"><input id="registration-interests-10" type="checkbox" name="interests" value="Open science / Ciencia abierta">Open science / Ciencia abierta</label><label class="choice" for="registration-interests-11"><input id="registration-interests-11" type="checkbox" name="interests" value="Other / Otra">Other / Otra</label></fieldset><fieldset><legend>Participation / Participación</legend><div class="field"><label for="registration-previous_brainhack">Have you attended a BrainHack before? / ¿Has participado antes en un BrainHack?</label><select id="registration-previous_brainhack" name="previous_brainhack"><option value="">Select / Selecciona</option><option value="Yes / Sí">Yes / Sí</option><option value="No">No</option></select></div><div class="field"><label for="registration-programming">Programming experience / Experiencia en programación</label><select id="registration-programming" name="programming"><option value="">Select / Selecciona</option><option value="No experience yet / Sin experiencia">No experience yet / Sin experiencia</option><option value="Beginner / Principiante">Beginner / Principiante</option><option value="Intermediate / Intermedio">Intermediate / Intermedio</option><option value="Advanced / Avanzado">Advanced / Avanzado</option></select></div><div class="field"><label for="registration-expectations">What would you like to learn or work on? / ¿Qué te gustaría aprender o desarrollar?</label><textarea id="registration-expectations" name="expectations" rows="5"></textarea></div><div class="field"><label for="registration-propose_project">Interested in proposing a project? / ¿Te interesa proponer un proyecto?</label><small>Use the <a href="project-submission.html">project submission page</a>. / Utiliza la <a href="project-submission.html">página de presentación de proyectos</a>.</small><select id="registration-propose_project" name="propose_project"><option value="">Select / Selecciona</option><option value="Yes / Sí">Yes / Sí</option><option value="Maybe / Quizá">Maybe / Quizá</option><option value="I prefer to join a project / Prefiero unirme a un proyecto">I prefer to join a project / Prefiero unirme a un proyecto</option></select></div></fieldset><fieldset><legend>Practical needs / Necesidades prácticas</legend><div class="field"><label for="registration-support">Do you need any adjustments or support? / ¿Necesitas alguna adaptación o apoyo?</label><small>Do not provide medical details. You can contact the organisers directly. / No proporciones información médica. Puedes contactar directamente con la organización.</small><textarea id="registration-support" name="support" rows="5"></textarea></div><div class="field"><label for="registration-comments">Questions or comments / Preguntas o comentarios</label><textarea id="registration-comments" name="comments" rows="5"></textarea></div></fieldset>
+<p class="notice">Submissions are not open yet. Please do not enter personal information here until registration opens.<br><span lang="es">El envío todavía no está habilitado. No introduzcas datos personales hasta que se abra la inscripción.</span></p>
+<button type="submit" disabled>Register / Inscribirse</button></form></section>
+<p>Contact / Contacto: <a href="mailto:info.bhg-donostia@bcbl.eu">info.bhg-donostia@bcbl.eu</a></p>
+<a class="back-link" href="index.html">Back to home / Volver al inicio</a></main>
+<script>
+// Defence against accidental submission before configuring the receiving endpoints.
+document.querySelectorAll('form').forEach(form => {
+  form.addEventListener('submit', event => {
+    if (!form.getAttribute('action').trim()) {
+      event.preventDefault();
+      return;
+    }
+    if (form.id === 'registration-form') {
+      const days = [...form.querySelectorAll('input[name="attendance"]')];
+      if (!days.some(day => day.checked)) {
+        event.preventDefault();
+        days[0].setCustomValidity('Choose at least one day / Selecciona al menos un día');
+        days[0].reportValidity();
+      }
+    }
+  });
+});
+document.querySelectorAll('input[name="attendance"]').forEach(day => {
+  day.addEventListener('change', () => {
+    document.querySelector('input[name="attendance"]').setCustomValidity('');
+  });
+});
+</script></body></html>
