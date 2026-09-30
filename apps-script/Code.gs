@@ -6,10 +6,10 @@ const FORM_DEFINITIONS = Object.freeze({
     fields: [
       'full_name', 'email', 'institution', 'position', 'interests',
       'previous_brainhack', 'programming', 'expectations', 'propose_project',
-      'support', 'comments', 'privacy_consent'
+      'support', 'comments', 'privacy_consent', 'registration_fee'
     ],
     multipleFields: ['interests'],
-    requiredFields: ['full_name', 'email', 'privacy_consent'],
+    requiredFields: ['full_name', 'email', 'privacy_consent', 'registration_fee'],
     allowedValues: {
       position: [
         'Undergraduate student / Estudiante de grado',
@@ -41,7 +41,12 @@ const FORM_DEFINITIONS = Object.freeze({
         'Yes / Sí', 'Maybe / Quizá',
         'I prefer to join a project / Prefiero unirme a un proyecto'
       ],
-      privacy_consent: ['accepted']
+      privacy_consent: ['accepted'],
+      registration_fee: [
+        '10€ BCBL members then 20€ / 10€ miembros del BCBL después 20€',
+        'Others 20€ then 30€ / Otr@s 20€ después 30€',
+        'Volunteers FREE / Voluntari@s GRATIS'
+      ]
     }
   },
   project: {

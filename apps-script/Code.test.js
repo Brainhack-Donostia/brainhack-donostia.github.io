@@ -38,6 +38,7 @@ const registration = api.collectAndValidate_(parameters({
   full_name: 'Test Person',
   email: 'test@example.org',
   interests: ['Neuroscience / Neurociencias', 'Open science / Ciencia abierta'],
+  registration_fee: '10€ BCBL members then 20€ / 10€ miembros del BCBL después 20€',
   privacy_consent: 'accepted'
 }), api.registration);
 assert.equal(registration.interests, 'Neuroscience / Neurociencias | Open science / Ciencia abierta');
@@ -46,6 +47,19 @@ assert.throws(() => api.collectAndValidate_(parameters({
   full_name: 'Test Person',
   email: 'test@example.org',
   interests: 'Invalid interest',
+  privacy_consent: 'accepted'
+}), api.registration), /invalid option/i);
+
+assert.throws(() => api.collectAndValidate_(parameters({
+  full_name: 'Test Person',
+  email: 'test@example.org',
+  privacy_consent: 'accepted'
+}), api.registration), /required field/i);
+
+assert.throws(() => api.collectAndValidate_(parameters({
+  full_name: 'Test Person',
+  email: 'test@example.org',
+  registration_fee: 'Not a real fee option',
   privacy_consent: 'accepted'
 }), api.registration), /invalid option/i);
 
