@@ -33,6 +33,21 @@
     return;
   }
 
+  // Volunteers are reserved for BCBL members: reveal the volunteer fee option
+  // only when the visitor declares BCBL membership, and clear it otherwise.
+  const volunteerBlock = document.getElementById(formType + '-volunteer-block');
+  const bcblMemberField = form.querySelector('[name="bcbl_member"]');
+  if (volunteerBlock && bcblMemberField) {
+    const volunteerOption = volunteerBlock.querySelector('input[name="registration_fee"]');
+    const syncVolunteerBlock = function () {
+      const isBcblMember = bcblMemberField.value === 'Yes';
+      volunteerBlock.hidden = !isBcblMember;
+      if (!isBcblMember && volunteerOption) volunteerOption.checked = false;
+    };
+    bcblMemberField.addEventListener('change', syncVolunteerBlock);
+    syncVolunteerBlock();
+  }
+
   if (startedAt) startedAt.value = String(Date.now());
   if (submissionId) submissionId.value = createSubmissionId();
 

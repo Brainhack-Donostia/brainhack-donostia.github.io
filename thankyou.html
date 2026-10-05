@@ -27,14 +27,16 @@
   </main>
   <script>
     (function () {
-      const type = new URLSearchParams(window.location.search).get('type');
+      const params = new URLSearchParams(window.location.search);
+      const type = params.get('type');
+      const fee = params.get('fee');
       const messages = {
         registration: 'Your registration has been received. A confirmation email will be sent to you shortly. / Hemos recibido tu inscripción. Recibirás un correo de confirmación en breve.',
         project: 'Your project submission has been received. A confirmation email will be sent to you shortly. / Hemos recibido tu propuesta de proyecto. Recibirás un correo de confirmación en breve.',
         preregistration: 'Your pre-registration has been received. We will email you as soon as official registration opens. / Hemos recibido tu pre-inscripción. Te avisaremos por correo en cuanto se abra la inscripción oficial.'
       };
       if (messages[type]) document.getElementById('confirmation-message').textContent = messages[type];
-      if (type === 'registration') document.getElementById('confirmation-payment').hidden = false;
+      if (type === 'registration' && fee !== 'free') document.getElementById('confirmation-payment').hidden = false;
     })();
   </script>
 </body>

@@ -40,9 +40,27 @@ const registration = api.collectAndValidate_(parameters({
   email: 'test@example.org',
   interests: ['Neuroscience / Neurociencias', 'Open science / Ciencia abierta'],
   registration_fee: '10€ BCBL & EHU members then 20€ / 10€ miembros del BCBL y EHU después 20€',
+  bcbl_member: 'No',
   privacy_consent: 'accepted'
 }), api.registration);
 assert.equal(registration.interests, 'Neuroscience / Neurociencias | Open science / Ciencia abierta');
+
+const volunteerRegistration = api.collectAndValidate_(parameters({
+  full_name: 'Volunteer Person',
+  email: 'volunteer@example.org',
+  registration_fee: 'Volunteers FREE / Voluntari@s GRATIS',
+  bcbl_member: 'Yes',
+  privacy_consent: 'accepted'
+}), api.registration);
+assert.equal(volunteerRegistration.registration_fee, 'Volunteers FREE / Voluntari@s GRATIS');
+
+assert.throws(() => api.collectAndValidate_(parameters({
+  full_name: 'Volunteer Person',
+  email: 'volunteer@example.org',
+  registration_fee: 'Volunteers FREE / Voluntari@s GRATIS',
+  bcbl_member: 'No',
+  privacy_consent: 'accepted'
+}), api.registration), /reserved for BCBL/i);
 
 assert.throws(() => api.collectAndValidate_(parameters({
   full_name: 'Test Person',
@@ -180,10 +198,12 @@ assert.throws(
 );
 assert.equal(rows.length, 2, 'duplicate email must not append another row');
 
-const registrationConfirmation = api.registration.confirmationBody(
-  { full_name: 'Test Person' }, 'info@example.org'
-);
-assert.match(registrationConfirmation, /bcbl\.eu\/events\/brainhackregistration2026/);
-assert.match(registrationConfirmation, /Test Person/);
+const paidConfirmation = api.registration.confirmationBody(registration, 'info@example.org');
+assert.match(paidConfirmation, /bcbl\.eu\/events\/brainhackregistration2026/);
+assert.match(paidConfirmation, /Test Person/);
+
+const volunteerConfirmation = api.registration.confirmationBody(volunteerRegistration, 'info@example.org');
+assert.doesNotMatch(volunteerConfirmation, /bcbl\.eu\/events\/brainhackregistration2026/);
+assert.match(volunteerConfirmation, /volunteer/i);
 
 console.log('Apps Script validation tests passed');

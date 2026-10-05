@@ -1,4 +1,5 @@
 const REGISTRATION_PAYMENT_URL = 'https://www.bcbl.eu/events/brainhackregistration2026/en/registration/';
+const VOLUNTEER_FEE_LABEL = 'Volunteers FREE / Voluntari@s GRATIS';
 
 const FORM_DEFINITIONS = Object.freeze({
   registration: {
@@ -8,10 +9,10 @@ const FORM_DEFINITIONS = Object.freeze({
     fields: [
       'full_name', 'email', 'institution', 'position', 'interests',
       'previous_brainhack', 'programming', 'expectations', 'propose_project',
-      'support', 'comments', 'privacy_consent', 'registration_fee'
+      'support', 'comments', 'privacy_consent', 'registration_fee', 'bcbl_member'
     ],
     multipleFields: ['interests'],
-    requiredFields: ['full_name', 'email', 'privacy_consent', 'registration_fee'],
+    requiredFields: ['full_name', 'email', 'bcbl_member', 'privacy_consent', 'registration_fee'],
     uniqueEmail: true,
     allowedValues: {
       position: [
@@ -49,9 +50,26 @@ const FORM_DEFINITIONS = Object.freeze({
         '10€ BCBL & EHU members then 20€ / 10€ miembros del BCBL y EHU después 20€',
         'Others 20€ then 30€ / Otr@s 20€ después 30€',
         'Volunteers FREE / Voluntari@s GRATIS'
-      ]
+      ],
+      bcbl_member: ['Yes', 'No']
+    },
+    restrictedValues: {
+      registration_fee: {
+        value: VOLUNTEER_FEE_LABEL,
+        when: { field: 'bcbl_member', equals: 'Yes' },
+        message: 'Volunteering is reserved for BCBL members.'
+      }
     },
     confirmationBody: function (data, organizerEmail) {
+      if (data.registration_fee === VOLUNTEER_FEE_LABEL) {
+        return 'Thank you, ' + data.full_name + '.\n\n' +
+          'We have received your registration as a volunteer for BrainHack Donostia 2026.\n' +
+          'No payment is required. We will contact you about the volunteer organisation.\n\n' +
+          'Gracias, ' + data.full_name + '.\n\n' +
+          'Hemos recibido tu inscripción como voluntari@ para BrainHack Donostia 2026.\n' +
+          'No se requiere ningún pago. Te contactaremos para organizar el voluntariado.\n\n' +
+          'Contact / Contacto: ' + organizerEmail;
+      }
       return 'Thank you, ' + data.full_name + '.\n\n' +
         'We have received your registration for BrainHack Donostia 2026.\n' +
         'To complete it, please pay your registration fee here:\n' +
@@ -170,7 +188,7 @@ function doPost(event) {
       emailStatuses.confirmation
     ]]);
 
-    return successPage_(formType);
+    return successPage_(formType, data);
   } catch (error) {
     console.error(error && error.stack ? error.stack : error);
     return errorPage_(formType, publicErrorCode_(error));
@@ -324,6 +342,13 @@ function collectAndValidate_(parameters, definition) {
     const rule = definition.requiredIf[field];
     if (data[rule.field] === rule.equals && !data[field]) {
       throw new Error('A required field is missing.');
+    }
+  });
+
+  Object.keys(definition.restrictedValues || {}).forEach(function (field) {
+    const rule = definition.restrictedValues[field];
+    if (data[field] === rule.value && data[rule.when.field] !== rule.when.equals) {
+      throw new Error(rule.message || 'A submitted value is not allowed.');
     }
   });
 
@@ -516,10 +541,13 @@ function sendEmails_(definition, data, currentStatuses) {
   return statuses;
 }
 
-function successPage_(formType) {
+function successPage_(formType, data) {
   const siteUrl = requiredProperty_(PropertiesService.getScriptProperties(), 'SITE_URL')
     .replace(/\/$/, '');
-  const destination = siteUrl + '/thankyou.html?type=' + encodeURIComponent(formType);
+  let destination = siteUrl + '/thankyou.html?type=' + encodeURIComponent(formType);
+  if (formType === 'registration' && data && data.registration_fee === VOLUNTEER_FEE_LABEL) {
+    destination += '&fee=free';
+  }
   return redirectPage_(destination, 'Submission received / Envío recibido');
 }
 
@@ -542,6 +570,14 @@ function errorPage_(formType, errorCode) {
       '<p>This email address has already been used for this form. If you think this is a mistake, please contact the organisers.</p>' +
       '<p>Esta dirección de correo ya ha sido utilizada en este formulario. Si crees que es un error, contacta con la organización.</p>' +
       '<p>Contact / Contacto: info.bhg-donostia@bcbl.eu</p>';
+  }
+
+  if (errorCode === 'VOLUNTEER_BCBL') {
+    heading = 'Volunteering is reserved for BCBL members';
+    body =
+      '<p>Volunteering is reserved for BCBL members. Please select a different registration fee, or contact the organisers.</p>' +
+      '<p>El voluntariado está reservado a miembros del BCBL. Selecciona otra tarifa de inscripción o contacta con la organización.</p>' +
+      '<p><a href="' + escapeHtml_(retryUrl) + '">Try again / Volver a intentarlo</a></p>';
   }
 
   return HtmlService.createHtmlOutput(
@@ -570,7 +606,8 @@ function publicErrorCode_(error) {
     [/email address is invalid/, 'EMAIL'],
     [/Privacy consent/, 'PRIVACY'],
     [/Unknown form type/, 'FORM_TYPE'],
-    [/already used for this form/, 'DUPLICATE_EMAIL']
+    [/already used for this form/, 'DUPLICATE_EMAIL'],
+    [/reserved for BCBL/, 'VOLUNTEER_BCBL']
   ];
   const match = mappings.find(function (mapping) { return mapping[0].test(message); });
   return match ? match[1] : 'SERVER_ERROR';
