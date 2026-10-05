@@ -50,8 +50,9 @@ Site statique public de l'événement annuel **Brainhack Donostia** (neuroscienc
 
 ## Formulaires — collecte des données (backend déployé, recette inscription réussie en production)
 
-- `js/form-config.js` contient l'URL `/exec` Apps Script et la site key publique reCAPTCHA. `js/forms.js` charge reCAPTCHA v3 et active chaque formulaire seulement si sa clé `*Open` vaut `true`. État courant : seul le formulaire de **pré-inscription** est ouvert (`preregistrationOpen: true`) ; `registrationOpen` et `projectOpen` restent à `false`. Tant que `registrationOpen` est faux, `js/forms.js` **redirige `registration.html` vers `pre-registration.html`** (garde-fou auto-désactivable, voir la checklist d'ouverture ci-dessous). L'ouverture se fait en passant le flag concerné à `true` dans `js/form-config.js` puis en déployant.
+- `js/form-config.js` contient l'URL `/exec` Apps Script et la site key publique reCAPTCHA. `js/forms.js` charge reCAPTCHA v3 et active chaque formulaire seulement si sa clé `*Open` vaut `true`. État courant : **inscription ouverte** (`registrationOpen: true`), pré-inscription fermée (`preregistrationOpen: false`), projet fermé (`projectOpen: false`). Quand un formulaire d'inscription/pré-inscription est fermé, `js/forms.js` **redirige vers l'autre s'il est ouvert** (`registration.html` ⇄ `pre-registration.html`, garde anti-boucle via le flag du formulaire cible). L'ouverture/fermeture se fait en passant le flag `*Open` concerné puis en déployant.
 - Le routage par onglet est piloté par les Script Properties : `registration`/`project` utilisent `REGISTRATION_SHEET_ID`/`PROJECT_SHEET_ID` ; `preregistration` utilise `PRE_REGISTRATION_SHEET_ID` (même classeur que `registration`) + `PRE_REGISTRATION_SHEET_NAME` (`Pre-registrations`). Unicité d'email activée **par formulaire** (`uniqueEmail: true`) : un email déjà présent pour un formulaire donné est rejeté (`DUPLICATE_EMAIL`).
+- Paiement de l'inscription : lien BCBL `https://www.bcbl.eu/events/brainhackregistration2026/en/registration/`, affiché sur `thankyou.html` (`type=registration`) et inclus dans l'email de confirmation d'inscription (constante `REGISTRATION_PAYMENT_URL` dans `apps-script/Code.gs`).
 - Décision retenue : réception via **Google Sheets + Apps Script** (Web App `doPost`), **1 projet Apps Script partagé** routant par champ caché `form_type` (`registration` / `project`) ; **2 classeurs séparés**.
 - Compte : **Gmail gratuit dédié**. Anti-spam : **honeypot + reCAPTCHA v3 + âge minimal du formulaire**. Les valeurs à choix sont vérifiées côté serveur, un `submission_id` empêche les doublons et `retryPendingEmails` permet la reprise séparée des e-mails échoués. RGPD : **case de consentement obligatoire + `privacy.html` bilingue** ; conservation proposée : 12 mois après l'événement, à faire valider avant ouverture.
 - Emission : notification aux organisateurs + accusé de réception bilingue EN/ES + redirection vers `thankyou.html?type=registration|project`.
@@ -67,9 +68,11 @@ Site statique public de l'événement annuel **Brainhack Donostia** (neuroscienc
 
 ### Checklist d'ouverture de l'inscription
 
-À exécuter dans l'ordre le jour où l'inscription officielle ouvre (état actuel : pré-inscription ouverte, inscription fermée) :
+> Exécutée le **2026-10-05** (ouverture de l'inscription). Conservée comme référence pour les prochaines éditions ; l'état courant est décrit ci-dessus. Le **lien de paiement BCBL** a été intégré en même temps (`thankyou.html` + email de confirmation).
 
-1. `js/form-config.js` : passer `registrationOpen: true` et `preregistrationOpen: false`. Le garde-fou de `js/forms.js` qui redirige `registration.html` vers `pre-registration.html` **s'auto-désactive** dès que `registrationOpen` vaut `true` (rien à retirer).
+À exécuter dans l'ordre le jour où l'inscription officielle ouvre :
+
+1. `js/form-config.js` : passer `registrationOpen: true` et `preregistrationOpen: false`. Les redirections de `js/forms.js` s'adaptent automatiquement (le formulaire fermé renvoie vers l'ouvert) — rien à retirer.
 2. `project-submission.html` : dans le `<nav class="form-nav">`, repasser le lien sur `registration.html` avec le libellé « Register / Inscribirse ».
 3. `_includes/header.html` : repasser l'entrée de nav **et** le CTA du hero de `pre-registration.html` / « Pre-Registration » vers `registration.html` / « Registration ».
 4. Apps Script (éditeur) : exécuter `notifyPreRegistrants()` — envoie l'email d'ouverture aux pré-inscrits (dédupliqué, marque `opening_notified_at`).

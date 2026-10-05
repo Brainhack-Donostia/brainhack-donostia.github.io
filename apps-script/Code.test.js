@@ -180,4 +180,10 @@ assert.throws(
 );
 assert.equal(rows.length, 2, 'duplicate email must not append another row');
 
+const registrationConfirmation = api.registration.confirmationBody(
+  { full_name: 'Test Person' }, 'info@example.org'
+);
+assert.match(registrationConfirmation, /bcbl\.eu\/events\/brainhackregistration2026/);
+assert.match(registrationConfirmation, /Test Person/);
+
 console.log('Apps Script validation tests passed');

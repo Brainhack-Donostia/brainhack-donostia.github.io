@@ -20,11 +20,16 @@
   // The project form also requires downloading the Word template first.
   let templateDownloaded = !templateDownload;
 
-  // While official registration is closed, keep visitors on the open
-  // pre-registration form instead of exposing the registration page.
-  // This auto-disables as soon as registrationOpen becomes true.
-  if (formType === 'registration' && !isOpen) {
-    window.location.replace('pre-registration.html');
+  // A closed form redirects to the currently open registration form (if any),
+  // so visitors never land on a disabled page. The redirect is guarded by the
+  // target's flag, so two closed forms can never bounce to each other.
+  const closedRedirects = {
+    registration: { target: 'pre-registration.html', targetFlag: 'preregistrationOpen' },
+    preregistration: { target: 'registration.html', targetFlag: 'registrationOpen' }
+  };
+  const redirectRule = closedRedirects[formType];
+  if (!isOpen && redirectRule && config[redirectRule.targetFlag] === true) {
+    window.location.replace(redirectRule.target);
     return;
   }
 

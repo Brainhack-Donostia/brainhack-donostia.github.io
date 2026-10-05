@@ -19,6 +19,9 @@
   <main>
     <h1 id="confirmation-title">Thank you! / <span lang="es">¡Gracias!</span></h1>
     <p id="confirmation-message">Your submission has been received. A confirmation email will be sent to you shortly.<br><span lang="es">Hemos recibido tu envío. Recibirás un correo de confirmación en breve.</span></p>
+    <p id="confirmation-payment" hidden>To complete your registration, pay the fee here / <span lang="es">Para completar tu inscripción, paga la tarifa aquí</span>:<br>
+      <a class="back-link" href="https://www.bcbl.eu/events/brainhackregistration2026/en/registration/" target="_blank" rel="noopener">Pay registration fee / Pagar inscripción</a>
+    </p>
     <p>If the email does not arrive, check your spam folder or contact <a href="mailto:info.bhg-donostia@bcbl.eu">info.bhg-donostia@bcbl.eu</a>.<br><span lang="es">Si no recibes el correo, revisa la carpeta de spam o ponte en contacto con nosotros.</span></p>
     <a class="back-link" href="index.html">Back to home / Volver al inicio</a>
   </main>
@@ -31,6 +34,7 @@
         preregistration: 'Your pre-registration has been received. We will email you as soon as official registration opens. / Hemos recibido tu pre-inscripción. Te avisaremos por correo en cuanto se abra la inscripción oficial.'
       };
       if (messages[type]) document.getElementById('confirmation-message').textContent = messages[type];
+      if (type === 'registration') document.getElementById('confirmation-payment').hidden = false;
     })();
   </script>
 </body>

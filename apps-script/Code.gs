@@ -1,3 +1,5 @@
+const REGISTRATION_PAYMENT_URL = 'https://www.bcbl.eu/events/brainhackregistration2026/en/registration/';
+
 const FORM_DEFINITIONS = Object.freeze({
   registration: {
     sheetProperty: 'REGISTRATION_SHEET_ID',
@@ -48,6 +50,17 @@ const FORM_DEFINITIONS = Object.freeze({
         'Others 20€ then 30€ / Otr@s 20€ después 30€',
         'Volunteers FREE / Voluntari@s GRATIS'
       ]
+    },
+    confirmationBody: function (data, organizerEmail) {
+      return 'Thank you, ' + data.full_name + '.\n\n' +
+        'We have received your registration for BrainHack Donostia 2026.\n' +
+        'To complete it, please pay your registration fee here:\n' +
+        REGISTRATION_PAYMENT_URL + '\n\n' +
+        'Gracias, ' + data.full_name + '.\n\n' +
+        'Hemos recibido tu inscripción para BrainHack Donostia 2026.\n' +
+        'Para completarla, paga la tarifa de inscripción aquí:\n' +
+        REGISTRATION_PAYMENT_URL + '\n\n' +
+        'Contact / Contacto: ' + organizerEmail;
     }
   },
   project: {
