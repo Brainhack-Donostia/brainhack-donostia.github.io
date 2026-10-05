@@ -174,4 +174,10 @@ const second = api.appendOrFindSubmission_(api.registration, registration, submi
 assert.equal(rows.length, 2, 'duplicate submission must not append another row');
 assert.equal(first.rowNumber, second.rowNumber);
 
+assert.throws(
+  () => api.appendOrFindSubmission_(api.registration, registration, '99999999-9999-9999-9999-999999999999'),
+  /already used/i
+);
+assert.equal(rows.length, 2, 'duplicate email must not append another row');
+
 console.log('Apps Script validation tests passed');

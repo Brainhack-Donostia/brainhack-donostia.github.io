@@ -10,6 +10,7 @@ const FORM_DEFINITIONS = Object.freeze({
     ],
     multipleFields: ['interests'],
     requiredFields: ['full_name', 'email', 'privacy_consent', 'registration_fee'],
+    uniqueEmail: true,
     allowedValues: {
       position: [
         'Undergraduate student / Estudiante de grado',
@@ -82,6 +83,7 @@ const FORM_DEFINITIONS = Object.freeze({
     requiredFields: [
       'full_name', 'email', 'institution', 'registration_fee', 'privacy_consent'
     ],
+    uniqueEmail: true,
     requiredIf: {
       institution_other: { field: 'institution', equals: 'Other / Otra' }
     },
@@ -399,6 +401,18 @@ function appendOrFindSubmission_(definition, data, submissionId) {
           emailStatuses: { organizer: statuses[0], confirmation: statuses[1] }
         };
       }
+
+      if (definition.uniqueEmail && data.email) {
+        const emailColumnIndex = SYSTEM_COLUMNS.length + definition.fields.indexOf('email') + 1;
+        const existingEmails = sheet.getRange(2, emailColumnIndex, sheet.getLastRow() - 1, 1).getValues();
+        const normalizedEmail = cleanText_(data.email).toLowerCase();
+        const duplicate = existingEmails.some(function (row) {
+          return cleanText_(row[0]).toLowerCase() === normalizedEmail;
+        });
+        if (duplicate) {
+          throw new Error('This email address is already used for this form.');
+        }
+      }
     }
 
     const row = [
@@ -503,15 +517,26 @@ function errorPage_(formType, errorCode) {
   const definition = FORM_DEFINITIONS[formType];
   const retryUrl = definition ? siteUrl + '/' + definition.page : siteUrl + '/';
 
+  let heading = 'We could not process the submission';
+  let body =
+    '<p>No hemos podido procesar el envío.</p>' +
+    '<p>Reference / Referencia: <strong>' + escapeHtml_(errorCode) + '</strong></p>' +
+    '<p><a href="' + escapeHtml_(retryUrl) + '">Try again / Volver a intentarlo</a></p>';
+
+  if (errorCode === 'DUPLICATE_EMAIL') {
+    heading = 'This email has already been used';
+    body =
+      '<p>This email address has already been used for this form. If you think this is a mistake, please contact the organisers.</p>' +
+      '<p>Esta dirección de correo ya ha sido utilizada en este formulario. Si crees que es un error, contacta con la organización.</p>' +
+      '<p>Contact / Contacto: info.bhg-donostia@bcbl.eu</p>';
+  }
+
   return HtmlService.createHtmlOutput(
     '<!doctype html><html lang="en"><head><meta charset="utf-8">' +
     '<meta name="viewport" content="width=device-width,initial-scale=1">' +
     '<base target="_top">' +
     '<title>Submission error</title></head><body>' +
-    '<main><h1>We could not process the submission</h1>' +
-    '<p>No hemos podido procesar el envío.</p>' +
-    '<p>Reference / Referencia: <strong>' + escapeHtml_(errorCode) + '</strong></p>' +
-    '<p><a href="' + escapeHtml_(retryUrl) + '">Try again / Volver a intentarlo</a></p>' +
+    '<main><h1>' + escapeHtml_(heading) + '</h1>' + body +
     '</main></body></html>'
   );
 }
@@ -531,7 +556,8 @@ function publicErrorCode_(error) {
     [/invalid option/, 'INVALID_OPTION'],
     [/email address is invalid/, 'EMAIL'],
     [/Privacy consent/, 'PRIVACY'],
-    [/Unknown form type/, 'FORM_TYPE']
+    [/Unknown form type/, 'FORM_TYPE'],
+    [/already used for this form/, 'DUPLICATE_EMAIL']
   ];
   const match = mappings.find(function (mapping) { return mapping[0].test(message); });
   return match ? match[1] : 'SERVER_ERROR';
