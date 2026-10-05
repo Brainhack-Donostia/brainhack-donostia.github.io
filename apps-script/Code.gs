@@ -68,6 +68,44 @@ const FORM_DEFINITIONS = Object.freeze({
       template_read: ['accepted'],
       forms_read: ['accepted']
     }
+  },
+  preregistration: {
+    sheetProperty: 'PRE_REGISTRATION_SHEET_ID',
+    sheetNameProperty: 'PRE_REGISTRATION_SHEET_NAME',
+    page: 'pre-registration.html',
+    subject: 'BrainHack Donostia 2026 pre-registration',
+    fields: [
+      'full_name', 'email', 'institution', 'institution_other',
+      'registration_fee', 'privacy_consent'
+    ],
+    multipleFields: [],
+    requiredFields: [
+      'full_name', 'email', 'institution', 'registration_fee', 'privacy_consent'
+    ],
+    requiredIf: {
+      institution_other: { field: 'institution', equals: 'Other / Otra' }
+    },
+    allowedValues: {
+      institution: [
+        'BCBL', 'UPV/EHU', 'Ikerbasque', 'DIPC', 'Biodonostia',
+        'International / Internacional', 'Other / Otra'
+      ],
+      registration_fee: [
+        '10€ BCBL members then 20€ / 10€ miembros del BCBL después 20€',
+        'Others 20€ then 30€ / Otr@s 20€ después 30€',
+        'Volunteers FREE / Voluntari@s GRATIS'
+      ],
+      privacy_consent: ['accepted']
+    },
+    confirmationBody: function (data, organizerEmail) {
+      return 'Thank you, ' + data.full_name + '.\n\n' +
+        'We have received your pre-registration for BrainHack Donostia 2026. ' +
+        'We will email you as soon as official registration opens.\n\n' +
+        'Gracias, ' + data.full_name + '.\n\n' +
+        'Hemos recibido tu pre-inscripción para BrainHack Donostia 2026. ' +
+        'Te avisaremos por correo en cuanto se abra la inscripción oficial.\n\n' +
+        'Contact / Contacto: ' + organizerEmail;
+    }
   }
 });
 
@@ -79,6 +117,7 @@ const SYSTEM_COLUMNS = Object.freeze([
 const MAX_FIELD_LENGTH = 10000;
 const MIN_FORM_AGE_MS = 2000;
 const MAX_FORM_AGE_MS = 24 * 60 * 60 * 1000;
+const OPENING_NOTIFIED_COLUMN = 'opening_notified_at';
 
 /**
  * Public Web App entry point. Deploy as the dedicated Gmail account and allow
@@ -170,6 +209,74 @@ function retryPendingEmails() {
   });
 }
 
+/**
+ * Run manually when official registration opens. Sends the "registration is
+ * now open" email to every pre-registrant (deduplicated) and records the
+ * timestamp in the OPENING_NOTIFIED_COLUMN so re-runs do not resend.
+ */
+function notifyPreRegistrants() {
+  const definition = FORM_DEFINITIONS.preregistration;
+  const properties = PropertiesService.getScriptProperties();
+  const siteUrl = requiredProperty_(properties, 'SITE_URL').replace(/\/$/, '');
+  const organizerEmail = requiredProperty_(properties, 'ORGANIZER_EMAIL');
+  const sheet = destinationSheet_(definition);
+
+  if (sheet.getLastRow() < 2) return 0;
+
+  const fieldColumnCount = SYSTEM_COLUMNS.length + definition.fields.length;
+  const emailColumnIndex = SYSTEM_COLUMNS.length + definition.fields.indexOf('email') + 1;
+  const registrationUrl = siteUrl + '/registration.html';
+
+  const header = sheet.getRange(1, 1, 1, Math.max(fieldColumnCount, sheet.getLastColumn())).getValues()[0];
+  let notifiedColumnIndex = header.indexOf(OPENING_NOTIFIED_COLUMN) + 1;
+  if (notifiedColumnIndex === 0) {
+    notifiedColumnIndex = fieldColumnCount + 1;
+    sheet.getRange(1, notifiedColumnIndex).setValue(OPENING_NOTIFIED_COLUMN);
+  }
+
+  const lastRow = sheet.getLastRow();
+  const emails = sheet.getRange(2, emailColumnIndex, lastRow - 1, 1).getValues();
+  const notified = sheet.getRange(2, notifiedColumnIndex, lastRow - 1, 1).getValues();
+
+  const seen = {};
+  let sentCount = 0;
+
+  for (let i = 0; i < emails.length; i++) {
+    const email = cleanText_(emails[i][0]);
+    if (!email || seen[email]) continue;
+    seen[email] = true;
+    if (cleanText_(notified[i][0])) continue;
+
+    try {
+      MailApp.sendEmail({
+        to: email,
+        replyTo: organizerEmail,
+        name: 'BrainHack Donostia',
+        subject: 'BrainHack Donostia 2026 — registration is now open / la inscripción ya está abierta',
+        body: openingEmailBody_(registrationUrl, organizerEmail)
+      });
+      sheet.getRange(i + 2, notifiedColumnIndex).setValue(new Date().toISOString());
+      sentCount++;
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  return sentCount;
+}
+
+function openingEmailBody_(registrationUrl, organizerEmail) {
+  return 'Dear BrainHack Donostia community,\n\n' +
+    'Official registration for BrainHack Donostia 2026 (November 3–6) is now open!\n' +
+    'You pre-registered your interest, so we are writing to let you know first.\n\n' +
+    'Register here: ' + registrationUrl + '\n\n' +
+    'Querida comunidad de BrainHack Donostia,\n\n' +
+    '¡La inscripción oficial de BrainHack Donostia 2026 (3–6 de noviembre) ya está abierta!\n' +
+    'Te escribimos porque te pre-inscribiste, para avisarte antes que nadie.\n\n' +
+    'Inscríbete aquí: ' + registrationUrl + '\n\n' +
+    'Contact / Contacto: ' + organizerEmail;
+}
+
 function collectAndValidate_(parameters, definition) {
   const data = {};
 
@@ -194,6 +301,13 @@ function collectAndValidate_(parameters, definition) {
 
   definition.requiredFields.forEach(function (field) {
     if (!data[field]) {
+      throw new Error('A required field is missing.');
+    }
+  });
+
+  Object.keys(definition.requiredIf || {}).forEach(function (field) {
+    const rule = definition.requiredIf[field];
+    if (data[rule.field] === rule.equals && !data[field]) {
       throw new Error('A required field is missing.');
     }
   });
@@ -310,7 +424,15 @@ function appendOrFindSubmission_(definition, data, submissionId) {
 function destinationSheet_(definition) {
   const properties = PropertiesService.getScriptProperties();
   const spreadsheetId = requiredProperty_(properties, definition.sheetProperty);
-  return SpreadsheetApp.openById(spreadsheetId).getSheets()[0];
+  const spreadsheet = SpreadsheetApp.openById(spreadsheetId);
+  if (definition.sheetNameProperty) {
+    const sheetName = requiredProperty_(properties, definition.sheetNameProperty);
+    const existing = spreadsheet.getSheetByName(sheetName);
+    // Insert at the end so the first sheet (used by the registration form via
+    // getSheets()[0]) is never displaced.
+    return existing || spreadsheet.insertSheet(sheetName, spreadsheet.getSheets().length);
+  }
+  return spreadsheet.getSheets()[0];
 }
 
 function sendEmails_(definition, data, currentStatuses) {
@@ -343,17 +465,19 @@ function sendEmails_(definition, data, currentStatuses) {
 
   if (statuses.confirmation !== 'sent') {
     try {
+      const confirmationBody = definition.confirmationBody
+        ? definition.confirmationBody(data, organizerEmail)
+        : 'Thank you, ' + data.full_name + '.\n\n' +
+          'We have received your ' + definition.subject + '. The BrainHack Donostia team will contact you if needed.\n\n' +
+          'Gracias, ' + data.full_name + '.\n\n' +
+          'Hemos recibido tu envío. El equipo de BrainHack Donostia se pondrá en contacto contigo si fuera necesario.\n\n' +
+          'Contact / Contacto: ' + organizerEmail;
       MailApp.sendEmail({
         to: data.email,
         replyTo: organizerEmail,
         name: 'BrainHack Donostia',
         subject: definition.subject + ' received / recibida',
-        body:
-          'Thank you, ' + data.full_name + '.\n\n' +
-          'We have received your ' + definition.subject + '. The BrainHack Donostia team will contact you if needed.\n\n' +
-          'Gracias, ' + data.full_name + '.\n\n' +
-          'Hemos recibido tu envío. El equipo de BrainHack Donostia se pondrá en contacto contigo si fuera necesario.\n\n' +
-          'Contact / Contacto: ' + organizerEmail
+        body: confirmationBody
       });
       statuses.confirmation = 'sent';
     } catch (error) {

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Pre-Registration - BrainHack Donostia 2026</title><style>
+      body {
+        margin: 0;
+        font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+        background: #f7f9ff;
+        color: #16213b;
+      }
+      .hero {
+        background:
+          url('img/logos/logo_title.png') center / min(92vw, 1000px) auto no-repeat,
+          radial-gradient(circle at 18% 20%, rgba(2, 171, 254, .16), transparent 34%),
+          radial-gradient(circle at 82% 30%, rgba(112, 14, 251, .12), transparent 36%),
+          linear-gradient(180deg, #fff 0%, #eef4ff 100%);
+        height: 360px;
+        filter: drop-shadow(0 2px 2px rgba(22, 33, 59, .25));
+      }
+      .content {
+        max-width: 700px;
+        margin: -36px auto 40px;
+        padding: 60px 20px;
+        text-align: center;
+        background: #fff;
+        border: 1px solid #dce6ff;
+        border-radius: 22px;
+        box-shadow: 0 18px 45px rgba(22, 33, 59, .10);
+      }
+      h1 {
+        color: #16213b;
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #596780;
+      }
+      a {
+        color: #0a76fd;
+      }
+      .back-link {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 12px 28px;
+        border: 0;
+        border-radius: 999px;
+        color: #fff;
+        background: linear-gradient(135deg, #02abfe 0%, #0a76fd 50%, #700efb 100%);
+        box-shadow: 0 12px 28px rgba(10, 118, 253, .22);
+        text-decoration: none;
+      }
+      .back-link:hover {
+        color: #fff;
+        background: linear-gradient(135deg, #0a76fd, #700efb);
+      }
+      @media (max-width: 740px) {
+        .hero {
+          height: 240px;
+        }
+        .content {
+          margin: 0;
+          padding: 44px 22px;
+          border-right: 0;
+          border-left: 0;
+          border-radius: 0;
+        }
+      }
+    
+.content {text-align:left; padding:40px 24px; position:relative;}
+.content h1,.intro,.form-nav {text-align:center;}
+.form-nav {display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin:24px 0;}
+.form-nav .current {padding:12px 18px; border:1px solid #dce6ff; border-radius:12px; font-weight:700; background:#eef4ff; color:#16213b;}
+.form-nav a {padding:12px 18px; border:1px solid #dce6ff; border-radius:12px; text-decoration:none;}
+form {display:grid; gap:20px;}
+fieldset {border:1px solid #dce6ff; border-radius:12px; padding:20px; margin:0; min-width:0;}
+legend {font-weight:700; padding:0 8px;}
+.field {margin:0 0 20px;}.field:last-child {margin-bottom:0;}
+label,.field-title {display:block; font-weight:600; margin-bottom:8px; line-height:1.5;}
+input:not([type=checkbox]):not([type=radio]),select,textarea {box-sizing:border-box; width:100%; padding:12px; border:1px solid #aab9d2; border-radius:8px; font:inherit; background:#fff; color:#16213b;}
+textarea {resize:vertical;}
+.choice {display:flex; gap:10px; align-items:baseline; font-weight:400;}
+input[type=checkbox],input[type=radio] {flex-shrink:0;}
+small {display:block; color:#596780; line-height:1.5; margin:6px 0 10px;}
+.notice {padding:16px; background:#eef4ff; border-radius:12px; font-size:15px;}
+button {padding:14px 24px; border:0; border-radius:999px; color:#fff; font:inherit; background:linear-gradient(135deg,#02abfe,#0a76fd,#700efb); cursor:pointer;}
+button:disabled {background:#dce6ff; color:#596780; cursor:not-allowed;}
+.hp-field {position:absolute; left:-10000px; width:1px; height:1px; overflow:hidden;}
+.privacy-consent {font-size:15px;}
+.consent-copy {min-width:0;}
+.form-status {min-height:24px; margin:0; font-size:15px; font-weight:600;}
+[hidden] {display:none !important;}
+:focus-visible {outline:3px solid #700efb; outline-offset:3px;}
+</style></head><body><section class="hero" aria-label="BrainHack Donostia 2026"></section>
+<main class="content"><h1>BrainHack Donostia 2026</h1>
+<p class="intro">November 3–6, 2026 / <span lang="es">3–6 de noviembre de 2026</span></p>
+<nav class="form-nav" aria-label="Forms"><span class="current">Pre-Register / Pre-inscripción</span><a href="project-submission.html">Submit a project / Proponer un proyecto</a></nav>
+<section id="preregistration"><h2>Pre-Registration / <span lang="es">Pre-inscripción</span></h2>
+<p>Registration is not open yet. Leave your details and we will email you as soon as it opens.<br><span lang="es">La inscripción todavía no está abierta. Déjanos tus datos y te avisaremos por correo en cuanto se abra.</span></p>
+<small>* Required fields / Campos obligatorios</small>
+<!-- Runtime endpoint and opening state are configured in js/form-config.js. -->
+<form id="preregistration-form" method="post" action="" data-form-type="preregistration" aria-describedby="form-status">
+<input type="hidden" name="form_type" value="preregistration">
+<input type="hidden" name="submission_id" value="">
+<input type="hidden" name="form_started_at" value="">
+<input type="hidden" name="recaptcha_token" value="">
+<div class="hp-field" aria-hidden="true"><label for="preregistration-website">Leave this field empty</label><input id="preregistration-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+<fieldset><legend>Contact details / Datos de contacto</legend><div class="field"><label for="preregistration-full_name">Full name / Nombre y apellidos *</label><input id="preregistration-full_name" name="full_name" type="text" required autocomplete="name"></div><div class="field"><label for="preregistration-email">Email address / Correo electrónico *</label><input id="preregistration-email" name="email" type="email" required autocomplete="email"></div><div class="field"><label for="preregistration-institution">Affiliation / Afiliación *</label><select id="preregistration-institution" name="institution" required><option value="">Select / Selecciona</option><option value="BCBL">BCBL</option><option value="UPV/EHU">UPV/EHU</option><option value="Ikerbasque">Ikerbasque</option><option value="DIPC">DIPC</option><option value="Biodonostia">Biodonostia</option><option value="International / Internacional">International / Internacional</option><option value="Other / Otra">Other / Otra</option></select></div><div class="field" id="preregistration-institution-other-field" hidden><label for="preregistration-institution_other">Please specify your affiliation / Indica tu afiliación *</label><input id="preregistration-institution_other" name="institution_other" type="text" autocomplete="organization"></div></fieldset><fieldset><legend>Registration fee / Tarifa de inscripción *</legend><small>Indicate your intended category. No payment is taken now — you will receive a payment link when official registration opens. / <span lang="es">Indica tu categoría prevista. No se realiza ningún pago ahora; recibirás un enlace de pago cuando se abra la inscripción oficial.</span></small><label class="choice" for="preregistration-fee-0"><input id="preregistration-fee-0" type="radio" name="registration_fee" value="10€ BCBL members then 20€ / 10€ miembros del BCBL después 20€" required>10€ BCBL members then 20€ / <span lang="es">10€ miembros del BCBL después 20€</span></label><label class="choice" for="preregistration-fee-1"><input id="preregistration-fee-1" type="radio" name="registration_fee" value="Others 20€ then 30€ / Otr@s 20€ después 30€">Others 20€ then 30€ / <span lang="es">Otr@s 20€ después 30€</span></label><label class="choice" for="preregistration-fee-2"><input id="preregistration-fee-2" type="radio" name="registration_fee" value="Volunteers FREE / Voluntari@s GRATIS">Volunteers FREE / <span lang="es">Voluntari@s GRATIS</span></label></fieldset><fieldset><legend>Privacy / Privacidad *</legend><label class="choice privacy-consent" for="preregistration-privacy-consent"><input id="preregistration-privacy-consent" type="checkbox" name="privacy_consent" value="accepted" required><span class="consent-copy">I have read the <a href="privacy.html" target="_blank" rel="noopener">privacy notice</a> and consent to the processing of my data to manage my pre-registration and communicate with me about BrainHack Donostia 2026. / <span lang="es">He leído el <a href="privacy.html" target="_blank" rel="noopener">aviso de privacidad</a> y consiento el tratamiento de mis datos para gestionar mi pre-inscripción y comunicarse conmigo sobre BrainHack Donostia 2026.</span></span></label></fieldset>
+<button type="submit" disabled>Pre-Register / Pre-inscribirse</button><p id="form-status" class="form-status" role="status" aria-live="polite"></p></form></section>
+<p>Contact / Contacto: <a href="mailto:info.bhg-donostia@bcbl.eu">info.bhg-donostia@bcbl.eu</a></p>
+<a class="back-link" href="index.html">Back to home / Volver al inicio</a></main>
+<script src="js/form-config.js"></script>
+<script src="js/forms.js"></script>
+<script>
+(function () {
+  var select = document.getElementById('preregistration-institution');
+  var otherField = document.getElementById('preregistration-institution-other-field');
+  var input = document.getElementById('preregistration-institution_other');
+  if (!select || !otherField || !input) return;
+  function toggle() {
+    var isOther = select.value === 'Other / Otra';
+    otherField.hidden = !isOther;
+    input.required = isOther;
+  }
+  select.addEventListener('change', toggle);
+  toggle();
+})();
+</script>
+</body></html>

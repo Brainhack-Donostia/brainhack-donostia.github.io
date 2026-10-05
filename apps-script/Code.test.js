@@ -16,6 +16,7 @@ vm.runInContext(source + `
   globalThis.testApi = {
     registration: FORM_DEFINITIONS.registration,
     project: FORM_DEFINITIONS.project,
+    preregistration: FORM_DEFINITIONS.preregistration,
     collectAndValidate_,
     validateSubmissionId_,
     safeSheetValue_,
@@ -96,6 +97,48 @@ assert.throws(() => api.collectAndValidate_(parameters({
   privacy_consent: 'accepted',
   forms_read: 'accepted'
 }), api.project), /required field/i);
+
+const preregistration = api.collectAndValidate_(parameters({
+  full_name: 'Pre Person',
+  email: 'pre@example.org',
+  institution: 'BCBL',
+  registration_fee: 'Others 20€ then 30€ / Otr@s 20€ después 30€',
+  privacy_consent: 'accepted'
+}), api.preregistration);
+assert.equal(preregistration.institution, 'BCBL');
+
+const preregOther = api.collectAndValidate_(parameters({
+  full_name: 'Pre Person',
+  email: 'pre@example.org',
+  institution: 'Other / Otra',
+  institution_other: 'Some Lab',
+  registration_fee: 'Volunteers FREE / Voluntari@s GRATIS',
+  privacy_consent: 'accepted'
+}), api.preregistration);
+assert.equal(preregOther.institution_other, 'Some Lab');
+
+assert.throws(() => api.collectAndValidate_(parameters({
+  full_name: 'Pre Person',
+  email: 'pre@example.org',
+  registration_fee: 'Volunteers FREE / Voluntari@s GRATIS',
+  privacy_consent: 'accepted'
+}), api.preregistration), /required field/i);
+
+assert.throws(() => api.collectAndValidate_(parameters({
+  full_name: 'Pre Person',
+  email: 'pre@example.org',
+  institution: 'Other / Otra',
+  registration_fee: 'Volunteers FREE / Voluntari@s GRATIS',
+  privacy_consent: 'accepted'
+}), api.preregistration), /required field/i);
+
+assert.throws(() => api.collectAndValidate_(parameters({
+  full_name: 'Pre Person',
+  email: 'pre@example.org',
+  institution: 'Unknown institution',
+  registration_fee: 'Volunteers FREE / Voluntari@s GRATIS',
+  privacy_consent: 'accepted'
+}), api.preregistration), /invalid option/i);
 
 assert.equal(api.validateSubmissionId_('12345678-1234-1234-1234-123456789abc'), '12345678-1234-1234-1234-123456789abc');
 assert.throws(() => api.validateSubmissionId_('short'), /submission ID/i);
