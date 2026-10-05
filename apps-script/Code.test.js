@@ -39,7 +39,7 @@ const registration = api.collectAndValidate_(parameters({
   full_name: 'Test Person',
   email: 'test@example.org',
   interests: ['Neuroscience / Neurociencias', 'Open science / Ciencia abierta'],
-  registration_fee: '10€ BCBL members then 20€ / 10€ miembros del BCBL después 20€',
+  registration_fee: '10€ BCBL & EHU members then 20€ / 10€ miembros del BCBL y EHU después 20€',
   privacy_consent: 'accepted'
 }), api.registration);
 assert.equal(registration.interests, 'Neuroscience / Neurociencias | Open science / Ciencia abierta');

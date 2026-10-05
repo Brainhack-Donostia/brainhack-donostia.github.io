@@ -46,7 +46,7 @@ const FORM_DEFINITIONS = Object.freeze({
       ],
       privacy_consent: ['accepted'],
       registration_fee: [
-        '10€ BCBL members then 20€ / 10€ miembros del BCBL después 20€',
+        '10€ BCBL & EHU members then 20€ / 10€ miembros del BCBL y EHU después 20€',
         'Others 20€ then 30€ / Otr@s 20€ después 30€',
         'Volunteers FREE / Voluntari@s GRATIS'
       ]
@@ -106,7 +106,7 @@ const FORM_DEFINITIONS = Object.freeze({
         'International / Internacional', 'Other / Otra'
       ],
       registration_fee: [
-        '10€ BCBL members then 20€ / 10€ miembros del BCBL después 20€',
+        '10€ BCBL & EHU members then 20€ / 10€ miembros del BCBL y EHU después 20€',
         'Others 20€ then 30€ / Otr@s 20€ después 30€',
         'Volunteers FREE / Voluntari@s GRATIS'
       ],
