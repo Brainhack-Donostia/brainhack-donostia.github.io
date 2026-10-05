@@ -152,6 +152,8 @@ Tailles attendues (README) :
   - header background : 1900×1250
   - contact/register : 1469×725
   - sponsors : 295×86
+- Logos de titre (header) : viser **~500 Ko**. Les exports sources (`ressources/`) peuvent arriver **non compressés** (~6 Mo) ; les recompresser **sans perte** avant intégration (Pillow : `Image.open(src).convert('RGBA').save(dst, 'PNG', optimize=True, compress_level=9)`), puis vérifier l'égalité des pixels (`ImageChops.difference(...).getbbox() is None`).
+- Header responsive (`_includes/header.html`) : `logo_title.png` (≤479px), `donostia4title.png` (≤899px), `donostia3title.png` (≤1299px), `donostia2title.png` (au-delà). `logo_title.png` sert aussi de fond de hero aux pages autonomes (`registration.html`, `pre-registration.html`, `project-submission.html`, `privacy.html`, `thankyou.html`).
 
 ## Personnalisation du thème
 
