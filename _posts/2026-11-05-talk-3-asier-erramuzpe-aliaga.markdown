@@ -2,8 +2,8 @@
 title: "Brain Age the Brainhack Way"
 subtitle: "Asier Erramuzpe Aliaga, Ikerbasque Research Fellow <br /> @ Computational Neuroimaging Lab, Biobizkaia Health Research Institute"
 layout: default
-modal-id: 8
-date: 2026-11-06
+modal-id: 7
+date: 2026-11-05
 img:
 thumbnail:
 alt: "Portrait of Asier Erramuzpe Aliaga — photograph to be added once image rights are confirmed"

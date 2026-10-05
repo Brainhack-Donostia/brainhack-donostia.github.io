@@ -2,8 +2,8 @@
 title: "From Brain Maps to Molecular Mechanisms: Unveiling the Neuroimaging-Genetic Intersections in the Human Brain"
 subtitle: "Ibai Diez Palacio, Ikerbasque Research Fellow <br /> @ Biobizkaia Health Research Institute"
 layout: default
-modal-id: 6
-date: 2026-11-04
+modal-id: 8
+date: 2026-11-05
 img:
 thumbnail:
 alt: "Portrait of Ibai Diez Palacio — photograph to be added once image rights are confirmed"

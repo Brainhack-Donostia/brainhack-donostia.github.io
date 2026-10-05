@@ -2,8 +2,8 @@
 title: "Replacing academic journals by repositories and peer communities"
 subtitle: "Pandelis Perakakis, Associate Professor of Psychology <br /> @ Complutense University of Madrid (UCM)"
 layout: default
-modal-id: 7
-date: 2026-11-05
+modal-id: 6
+date: 2026-11-04
 img:
 thumbnail:
 alt: "Portrait of Pandelis Perakakis — photograph to be added once image rights are confirmed"
