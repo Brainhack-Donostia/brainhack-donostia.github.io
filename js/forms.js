@@ -20,6 +20,14 @@
   // The project form also requires downloading the Word template first.
   let templateDownloaded = !templateDownload;
 
+  // While official registration is closed, keep visitors on the open
+  // pre-registration form instead of exposing the registration page.
+  // This auto-disables as soon as registrationOpen becomes true.
+  if (formType === 'registration' && !isOpen) {
+    window.location.replace('pre-registration.html');
+    return;
+  }
+
   if (startedAt) startedAt.value = String(Date.now());
   if (submissionId) submissionId.value = createSubmissionId();
 

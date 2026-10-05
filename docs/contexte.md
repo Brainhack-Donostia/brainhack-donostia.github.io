@@ -26,7 +26,7 @@ Site statique public de l'événement annuel **Brainhack Donostia** (neuroscienc
 - `_plugins/hex_to_rgb.rb` : filtre Liquid `hex_to_rgb` utilisé par le thème.
 - `img/` : assets images, avec des conventions de taille (voir section « Conventions »).
 - `_site/` : sortie de build Jekyll, **entièrement retirée du suivi git** (commit `be1bfa5a`, `_site/*` dans `.gitignore`). Ne jamais l'éditer ni le committer ; le régénérer via `bundle exec jekyll build`.
-- `registration.html` et `project-submission.html` : pages autonomes (formulaires d'inscription et de soumission de projet). Collecte des données : voir « Formulaires — collecte des données » ci-dessous et `docs/plan-formulaires.md`.
+- `registration.html`, `pre-registration.html` et `project-submission.html` : pages autonomes (formulaires d'inscription, de pré-inscription et de soumission de projet). Collecte des données : voir « Formulaires — collecte des données » ci-dessous et `docs/plan-formulaires.md`.
 - `tools/make_bhd_template.py` : script générateur du template Word de projet (voir « Template Word de projet »). Dépendance de build `python-docx`, **hors** dépendances du site.
 - `assets/` : fichiers statiques publiés tels quels par Jekyll (téléchargeables). Contient le template Word de projet.
 
@@ -50,7 +50,8 @@ Site statique public de l'événement annuel **Brainhack Donostia** (neuroscienc
 
 ## Formulaires — collecte des données (backend déployé, recette inscription réussie en production)
 
-- `js/form-config.js` contient l'URL `/exec` Apps Script et la site key publique reCAPTCHA. `js/forms.js` charge reCAPTCHA v3 et active chaque formulaire seulement si sa clé `*Open` vaut `true`. Les deux formulaires restent **fermés publiquement** (`registrationOpen: false`, `projectOpen: false`) ; l'ouverture se fait uniquement en passant le flag concerné à `true` dans `js/form-config.js` puis en déployant.
+- `js/form-config.js` contient l'URL `/exec` Apps Script et la site key publique reCAPTCHA. `js/forms.js` charge reCAPTCHA v3 et active chaque formulaire seulement si sa clé `*Open` vaut `true`. État courant : seul le formulaire de **pré-inscription** est ouvert (`preregistrationOpen: true`) ; `registrationOpen` et `projectOpen` restent à `false`. Tant que `registrationOpen` est faux, `js/forms.js` **redirige `registration.html` vers `pre-registration.html`** (garde-fou auto-désactivable, voir la checklist d'ouverture ci-dessous). L'ouverture se fait en passant le flag concerné à `true` dans `js/form-config.js` puis en déployant.
+- Le routage par onglet est piloté par les Script Properties : `registration`/`project` utilisent `REGISTRATION_SHEET_ID`/`PROJECT_SHEET_ID` ; `preregistration` utilise `PRE_REGISTRATION_SHEET_ID` (même classeur que `registration`) + `PRE_REGISTRATION_SHEET_NAME` (`Pre-registrations`). Unicité d'email activée **par formulaire** (`uniqueEmail: true`) : un email déjà présent pour un formulaire donné est rejeté (`DUPLICATE_EMAIL`).
 - Décision retenue : réception via **Google Sheets + Apps Script** (Web App `doPost`), **1 projet Apps Script partagé** routant par champ caché `form_type` (`registration` / `project`) ; **2 classeurs séparés**.
 - Compte : **Gmail gratuit dédié**. Anti-spam : **honeypot + reCAPTCHA v3 + âge minimal du formulaire**. Les valeurs à choix sont vérifiées côté serveur, un `submission_id` empêche les doublons et `retryPendingEmails` permet la reprise séparée des e-mails échoués. RGPD : **case de consentement obligatoire + `privacy.html` bilingue** ; conservation proposée : 12 mois après l'événement, à faire valider avant ouverture.
 - Emission : notification aux organisateurs + accusé de réception bilingue EN/ES + redirection vers `thankyou.html?type=registration|project`.
@@ -63,6 +64,19 @@ Site statique public de l'événement annuel **Brainhack Donostia** (neuroscienc
 - **Restant avant ouverture durable** : retirer `localhost` de la configuration reCAPTCHA et de `ALLOWED_HOSTNAMES` ; valider juridiquement `privacy.html` ; confirmer la ligne dans Projects et la réception des e-mails de la recette projet ; supprimer les données de test ; puis activer le flag `*Open` concerné.
 - **Gate de téléchargement** (`project-submission.html`) : le bouton `Download: Project Template / Descargar Template del Proyecto` (`<a data-template-download>` → `assets/brainhack_project_template.docx`) doit être cliqué pour que Submit (`#project-form button[type=submit]`) s'active. `js/forms.js` suit `templateDownloaded` dans `refreshSubmitState()` (cumulé avec `projectOpen` et le chargement reCAPTCHA). L'aide `#template-hint` (`.form-hint`) explique le bouton grisé : elle n'est **pas** dans le HTML par défaut, n'apparaît que si le formulaire est ouvert et est masquée dès le téléchargement.
 - Les deux cases obligatoires « I read this! / ¡Leído! » (consigne du template, puis rappel « Submitting a project… ») vivent **hors** du `<form>`, dans l'encadré `.notice` : elles sont rattachées au formulaire par l'attribut `form="project-form"`, sans quoi `required` et l'envoi les ignoreraient.
+
+### Checklist d'ouverture de l'inscription
+
+À exécuter dans l'ordre le jour où l'inscription officielle ouvre (état actuel : pré-inscription ouverte, inscription fermée) :
+
+1. `js/form-config.js` : passer `registrationOpen: true` et `preregistrationOpen: false`. Le garde-fou de `js/forms.js` qui redirige `registration.html` vers `pre-registration.html` **s'auto-désactive** dès que `registrationOpen` vaut `true` (rien à retirer).
+2. `project-submission.html` : dans le `<nav class="form-nav">`, repasser le lien sur `registration.html` avec le libellé « Register / Inscribirse ».
+3. `_includes/header.html` : repasser l'entrée de nav **et** le CTA du hero de `pre-registration.html` / « Pre-Registration » vers `registration.html` / « Registration ».
+4. Apps Script (éditeur) : exécuter `notifyPreRegistrants()` — envoie l'email d'ouverture aux pré-inscrits (dédupliqué, marque `opening_notified_at`).
+5. Retirer `localhost` de la console reCAPTCHA **et** de la Script Property `ALLOWED_HOSTNAMES`.
+6. Vérifier `privacy.html` (validation juridique) et la durée de conservation des données.
+7. Supprimer les données de test des onglets `Registrations` / `Pre-registrations` / `Projects`.
+8. `commit` + `push` sur `master` (le déploiement GitHub Pages se déclenche au push).
 
 ## Commandes d'installation, exécution, test et build
 
@@ -166,6 +180,7 @@ Tailles attendues (README) :
 | Modifier les sponsors | `_includes/clients.html` + `img/logos/` |
 | Modifier les couleurs du thème | `_data/template.yml`, `_includes/css/light-theme.css` |
 | Page d'inscription | `registration.html` |
+| Page de pré-inscription | `pre-registration.html` |
 | Page de soumission de projet | `project-submission.html` |
 | Plan de collecte des formulaires | `docs/plan-formulaires.md` |
 | Template Word de projet | `assets/brainhack_project_template.docx`, `tools/make_bhd_template.py` |
