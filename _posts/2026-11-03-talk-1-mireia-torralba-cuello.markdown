@@ -4,9 +4,9 @@ subtitle: "Mireia Torralba Cuello, Serra Húnter Assistant Professor <br /> @ Un
 layout: default
 modal-id: 5
 date: 2026-11-03
-img:
-thumbnail:
-alt: "Portrait of Mireia Torralba Cuello — photograph to be added once image rights are confirmed"
+img: mireia-torralba.jpg
+thumbnail: mireia-torralba-thumbnail.jpg
+alt: "Portrait of Mireia Torralba Cuello"
 project-date: November 2026
 category: Keynote Talk
 description: "Midfrontal theta activity (4–8 Hz) has long been recognized as a canonical EEG marker of cognitive conflict. While earlier studies used paradigms in which conflict relies on response selection (for instance, Stroop, Flanker, or Simon tasks), purely stimulus-driven conflict has received less attention. In the first part of this talk, I will present empirical results to support the existence of purely stimulus-driven conflict, showing that the conflict signal can be disentangled from the response.<br /><br />

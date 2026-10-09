@@ -4,9 +4,9 @@ subtitle: "Ibai Diez Palacio, Ikerbasque Research Fellow <br /> @ Biobizkaia Hea
 layout: default
 modal-id: 8
 date: 2026-11-05
-img:
-thumbnail:
-alt: "Portrait of Ibai Diez Palacio — photograph to be added once image rights are confirmed"
+img: ibai-diez.jpg
+thumbnail: ibai-diez-thumbnail.jpg
+alt: "Portrait of Ibai Diez Palacio"
 project-date: November 2026
 category: Keynote Talk
 description: "Neuroimaging has transformed our ability to map brain structure, function, connectivity, and pathology in vivo. However, many neuroimaging findings remain primarily descriptive, identifying where the brain changes without fully explaining the biological mechanisms underlying these spatial patterns. In this talk, I will discuss the importance of moving beyond anatomical localization toward mechanistic interpretation of neuroimaging results. I will present different computational approaches that integrate neuroimaging-derived brain maps with molecular and cellular information, including transcriptomic and cell-type-specific data, to identify underlying cellular and molecular mechanism behind neuroimaging findings. This talk will emphasize how open datasets, and reproducible workflows, can help bridge systems neuroscience and molecular neuroscience. By connecting brain maps with biological context, neuroimaging can become not only a tool for detecting where changes occur, but also a starting point for understanding why they occur and how they may inform future biomarkers, disease models, and therapeutic strategies.<br /><br />

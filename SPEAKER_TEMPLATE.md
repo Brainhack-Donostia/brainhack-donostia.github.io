@@ -20,7 +20,7 @@ _posts/AAAA-MM-DD-talk-N-nombre-apellido.markdown
 title: "Título de la charla en inglés"
 subtitle: "Nombre Apellido, cargo <br /> @ Institución"
 layout: default
-modal-id: 9
+modal-id: 10
 date: 2026-11-07
 img:
 thumbnail:
@@ -43,7 +43,7 @@ Nombre Apellido es [cargo] en [institución]. Sus intereses de investigación in
 title: "Neural Correlates of Decision-Making in Dynamic Environments"
 subtitle: "Juan Pérez García, Assistant Professor <br /> @ Universidad del País Vasco"
 layout: default
-modal-id: 9
+modal-id: 10
 date: 2026-11-07
 img:
 thumbnail:
@@ -66,7 +66,7 @@ Juan Pérez García es Profesor Ayudante en la Universidad del País Vasco. Sus 
 | `title` | Sí | Título de la charla, en inglés. |
 | `subtitle` | Sí | Nombre del conferenciante + cargo, `<br />` para separar líneas, `@ Institución`. |
 | `layout` | Sí | Siempre `default`. |
-| `modal-id` | **Sí** | Entero **único** (actualmente el mayor es `8`; usa el siguiente). Debe coincidir entre `_includes/portfolio_grid.html` y `_includes/modals.html`. |
+| `modal-id` | **Sí** | Entero **único** (actualmente el mayor es `9`; usa el siguiente). Debe coincidir entre `_includes/portfolio_grid.html` y `_includes/modals.html`. |
 | `date` | Sí | Fecha de la charla, formato `YYYY-MM-DD`. |
 | `img` | No | Ruta a la imagen expandida (modal), si hay. |
 | `thumbnail` | No | Ruta a la miniatura de la grilla, si hay. |

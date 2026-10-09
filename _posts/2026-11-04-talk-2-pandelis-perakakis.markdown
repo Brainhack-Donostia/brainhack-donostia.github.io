@@ -4,9 +4,9 @@ subtitle: "Pandelis Perakakis, Associate Professor of Psychology <br /> @ Complu
 layout: default
 modal-id: 6
 date: 2026-11-04
-img:
-thumbnail:
-alt: "Portrait of Pandelis Perakakis — photograph to be added once image rights are confirmed"
+img: pandelis-perakakis.jpg
+thumbnail: pandelis-perakakis-thumbnail.jpg
+alt: "Portrait of Pandelis Perakakis"
 project-date: November 2026
 category: Keynote Talk
 description: "Journals once solved a genuine problem: how to distribute and certify research in a world of paper and scarcity. That world is gone, and the institution has outlived the problem it was built to solve. Publication already happens in repositories, and evaluation can be carried out by communities of peers whose judgments are themselves deposited back into those repositories as open, citable research objects. This talk makes the case for replacing journal-based publishing, inspired by existing successful projects and initiatives. The time for change is ripe: open infrastructures and an international movement for research assessment reform now promise to end the reliance on journal metrics when evaluating research and careers. I will present examples of do-it-yourself, journal-independent scientific communication and explore how to bridge the remaining technical gaps and improve interoperability between today's publication and review-management workflows.<br /><br />
