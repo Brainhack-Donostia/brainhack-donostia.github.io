@@ -1,5 +1,4 @@
 <!-- Portfolio Grid Section -->
-<!-- Portfolio Grid Section -->
 <section id="portfolio" class="bg-light-gray">
   <div class="container">
     <div class="row">
@@ -8,7 +7,7 @@
         <h2 class="white mb-3">Take a look to the amazing speakers we will host!</h2>
       </div>
     </div>
-             <div class="row">
+             <div class="row portfolio-grid">
             {% assign talks = site.posts | where_exp: "post", "post.title != ''" | sort: 'modal-id' %}
             {% for post in talks %}
                 <div class="col-md-4 col-sm-6 portfolio-item">

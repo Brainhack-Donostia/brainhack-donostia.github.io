@@ -310,6 +310,56 @@ section:nth-of-type(even) {
     box-shadow: 0 12px 28px rgba(22, 33, 59, .08);
 }
 
+/* Keynote speakers grid.
+   Bootstrap 3 lays columns out with floats, which produced an uneven
+   "staircase" here because the caption height varies with the (very
+   different) title/subtitle lengths. A CSS Grid keeps the cards aligned
+   in rows whatever the number of speakers or the text length. */
+#portfolio .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 0;
+}
+
+/* Bootstrap's .row clearfix uses ::before/::after, which become grid items
+   and shift the whole grid by one cell - so disable them here. */
+#portfolio .portfolio-grid::before,
+#portfolio .portfolio-grid::after {
+    content: none;
+    display: none;
+}
+
+#portfolio .portfolio-grid > .portfolio-item {
+    display: flex;
+    flex-direction: column;
+    float: none;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#portfolio .portfolio-grid > .portfolio-item .portfolio-link {
+    width: 100%;
+}
+
+/* Let the caption grow so every card in a row has the same height. */
+#portfolio .portfolio-grid > .portfolio-item .portfolio-caption {
+    flex: 1 1 auto;
+}
+
+@media (max-width: 991px) {
+    #portfolio .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    #portfolio .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .timeline:before {
     background: linear-gradient(180deg, var(--bhd-cyan), var(--bhd-violet));
 }
