@@ -76,7 +76,8 @@
 | Hora | Actividad |
 |------|-----------|
 | 09:00–09:30 | Café social y bollería |
-| 09:30–11:30 | **Conferencia 3 — Asier Erramuzpe Aliaga:** "Brain Age the Brainhack Way" |
+| 09:30–10:30 | **Conferencia 3 — Asier Erramuzpe Aliaga:** "Brain Age the Brainhack Way" |
+| 10:30–11:30 | Tiempo de proyecto (Project Time) |
 | 11:30–12:00 | **Pausa café** |
 | 12:00–13:00 | **Conferencia 4 — Ibai Diez Palacio:** "From Brain Maps to Molecular Mechanisms: Unveiling the Neuroimaging-Genetic Intersections in the Human Brain" |
 | 13:00–14:00 | **Pausa comida** |
