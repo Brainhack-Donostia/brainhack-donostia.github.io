@@ -48,9 +48,7 @@
 | 12:00–13:00 | Módulo de formación 2: Git/GitHub y colaboración reproducible |
 | 13:00–14:00 | **Pausa comida** |
 | 14:00–15:00 | **Conferencia 1 — Mireia Torralba Cuello:** "Electrophysiological correlates of Stimulus and Response Conflict: From Midfrontal Theta activity to aperiodic and oscillatory Dynamics" |
-| 15:00–16:30 | Presentación de proyectos (Project Pitches) |
-| 16:30–17:00 | **Pausa café** |
-| 17:00–18:00 | Módulo de formación 3 + Formación de equipos |
+| 15:00–16:30 | Módulo de formación 3: práctica guiada y preguntas |
 
 ---
 
@@ -59,9 +57,8 @@
 | Hora | Actividad |
 |------|-----------|
 | 09:00–09:30 | Café social y bollería |
-| 09:30–10:00 | Kick-off del Brainhack e información práctica |
-| 10:00–11:00 | Inicio de proyectos (Project start) |
-| 11:00–11:30 | **Pausa café** |
+| 09:30–11:00 | Presentación de proyectos (Project Pitches) |
+| 11:00–11:30 | **Pausa café** + Formación de equipos |
 | 11:30–13:00 | Tiempo de proyecto |
 | 13:00–14:00 | **Pausa comida** |
 | 14:00–15:00 | **Conferencia 2 — Pandelis Perakakis:** "Replacing academic journals by repositories and peer communities" |
