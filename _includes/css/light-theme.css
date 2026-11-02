@@ -89,14 +89,27 @@ body {
 }
 
 .toolbox-cta {
-    display: block;
-    width: min(220px, 75vw);
-    margin: 8px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: min(176px, 75vw);
+    height: 51px;
+    margin: 10px auto 0;
     pointer-events: auto;
-    border-radius: 18px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #8974cc, #7561b8);
+    box-shadow: 0 8px 20px rgba(103, 83, 159, .20);
+    color: #fff;
+    font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: .015em;
+    text-decoration: none;
 }
-.toolbox-cta img { display: block; width: 100%; height: auto; }
-.toolbox-cta:focus-visible { outline: 3px solid #700efb; outline-offset: 3px; }
+.toolbox-cta:hover, .toolbox-cta:focus { color: #fff; text-decoration: none; }
+.toolbox-cta svg { flex: none; }
+.toolbox-cta:focus-visible { outline: 3px solid #423179; outline-offset: 3px; }
 
 .btn.btn-xl.project-submission-cta {
     display: block;
@@ -162,6 +175,7 @@ body {
 @media (max-width: 767px) {
     .site-hero {
         padding-top: 60px;
+        min-height: 370px;
     }
 
     .site-hero .container {
