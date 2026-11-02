@@ -88,6 +88,16 @@ body {
     line-height: 1.2;
 }
 
+.toolbox-cta {
+    display: block;
+    width: min(220px, 75vw);
+    margin: 8px auto 0;
+    pointer-events: auto;
+    border-radius: 18px;
+}
+.toolbox-cta img { display: block; width: 100%; height: auto; }
+.toolbox-cta:focus-visible { outline: 3px solid #700efb; outline-offset: 3px; }
+
 .btn.btn-xl.project-submission-cta {
     display: block;
     width: max-content;
